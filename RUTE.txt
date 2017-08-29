@@ -1,0 +1,1104 @@
+LIVRO E CAPITULO: $RUTE [1]
+VERSICULO: 1
+PALAVRA: dias	RADICAL: dia	SINONIMOS: tempo, século, etapa, fase, momento, era, data, prazo, ciclo, horas, anos, meses, minutos, segundos, ocasião.
+PALAVRA: juízes	RADICAL: juiz	SINONIMOS: justiça, judicatura, magistratura, magistrados, ministro, magistrado, togado, desembargador, mediador, árbitro, julgador, conhecedor.
+PALAVRA: governavam	RADICAL: govern	SINONIMOS: administravam, geriam, dirigiam, comandavam, mandavam, chefiavam, regiam, orientavam, controlavam, dominavam, continham, seguravam, regulavam, influenciavam, sugestionavam, aconselhavam, induziam, encaminhavam, conduziam, guiavam, pilotavam, levavam.
+PALAVRA: houve	RADICAL: houv	SINONIMOS: existiu, aconteceu, ocorreu, sucedeu, passou-se, deu-se, realizou-se, foi, desenrolou-se, processou-se, efetuou-se, verificou-se, fez, completou-se, decorreu, transcorreu, passou, completou, contou, perfez, atingiu.
+PALAVRA: fome	RADICAL: fom	SINONIMOS: orexia, apetência, apetite, subnutrição, subalimentação, lazeira, desnutrição, carência, escassez, falta, privação, inópia, miséria, míngua, penúria, rafa, necessidade, pobreza, indigência.
+PALAVRA: terra	RADICAL: terr	SINONIMOS: chão, solo, pátria, lar, torrão natal, país, ninho, nação, terreno, propriedade, fazenda, herdade, domínio, plano, várzea, vale, planície, campo, cidade, vilarejo, vila, localidade, aldeia, povoação, povoado, lugarejo, lugar, local, região, plaga, localidade, território.
+PALAVRA: homem	RADICAL: hom	SINONIMOS: pessoa, indivíduo, sujeito, ser, criatura, gente, adulto, varão, humano, mortal, macho, másculo, viril.
+PALAVRA: Belém	RADICAL: belem	SINONIMOS: Jesus, Cristo, Israel.
+PALAVRA: Judá	RADICAL: jud	SINONIMOS: tribo.
+PALAVRA: saiu	RADICAL: saiu	SINONIMOS: foi, mudou, andou, locomoveu-se, movimentou-se, moveu-se, caminhou, marchou, partiu, ausentou-se, retirou-se, afastou-se, abalou, viajou.
+PALAVRA: peregrinar	RADICAL: peregrin	SINONIMOS: jornadear, viajar, caminhar, andar, locomover.
+PALAVRA: país	RADICAL: pais	SINONIMOS: estado, povo, nação, pátria, terra natal, torrão natal, região, lugar, terra, plaga, território, torrão, ambiente, meio.
+PALAVRA: Moabe	RADICAL: moab	SINONIMOS: Jordânia, Moabitas.
+PALAVRA: mulher	RADICAL: mulh	SINONIMOS: moça, dama, senhora, madame, consorte, esposa, dona, senhora, cônjuge, companheira, patroa, amante.
+PALAVRA: dois	RADICAL: doi	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.
+VERSICULO: 2
+PALAVRA: Chamava-se	RADICAL: chamava-s	SINONIMOS: intitulava-se, era, denominava-se, nomeava-se, caracterizava-se, acionava-se, autodenominava-se, apelidava-se.
+PALAVRA: homem	RADICAL: hom	SINONIMOS: pessoa, indivíduo, sujeito, ser, criatura, gente, adulto, varão, humano, mortal, macho, másculo, viril.
+PALAVRA: Elimeleque	RADICAL: elimelequ	SINONIMOS: .
+PALAVRA: mulher	RADICAL: mulh	SINONIMOS: moça, dama, senhora, madame, consorte, esposa, dona, senhora, cônjuge, companheira, patroa, amante.
+PALAVRA: Noêmi	RADICAL: noem	SINONIMOS: .
+PALAVRA: dois	RADICAL: doi	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.
+PALAVRA: chamavam	RADICAL: cham	SINONIMOS: autodenominavam, intitulavam, eram, denominavam, cognominavam, apelidavam, batizavam, designavam, nomeavam, caracterizavam.
+PALAVRA: Malom	RADICAL: malom	SINONIMOS: .
+PALAVRA: Quiliom	RADICAL: quiliom	SINONIMOS: .
+PALAVRA: eram	RADICAL: er	SINONIMOS: significavam, constituíam, consistiam, descendiam, provinham, resultavam.
+PALAVRA: efrateus	RADICAL: efrat	SINONIMOS: Efrata, Belém, Efraim, Israel.
+PALAVRA: Belém	RADICAL: belem	SINONIMOS: Jesus, Cristo, Israel.
+PALAVRA: Judá	RADICAL: jud	SINONIMOS: tribo.
+PALAVRA: entrado	RADICAL: entr	SINONIMOS: atingido, completado, avançado, chegado, alcançado, andado, introduzido, aprofundado, adentrado, penetrado, ingressado.
+PALAVRA: país	RADICAL: pais	SINONIMOS: estado, povo, nação, pátria, terra natal, torrão natal, região, lugar, terra, plaga, território, torrão, ambiente, meio.
+PALAVRA: Moabe	RADICAL: moab	SINONIMOS: SINONIMOS: Jordânia, Moabitas.
+PALAVRA: ficaram	RADICAL: fic	SINONIMOS: permaneceram, continuaram, mantiveram, detiveram, conservaram, pararam, estacionaram, empacaram, hospedaram, alojaram, acamparam, habitaram.
+PALAVRA: ali	RADICAL: ali	SINONIMOS: naquele lugar, lugar, localidade, local.
+VERSICULO: 3
+PALAVRA: morreu	RADICAL: morr	SINONIMOS: expirou, terminou, findou, padeceu, faleceu, extinguiu, descansou, partiu, óbito, morte.
+PALAVRA: Elimeleque	RADICAL: elimelequ	SINONIMOS: .
+PALAVRA: marido	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+PALAVRA: Noêmi	RADICAL: noem	SINONIMOS: .
+PALAVRA: ficou	RADICAL: fic	SINONIMOS: SINONIMOS: tornou-se, fez-se, encontrou-se, passou, sentiu-se, transformou.
+PALAVRA: dois	RADICAL: doi	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.
+VERSICULO: 4
+PALAVRA: casaram	RADICAL: cas	SINONIMOS: uniram, enlaçaram, esposaram, desposaram, matrimoniaram, maridaram, consorciaram, aliaram,  juntaram, reuniram, ligaram, associaram, emparelharam, irmanaram, agregaram, casalaram, acasalaram, ajuntaram.
+PALAVRA: mulheres	RADICAL: mulh	SINONIMOS: fêmeas, mocinhas, madames, moças, damas, senhoras, consortes, esposas, donas, senhoras, cônjuges, companheiras, patroas, amantes.
+PALAVRA: moabitas	RADICAL: moabit	SINONIMOS: Moabe, Jordânia.
+PALAVRA: chamava	RADICAL: cham	SINONIMOS: autodenominava, intitulava, era, denominava, cognominava, apelidava, batizava, nomeava, caracterizava, designava.
+PALAVRA: Orfa	RADICAL: orf	SINONIMOS: .
+PALAVRA: Rute	RADICAL: rut	SINONIMOS: .
+PALAVRA: moraram	RADICAL: mor	SINONIMOS: residiram, habitaram, viveram, assistiram, coabitaram, conviveram, estanciaram, estiveram, existiram, permaneceram, domiciliaram, localizaram, situaram, instalaram. 
+PALAVRA: ali	RADICAL: ali	SINONIMOS: naquele lugar, lugar, localidade, local.
+PALAVRA: quase	RADICAL: quas	SINONIMOS: perto de, próximo de, mais ou menos, aproximadamente, cerca de, pouco menos de, praticamente.
+PALAVRA: dez	RADICAL: dez	SINONIMOS: dezena, 10, x.
+PALAVRA: anos	RADICAL: ano	SINONIMOS: duração, existência, tempo, século, etapa, fase, momento, era, data, prazo, ciclo.
+VERSICULO: 5
+PALAVRA: morreram	RADICAL: morr	SINONIMOS: expiraram, terminaram, findaram, padeceram, faleceram, extinguiram, descansaram, partiram, óbito, morte.
+PALAVRA: dois	RADICAL: doi	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: Malom	RADICAL: malom	SINONIMOS: .
+PALAVRA: Quiliom	RADICAL: quiliom	SINONIMOS: .
+PALAVRA: ficando	RADICAL: fic	SINONIMOS: tornando, encontrando, transformando, resultando, dando em, ocasionando, tornando-se, estando, achando-se, encontrando-se, vivendo, existindo, virando, fazendo-se..
+PALAVRA: assim	RADICAL: assim	SINONIMOS: desse modo, dessa forma, deste modo, desta forma, dessarte, desta maneira, destarte, deste jeito, desse jeito, dessa maneira.
+PALAVRA: mulher	RADICAL: mulh	SINONIMOS: moça, dama, senhora, madame, consorte, dona, senhora, viúva.
+PALAVRA: desamparada	RADICAL: desampar	SINONIMOS: desabitada, erma, solitária, abandonada, perdida, desprotegida, desvalida, leca, descoberta, indefesa, sozinha.
+PALAVRA: dois	RADICAL: doi	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.	
+PALAVRA: marido	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+VERSICULO: 6
+PALAVRA: Então	RADICAL: ent	SINONIMOS: portanto, logo, assim, pois, por isso.
+PALAVRA: levantou	RADICAL: levant	SINONIMOS: acordou, despertou, espertou, animou, alegrou, arrebitou, entusiasmou, excitou, estimulou, avivou, arribou, vivificou, revigorou, raiou.
+PALAVRA: noras	RADICAL: nor	SINONIMOS: família.
+PALAVRA: voltar	RADICAL: volt	SINONIMOS: reverter, regressar, retornar, revir, retomar, reiniciar, recomeçar.
+PALAVRA: país	RADICAL: pais	SINONIMOS: estado, povo, nação, pátria, terra natal, torrão natal, região, lugar, terra, plaga, território, torrão, ambiente, meio.
+PALAVRA: Moabe	RADICAL: moab	SINONIMOS: SINONIMOS: Jordânia, Moabitas.
+PALAVRA: porquanto	RADICAL: porquant	SINONIMOS: uma vez que, posto que, pois, porque, por causa de, visto que, dado que, em atenção a, em razão de, já que, pois que.
+PALAVRA: terra	RADICAL: terr	SINONIMOS: chão, solo, pátria, lar, torrão natal, país, ninho, nação, terreno, propriedade, fazenda, herdade, domínio, plano, várzea, vale, planície, campo, cidade, vilarejo, vila, localidade, aldeia, povoação, povoado, lugarejo, lugar, local, região, plaga, localidade, território.
+PALAVRA: ouvido	RADICAL: ouv	SINONIMOS: sentido, percebido, atendido, escutado, auscultado, entendido.
+PALAVRA: Senhor	RADICAL: senh	SINONIMOS: dono, possuidor, proprietário, imperador, chefe, soberano, rei, pai, altíssimo, criador, deus, Ser Supremo, onipotente, todo-poderoso, dominador.
+PALAVRA: havia	RADICAL: hav	SINONIMOS: tinha.
+PALAVRA: visitado	RADICAL: visit	SINONIMOS: despontado, assomado, apontado, aparecido, surgido, atendido, assistido, estado, frequentado, ido.
+PALAVRA: povo	RADICAL: pov	SINONIMOS: sociedade, habitantes, pessoas, turma, público, população, gente, nação, grupo, povoamento, povoado, lugarejo.
+PALAVRA: dando-lhe	RADICAL: dando-lh	SINONIMOS: oferecendo-lhe, presenteando-lhe, ofertando-lhe, doando-lhe, brindando-lhe, cedendo-lhe, concedendo-lhe, entregando-lhe, transferindo-lhe, atribuindo-lhe, passando-lhe, dedicando-lhe, fornecendo-lhe, conferindo-lhe, facultando-lhe, outorgando-lhe, destinando-lhe, legando-lhe.
+PALAVRA: pão	RADICAL: pao	SINONIMOS: alimentação, alimento, sustento, subsistência, rosca, hóstia, comida, nutrição.
+VERSICULO: 7
+PALAVRA: saiu	RADICAL: saiu	SINONIMOS: foi, mudou, andou, locomoveu-se, movimentou-se, moveu-se, caminhou, marchou, partiu, ausentou-se, retirou-se, afastou-se, abalou, viajou.
+PALAVRA: lugar	RADICAL: lug	SINONIMOS: localidade, área, terra, recinto, paragem, sítio, povoação, povoado, região, local, vila, zona, parte, posição, posto, colocação, ponto, localização.
+PALAVRA: onde	RADICAL: ond	SINONIMOS: em que, na qual, no qual.
+PALAVRA: duas	RADICAL: dua	SINONIMOS: dual, dobrado, dobro, duplo, 2.
+PALAVRA: noras	RADICAL: nor	SINONIMOS: família.
+PALAVRA: Indo	RADICAL: ind	SINONIMOS: partindo, deixando, saindo, retirando-se, zarpando, fugindo, viajando, ausentando-se, abandonando, encaminhando-se, dirigindo-se, conduzindo-se, seguindo.
+PALAVRA: caminhando	RADICAL: caminh	SINONIMOS: calcorreando, andando, andejando, marchando, correndo, viajando, peregrinando, percorrendo, passeando, jornadeando, deslocando, movimentando, avançando, marchando, locomovendo, vagueando, vagando, passeando.
+PALAVRA: voltarem	RADICAL: volt	SINONIMOS: reverterem, regressarem, retornarem, revierem, retomarem, reiniciarem, recomeçarem.
+PALAVRA: terra	RADICAL: terr	SINONIMOS: SINONIMOS: chão, solo, pátria, lar, torrão natal, país, ninho, nação, terreno, propriedade, fazenda, herdade, domínio, plano, várzea, vale, planície, campo, cidade, vilarejo, vila, localidade, aldeia, povoação, povoado, lugarejo, lugar, local, região, plaga, localidade, território.
+PALAVRA: Judá	RADICAL: jud	SINONIMOS: tribo.
+VERSICULO: 8
+PALAVRA: Noêmi	RADICAL: noem	SINONIMOS: .
+PALAVRA: às	RADICAL: as	SINONIMOS: .
+PALAVRA: noras	RADICAL: nor	SINONIMOS: família.
+PALAVRA: Ide	RADICAL: ide	SINONIMOS: avançai, vá, andai, caminhai, marchai, parti, saí, viajai, caminhai, andai.
+PALAVRA: voltai	RADICAL: volt	SINONIMOS: revertei, regressai, retornai, revinde, retomai, reiniciai, recomeçai.
+PALAVRA: casa	RADICAL: cas	SINONIMOS: residência, habitação, domicílio, vivenda, moradia, morada, lar, família, linhagem, geração.
+PALAVRA: mãe	RADICAL: mae	SINONIMOS: mamãe, mamã, genetriz, genitora, progenitora, madre, protetora, defensora, cuidadora, raiz, fonte, origem, precedente.
+PALAVRA: Senhor	RADICAL: senh	SINONIMOS: dono, possuidor, proprietário, imperador, chefe, soberano, rei, pai, altíssimo, criador, deus, Ser Supremo, onipotente, todo-poderoso, dominador.
+PALAVRA: use	RADICAL: use	SINONIMOS: tenha, utilize.
+PALAVRA: convosco	RADICAL: convosc	SINONIMOS: companhia, com vocês, com vós.
+PALAVRA: benevolência	RADICAL: benevol	SINONIMOS: bondade, boa vontade, generosidade, benignidade, beneficência, compaixão, altruísmo, humanitarismo, filantropia, caridade, piedade, ajuda, socorro, mercê, coração, comprazimento, obséquio, favor, graça, compreensão, tolerância, complacência, clemência, indulgência, afeto, simpatia, afetuosidade, estima, benquerença, afabilidade, amor, amizade, ternura, trato, guarda, fraternidade, apego.
+PALAVRA: fizestes	RADICAL: fiz	SINONIMOS: realizastes, exercestes, executastes, efetuastes, efetivastes, empreendestes, praticastes, cometestes, desempenhastes, prestastes, consumastes, formalizastes, calculastes, perpetrastes, agistes, procedestes.
+PALAVRA: falecidos	RADICAL: falec	SINONIMOS:  defuntos, mortos, fímbrias, finados, extintos.
+PALAVRA: comigo	RADICAL: comig	SINONIMOS: mim.
+VERSICULO: 9
+PALAVRA: Senhor	RADICAL: senh	SINONIMOS: dono, possuidor, proprietário, imperador, chefe, soberano, rei, pai, altíssimo, criador, deus, Ser Supremo, onipotente, todo-poderoso, dominador.
+PALAVRA: dê	RADICAL: de	SINONIMOS: tenha, diga, apresente, revele, manifeste, demonstre, mostre, evidencie, expresse, exprima, emita, enuncie.
+PALAVRA: acheis	RADICAL: achel	SINONIMOS: tenhais, alcanceis, consigais, obtenhais.
+PALAVRA: descanso	RADICAL: descans	SINONIMOS: repouso, relaxamento, placidez, quietação, calma, paz, sossego, tranquilidade, serenidade, quietude, suporte, gozo.
+PALAVRA: casa	RADICAL: cas	SINONIMOS: residência, habitação, domicílio, vivenda, moradia, morada, lar, família, linhagem, geração.
+PALAVRA: marido	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+PALAVRA: beijou	RADICAL: beij	SINONIMOS: amou, gostou, tocou, osculou, roçou.
+PALAVRA: levantaram	RADICAL: levant	SINONIMOS: ergueram, elevaram, alçaram, subiram, hastearam, içaram, arvoraram, guindaram, altearam, alaram, suspenderam, alevantaram.
+PALAVRA: voz	RADICAL: voz	SINONIMOS: fala, linguagem, som, soada, ruído, zoada, queixa, reivindicação, reclamo, grito, vozear, brado, clamor.
+PALAVRA: choraram	RADICAL: chor	SINONIMOS: lacrimejaram, lagrimejaram, lagrimaram, lacrimaram, choramingaram, queixaram, soluçaram, carpiram, vagiram, plangeram, lamuriaram, gemeram, lastimaram, lamentaram, uivaram, prantearam, sofreram, deploraram.
+VERSICULO: 10
+PALAVRA: disseram-lhe	RADICAL: disseram-lh	SINONIMOS: enunciaram-lhe, falaram-lhe, expressaram-lhe, exprimiram-lhe, expuseram-lhe, emitiram-lhe, proferiram-lhe, pronunciaram-lhe, articularam-lhe, recitaram-lhe, declamaram-lhe, discursaram-lhe, manifestaram-lhe, contaram-lhe, narraram-lhe, relataram-lhe, revelaram-lhe, confessaram-lhe, referiram-lhe, divulgaram-lhe, discorreram-lhe, dissertaram-lhe, palestraram-lhe, atestaram-lhe, garantiram-lhe, certificaram-lhe, declararam-lhe, informaram-lhe, comunicaram-lhe, esclareceram-lhe, explanaram-lhe, explicaram-lhe, avisaram-lhe, aconselharam-lhe, orientaram-lhe.
+PALAVRA: Certamente	RADICAL: cert	SINONIMOS:  com certeza, decerto, sem dúvida, seguramente, de certeza, indubitavelmente, muito possivelmente, muito provavelmente, sim, claro, certo.
+PALAVRA: voltaremos	RADICAL: volt	SINONIMOS: reverteremos, regressaremos, retornaremos, reviremos, reiniciaremos, tornaremos, desandar, retrosseguiremos, retrogradaremos, retrocederemos, recuaremos.
+PALAVRA: contigo	RADICAL: contig	SINONIMOS: com você, com tu.
+PALAVRA: povo	RADICAL: pov	SINONIMOS: SINONIMOS: sociedade, habitantes, pessoas, turma, público, população, gente, nação, grupo, povoamento, povoado, lugarejo.
+VERSICULO: 11
+PALAVRA: Noêmi	RADICAL: noem	SINONIMOS: .
+PALAVRA: respondeu	RADICAL: respond	SINONIMOS: tornou, explicou, disse, falou, afirmou, transmitiu, replicou, redarguiu.
+PALAVRA: Voltai	RADICAL: volt	SINONIMOS: revertei, regressai, retornai, revinde, retomai, reiniciai, recomeçai, tornai, retrocedei, recuai, virai.
+PALAVRA: filhas	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netas, provenientes, derivadas, originárias, oriundas, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeira.	
+PALAVRA: ireis	RADICAL: irel	SINONIMOS: avançareis, estareis, vireis, andareis, caminhareis, marchareis, partireis, saireis, viajareis, procedereis, agireis, reagireis, seguireis, optareis, mudareis, transferireis, transladareis, transcorrereis.
+PALAVRA: comigo	RADICAL: comig	SINONIMOS: mim.
+PALAVRA: Tenho	RADICAL: tenh	SINONIMOS: possuo, detenho, porto, conto, reúno, gozo, desfruto, gero, paro, concebo, procrio, crio, origino, produzo.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.	
+PALAVRA: ventre	RADICAL: ventr	SINONIMOS: abdome, útero, interior, seio, âmago, íntimo, barriga, bojo.
+PALAVRA: viessem	RADICAL: viess	SINONIMOS: acontecessem, decorressem, procedessem, derivassem, proviessem, adviessem, resultassem, descendessem, tornassem.
+PALAVRA: ser	RADICAL: ser	SINONIMOS: estar, tornar-se, ficar, virar, fazer-se, acontecer, ocorrer, decorrer, suceder, desenrolar-se, passar-se, dar-se, processar-se, transcorrer, constituir, consistir.
+PALAVRA: maridos	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+VERSICULO: 12
+PALAVRA: Voltai	RADICAL: volt	SINONIMOS: revertei, regressai, retornai, revinde, retomai, reiniciai, recomeçai, tornai, retrocedei, recuai, virai. 
+PALAVRA: filhas	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netas, provenientes, derivadas, originárias, oriundas, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeira.	
+PALAVRA: ide-vos	RADICAL: ide-v	SINONIMOS: avançai, andai, caminhai, marchai, parti, saí, mudai, transferi, transladai, transcorrei.
+PALAVRA: sou	RADICAL: sou	SINONIMOS: estou, existo.
+PALAVRA: velha	RADICAL: velh	SINONIMOS: caduca, decrépita, engelhada, anciã, idosa, anosa, antiga, antiquada, arcaica, desusada, envelhecida, obsoleta.
+PALAVRA: demais	RADICAL: demal	SINONIMOS: excessivo, demasiado, exorbitante, além da conta, além da medida, excessivamente, demasiadamente, intensamente, descomedidamente.
+PALAVRA: casar	RADICAL: cas	SINONIMOS: unir, enlaçar, esposar, desposar, nupciar-se, matrimoniar, maridar, consorciar, compatibilizar, aliar, ajuntar.
+PALAVRA: dissesse	RADICAL: diss	SINONIMOS: enunciasse, falasse, expressasse, exprimisse, expusesse, emitisse, proferisse, pronunciasse, articulasse, lesse, recitasse, declamasse, discursasse, manifestasse, contasse, narrasse, relatasse, revelasse, confessasse, referisse, divulgasse, discorresse, dissertasse, palestrasse, afirmasse, asseverasse, assegurasse, atestasse, garantisse, certificasse, declarasse, informasse, comunicasse, esclarecesse, explanasse, explicasse, alegasse, provasse, avisasse, advertisse, prevenisse, aconselhasse, recomendasse, acautelasse, orientasse.
+PALAVRA: Tenho	RADICAL: tenh	RADICAL: tenh	SINONIMOS: possuo, detenho, porto, conto, reúno, gozo, desfruto, gero, paro, concebo, procrio, crio, origino, produzo.
+PALAVRA: esperança	RADICAL: esperanc	SINONIMOS: aguardo, expectativa, expectação, espera, confiança, fé, crença, ilusão, sonho, fantasia, probabilidade, perspectiva, possibilidade.
+PALAVRA: noite	RADICAL: noit	SINONIMOS: treva, escuridão, obscuridade.
+PALAVRA: tivesse	RADICAL: tiv	SINONIMOS: possuísse, portasse, houvesse, desfrutasse, usufruísse.
+PALAVRA: marido	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+PALAVRA: viesse	RADICAL: viess	SINONIMOS: acontecesse, decorresse, procedesse, derivasse, proviesse, adviesse, resultasse, descendesse, tornasse.
+PALAVRA: filhos	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netos, provenientes, derivados, originários, oriundos, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeiro.	
+VERSICULO: 13
+PALAVRA: esperá-los-íeis	RADICAL: 	SINONIMOS: espera-los-iel	SINONIMOS: aguarda-los-ieis, expecta-los-ieis, atende-los=ieis.
+PALAVRA: viessem	RADICAL: viess	SINONIMOS: acontecessem, decorressem, procedessem, derivassem, proviessem, adviessem, resultassem, descendessem, tornassem.
+PALAVRA: ser	RADICAL: ser	SINONIMOS: estar, tornar-se, ficar, virar, fazer-se, acontecer, ocorrer, decorrer, suceder, desenrolar-se, passar-se, dar-se, processar-se, transcorrer, constituir, consistir.
+PALAVRA: deter-vos-íeis	RADICAL: deter-vos-iel	SINONIMOS: impedir-vos-ieis, impossibilitar-vos-ieis, bloquear-vos-ieis.
+PALAVRA: tomardes	RADICAL: tom	SINONIMOS: pegardes, segurardes, agarrardes.
+PALAVRA: marido	RADICAL: marid	SINONIMOS: consorte, cônjuge, esposo, homem, companheiro, parceiro, acompanhante.
+PALAVRA: filhas	RADICAL: filh	SINONIMOS: frutos, herdeiros, filiação, prole, posteridade, progenitura, descendentes, porvindouros, pósteros, sucessores,  menores, descendência, netas, provenientes, derivadas, originárias, oriundas, procedentes, raça, geração, sucessão, hereditariedade, crianças, rebentos, crias, herdeira.	
+PALAVRA: mais	RADICAL: mais	SINONIMOS: maior parte, maior número, maioria, maior quantidade, intenso.
+PALAVRA: amargo	RADICAL: amarg	SINONIMOS: triste, penoso, doloroso, cruel, áspero, rude, sofrido, ressentido, amargurado.
+PALAVRA: mim	RADICAL: mim	SINONIMOS: eu.
+PALAVRA: porquanto	RADICAL: porquant	SINONIMOS: como, uma vez que, posto que, pois, porque, por causa de, visto que, dado que, em atenção a, em razão de, já que, pois que, por isso que.
+PALAVRA: mão	RADICAL: mao	SINONIMOS: garra, pata, palmo, dedo, controle, comando, cuidado, decisão, domínio, mando, poder, responsabilidade, força, supervisão.
+PALAVRA: Senhor	RADICAL: senh	SINONIMOS: dono, possuidor, proprietário, imperador, chefe, soberano, rei, pai, altíssimo, criador, deus, Ser Supremo, onipotente, todo-poderoso, dominador.
+PALAVRA: descarregou	RADICAL: descarreg	SINONIMOS: desengatilhou, despejou.
+PALAVRA: mim	RADICAL: mim	SINONIMOS: eu.
+VERSICULO: 14
+PALAVRA: Então	RADICAL: ent	SINONIMOS: portanto, logo, assim, pois, por isso.
+PALAVRA: levantaram	RADICAL: levant	SINONIMOS: ergueram, elevaram, alçaram, subiram, hastearam, içaram, arvoraram, guindaram, altearam, alaram, suspenderam, alevantaram.
+PALAVRA: voz	RADICAL: voz	SINONIMOS: fala, linguagem, som, soada, ruído, zoada, queixa, reivindicação, reclamo, grito, vozear, brado, clamor.
+PALAVRA: tornaram	RADICAL: torn	SINONIMOS: voltaram, retornaram, regressaram, volveram.
+PALAVRA: chorar	RADICAL: chor	SINONIMOS: lacrimejar, lagrimejar, lagrimar, lacrimar, choramingar, queixar, soluçar, carpir, vagir, planger, lamuriar, gemer, lastimar, lamentar, uivar, prantear.
+PALAVRA: Orfa	RADICAL: orf	SINONIMOS: .
+PALAVRA: beijou	RADICAL: beij	SINONIMOS: amou, gostou, tocou, osculou, roçou.
+PALAVRA: sogra	RADICAL: sogr	SINONIMOS: família, parente, mãe.
+PALAVRA: Rute	RADICAL: rut	SINONIMOS: .
+PALAVRA: apegou	RADICAL: apeg	SINONIMOS: contagiou, juntou, prendeu, colou, ajuntou.
+VERSICULO: 15
+PALAVRA: Noêmi	RADICAL: noem	SINONIMOS: .
+PALAVRA: Eis	RADICAL: ei	SINONIMOS: aqui está, vede, aqui tendes, olhe aqui, veja.
+PALAVRA: concunhada	RADICAL: concunh	SINONIMOS: cunhada, família.
+PALAVRA: voltou	RADICAL: volt
+PALAVRA: povo	RADICAL: pov
+PALAVRA: deuses	RADICAL: deus
+PALAVRA: volta	RADICAL: volt
+PALAVRA: concunhada	RADICAL: concunh
+VERSICULO: 16
+PALAVRA: Respondeu	RADICAL: respond
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: instes	RADICAL: inst
+PALAVRA: abandone	RADICAL: abandon
+PALAVRA: deixe	RADICAL: deix
+PALAVRA: seguir-te	RADICAL: seguir-t
+PALAVRA: aonde	RADICAL: aond
+PALAVRA: quer	RADICAL: qu
+PALAVRA: fores	RADICAL: for
+PALAVRA: irei	RADICAL: ire
+PALAVRA: onde	RADICAL: ond
+PALAVRA: quer	RADICAL: qu
+PALAVRA: pousares	RADICAL: pous
+PALAVRA: ali	RADICAL: ali
+PALAVRA: pousarei	RADICAL: pous
+PALAVRA: povo	RADICAL: pov
+PALAVRA: povo	RADICAL: pov
+PALAVRA: Deus	RADICAL: deu
+PALAVRA: Deus	RADICAL: deu
+VERSICULO: 17
+PALAVRA: Onde	RADICAL: ond
+PALAVRA: quer	RADICAL: qu
+PALAVRA: morreres	RADICAL: morr
+PALAVRA: morrerei	RADICAL: morr
+PALAVRA: ali	RADICAL: ali
+PALAVRA: serei	RADICAL: ser
+PALAVRA: sepultada	RADICAL: sepult
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: faça	RADICAL: fac
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: tanto	RADICAL: tant
+PALAVRA: morte	RADICAL: mort
+PALAVRA: separar	RADICAL: separ
+VERSICULO: 18
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: resolvida	RADICAL: resolv
+PALAVRA: ir	RADICAL: ir
+PALAVRA: deixou	RADICAL: deix
+PALAVRA: falar	RADICAL: fal
+PALAVRA: nisso	RADICAL: niss
+VERSICULO: 19
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: foram-se	RADICAL: foram-s
+PALAVRA: ambas	RADICAL: ambas
+PALAVRA: chegaram	RADICAL: cheg
+PALAVRA: Belém	RADICAL: belem
+PALAVRA: sucedeu	RADICAL: suced
+PALAVRA: entrarem	RADICAL: entr
+PALAVRA: Belém	RADICAL: belem
+PALAVRA: cidade	RADICAL: cidad
+PALAVRA: comoveu	RADICAL: comov
+PALAVRA: causa	RADICAL: caus
+PALAVRA: mulheres	RADICAL: mulh
+PALAVRA: perguntavam	RADICAL: pergunt
+PALAVRA: porventura	RADICAL: porvent
+PALAVRA: Noêmi	RADICAL: noem
+VERSICULO: 20
+PALAVRA: respondeu	RADICAL: respond
+PALAVRA: chameis	RADICAL: chamel
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: chamai-me	RADICAL: chamai-m
+PALAVRA: Mara	RADICAL: mar
+PALAVRA: Todo-Poderoso	RADICAL: todo-poder
+PALAVRA: encheu	RADICAL: ench
+PALAVRA: amargura	RADICAL: amarg
+VERSICULO: 21
+PALAVRA: Cheia	RADICAL: chei
+PALAVRA: parti	RADICAL: part
+PALAVRA: vazia	RADICAL: vaz
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: fez	RADICAL: fez
+PALAVRA: tornar	RADICAL: torn
+PALAVRA: chamais	RADICAL: cham
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: visto	RADICAL: vist
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: testemunhou	RADICAL: testemunh
+PALAVRA: mim	RADICAL: mim
+PALAVRA: Todo-Poderoso	RADICAL: todo-poder
+PALAVRA: afligiu	RADICAL: aflig
+VERSICULO: 22
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: voltou	RADICAL: volt
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: nora	RADICAL: nor
+PALAVRA: veio	RADICAL: vei
+PALAVRA: país	RADICAL: pais
+PALAVRA: Moabe	RADICAL: moab
+PALAVRA: chegaram	RADICAL: cheg
+PALAVRA: Belém	RADICAL: belem
+PALAVRA: principio	RADICAL: principi
+PALAVRA: sega	RADICAL: seg
+PALAVRA: cevada	RADICAL: cev
+LIVRO E CAPITULO: $RUTE [2]
+VERSICULO: 1
+PALAVRA: Ora	RADICAL: ora
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: parente	RADICAL: parent
+PALAVRA: marido	RADICAL: marid
+PALAVRA: homem	RADICAL: hom
+PALAVRA: poderoso	RADICAL: poder
+PALAVRA: rico	RADICAL: ric
+PALAVRA: família	RADICAL: famil
+PALAVRA: Elimeleque	RADICAL: elimelequ
+PALAVRA: chamava	RADICAL: cham
+PALAVRA: Boaz	RADICAL: boaz
+VERSICULO: 2
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: Deixa-me	RADICAL: deixa-m
+PALAVRA: ir	RADICAL: ir
+PALAVRA: campo	RADICAL: camp
+PALAVRA: apanhar	RADICAL: apanh
+PALAVRA: espigas	RADICAL: espig
+PALAVRA: atrás	RADICAL: atras
+PALAVRA: cujos	RADICAL: cuj
+PALAVRA: olhos	RADICAL: olh
+PALAVRA: achar	RADICAL: ach
+PALAVRA: graça	RADICAL: grac
+PALAVRA: respondeu	RADICAL: respond
+PALAVRA: Vai	RADICAL: vai
+PALAVRA: filha	RADICAL: filh
+VERSICULO: 3
+PALAVRA: chegando	RADICAL: cheg
+PALAVRA: campo	RADICAL: camp
+PALAVRA: respigava	RADICAL: respig
+PALAVRA: segadores	RADICAL: seg
+PALAVRA: caiu-lhe	RADICAL: caiu-lh
+PALAVRA: sorte	RADICAL: sort
+PALAVRA: parte	RADICAL: part
+PALAVRA: campo	RADICAL: camp
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: família	RADICAL: famil
+PALAVRA: Elimeleque	RADICAL: elimelequ
+VERSICULO: 4
+PALAVRA: eis	RADICAL: ei
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: veio	RADICAL: vei
+PALAVRA: Belém	RADICAL: belem
+PALAVRA: segadores	RADICAL: seg
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: convosco	RADICAL: convosc
+PALAVRA: Responderam-lhe	RADICAL: responderam-lh
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: abençoe	RADICAL: abenco
+VERSICULO: 5
+PALAVRA: perguntou	RADICAL: pergunt
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: moço	RADICAL: moc
+PALAVRA: posto	RADICAL: post
+PALAVRA: segadores	RADICAL: seg
+PALAVRA: moça	RADICAL: moc
+VERSICULO: 6
+PALAVRA: Respondeu-lhe	RADICAL: respondeu-lh
+PALAVRA: moço	RADICAL: moc
+PALAVRA: moça	RADICAL: moc
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: voltou	RADICAL: volt
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: país	RADICAL: pais
+PALAVRA: Moabe	RADICAL: moab
+VERSICULO: 7
+PALAVRA: Disse-me	RADICAL: disse-m
+PALAVRA: Deixa-me	RADICAL: deixa-m
+PALAVRA: colher	RADICAL: colh
+PALAVRA: ajuntar	RADICAL: ajunt
+PALAVRA: espigas	RADICAL: espig
+PALAVRA: molhos	RADICAL: molh
+PALAVRA: segadores	RADICAL: seg
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: veio	RADICAL: vei
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: desde	RADICAL: desd
+PALAVRA: manhã	RADICAL: manh
+PALAVRA: descansar	RADICAL: descans
+PALAVRA: sequer	RADICAL: sequ
+VERSICULO: 8
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: Escuta	RADICAL: escut
+PALAVRA: filha	RADICAL: filh
+PALAVRA: vás	RADICAL: va
+PALAVRA: colher	RADICAL: colh
+PALAVRA: campo	RADICAL: camp
+PALAVRA: passes	RADICAL: pass
+PALAVRA: daqui	RADICAL: daqu
+PALAVRA: ajunta-te	RADICAL: ajunta-t
+PALAVRA: às	RADICAL: as
+PALAVRA: moças	RADICAL: moc
+VERSICULO: 9
+PALAVRA: olhos	RADICAL: olh
+PALAVRA: estarão	RADICAL: est
+PALAVRA: atentos	RADICAL: atent
+PALAVRA: campo	RADICAL: camp
+PALAVRA: segarem	RADICAL: seg
+PALAVRA: irás	RADICAL: 
+PALAVRA: dei	RADICAL: dei
+PALAVRA: ordem	RADICAL: ord
+PALAVRA: moços	RADICAL: moc
+PALAVRA: molestem	RADICAL: molest
+PALAVRA: tiveres	RADICAL: tiv
+PALAVRA: sede	RADICAL: sed
+PALAVRA: vai	RADICAL: vai
+PALAVRA: vasos	RADICAL: vas
+PALAVRA: bebe	RADICAL: beb
+PALAVRA: moços	RADICAL: moc
+PALAVRA: tiverem	RADICAL: tiv
+PALAVRA: tirado	RADICAL: tir
+VERSICULO: 10
+PALAVRA: Então	RADICAL: ent
+PALAVRA: inclinando-se	RADICAL: inclinando-s
+PALAVRA: prostrando-se	RADICAL: prostrando-s
+PALAVRA: rosto	RADICAL: rost
+PALAVRA: terra	RADICAL: terr
+PALAVRA: perguntou-lhe	RADICAL: perguntou-lh
+PALAVRA: achei	RADICAL: ach
+PALAVRA: graça	RADICAL: grac
+PALAVRA: olhos	RADICAL: olh
+PALAVRA: faças	RADICAL: fac
+PALAVRA: caso	RADICAL: cas
+PALAVRA: mim	RADICAL: mim
+PALAVRA: estrangeira	RADICAL: estrang
+VERSICULO: 11
+PALAVRA: respondeu	RADICAL: respond
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Bem	RADICAL: bem
+PALAVRA: contou	RADICAL: cont
+PALAVRA: tens	RADICAL: tem
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: morte	RADICAL: mort
+PALAVRA: marido	RADICAL: marid
+PALAVRA: deixaste	RADICAL: deix
+PALAVRA: pai	RADICAL: pai
+PALAVRA: mãe	RADICAL: mae
+PALAVRA: terra	RADICAL: terr
+PALAVRA: onde	RADICAL: ond
+PALAVRA: nasceste	RADICAL: nasc
+PALAVRA: vieste	RADICAL: viest
+PALAVRA: povo	RADICAL: pov
+PALAVRA: dantes	RADICAL: dant
+PALAVRA: conhecias	RADICAL: conhec
+VERSICULO: 12
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: recompense	RADICAL: recomp
+PALAVRA: fizeste	RADICAL: fiz
+PALAVRA: concedido	RADICAL: conced
+PALAVRA: pleno	RADICAL: plen
+PALAVRA: galardão	RADICAL: galard
+PALAVRA: parte	RADICAL: part
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: Deus	RADICAL: deu
+PALAVRA: Israel	RADICAL: israel
+PALAVRA: cujas	RADICAL: cuj
+PALAVRA: asas	RADICAL: asa
+PALAVRA: vieste	RADICAL: viest
+PALAVRA: abrigar	RADICAL: abrig
+VERSICULO: 13
+PALAVRA: Ache	RADICAL: ach
+PALAVRA: graça	RADICAL: grac
+PALAVRA: olhos	RADICAL: olh
+PALAVRA: senhor	RADICAL: senh
+PALAVRA: consolaste	RADICAL: consol
+PALAVRA: falaste	RADICAL: fal
+PALAVRA: bondosamente	RADICAL: bond
+PALAVRA: serva	RADICAL: serv
+PALAVRA: criadas	RADICAL: cri
+VERSICULO: 14
+PALAVRA: hora	RADICAL: hor
+PALAVRA: comer	RADICAL: com
+PALAVRA: disse-lhe	RADICAL: disse-lh
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Achega-te	RADICAL: achega-t
+PALAVRA: come	RADICAL: com
+PALAVRA: pão	RADICAL: pao
+PALAVRA: molha	RADICAL: molh
+PALAVRA: bocado	RADICAL: boc
+PALAVRA: vinagre	RADICAL: vinagr
+PALAVRA: sentando-se	RADICAL: sentando-s
+PALAVRA: lado	RADICAL: lad
+PALAVRA: segadores	RADICAL: seg
+PALAVRA: ofereceu	RADICAL: oferec
+PALAVRA: grão	RADICAL: grao
+PALAVRA: tostado	RADICAL: tost
+PALAVRA: comeu	RADICAL: com
+PALAVRA: ficou	RADICAL: fic
+PALAVRA: satisfeita	RADICAL: satisfeit
+PALAVRA: sobejou	RADICAL: sobej
+VERSICULO: 15
+PALAVRA: levantou	RADICAL: levant
+PALAVRA: respigar	RADICAL: respig
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: deu	RADICAL: deu
+PALAVRA: ordem	RADICAL: ord
+PALAVRA: moços	RADICAL: moc
+PALAVRA: dizendo	RADICAL: diz
+PALAVRA: molhos	RADICAL: molh
+PALAVRA: deixai-a	RADICAL: deixai-
+PALAVRA: respirar	RADICAL: respir
+PALAVRA: censureis	RADICAL: censurel
+VERSICULO: 16
+PALAVRA: tirai	RADICAL: tir
+PALAVRA: molhos	RADICAL: molh
+PALAVRA: espigas	RADICAL: espig
+PALAVRA: deixai-as	RADICAL: deixai-
+PALAVRA: ficar	RADICAL: fic
+PALAVRA: colha	RADICAL: colh
+PALAVRA: repreendais	RADICAL: repreend
+VERSICULO: 17
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: respigou	RADICAL: respig
+PALAVRA: naquele	RADICAL: naquel
+PALAVRA: campo	RADICAL: camp
+PALAVRA: tarde	RADICAL: tard
+PALAVRA: debulhou	RADICAL: debulh
+PALAVRA: havia	RADICAL: hav
+PALAVRA: apanhado	RADICAL: apanh
+PALAVRA: quase	RADICAL: quas
+PALAVRA: efa	RADICAL: efa
+PALAVRA: cevada	RADICAL: cev
+VERSICULO: 18
+PALAVRA: Então	RADICAL: ent
+PALAVRA: carregando	RADICAL: carreg
+PALAVRA: cevada	RADICAL: cev
+PALAVRA: veio	RADICAL: vei
+PALAVRA: cidade	RADICAL: cidad
+PALAVRA: viu	RADICAL: viu
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: havia	RADICAL: hav
+PALAVRA: apanhado	RADICAL: apanh
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: tirou	RADICAL: tir
+PALAVRA: deu-lhe	RADICAL: deu-lh
+PALAVRA: sobejara	RADICAL: sobej
+PALAVRA: fartar-se	RADICAL: fartar-s
+VERSICULO: 19
+PALAVRA: perguntou	RADICAL: pergunt
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: Onde	RADICAL: ond
+PALAVRA: respigaste	RADICAL: respig
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: onde	RADICAL: ond
+PALAVRA: trabalhaste	RADICAL: trabalh
+PALAVRA: Bendito	RADICAL: bendit
+PALAVRA: fez	RADICAL: fez
+PALAVRA: caso	RADICAL: cas
+PALAVRA: relatou	RADICAL: relat
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: trabalhado	RADICAL: trabalh
+PALAVRA: nome	RADICAL: nom
+PALAVRA: homem	RADICAL: hom
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: trabalhei	RADICAL: trabalh
+PALAVRA: Boaz	RADICAL: boaz
+VERSICULO: 20
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: nora	RADICAL: nor
+PALAVRA: Bendito	RADICAL: bendit
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: deixado	RADICAL: deix
+PALAVRA: misturar	RADICAL: mistur
+PALAVRA: beneficência	RADICAL: benefic
+PALAVRA: vivos	RADICAL: viv
+PALAVRA: mortos	RADICAL: mort
+PALAVRA: Disse-lhe	RADICAL: disse-lh
+PALAVRA: mais	RADICAL: mais
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: homem	RADICAL: hom
+PALAVRA: parente	RADICAL: parent
+PALAVRA: remidores	RADICAL: remi
+VERSICULO: 21
+PALAVRA: Respondeu	RADICAL: respond
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: Seguirás	RADICAL: segu
+PALAVRA: perto	RADICAL: pert
+PALAVRA: moços	RADICAL: moc
+PALAVRA: tenham	RADICAL: tenh
+PALAVRA: acabado	RADICAL: acab
+PALAVRA: sega	RADICAL: seg
+VERSICULO: 22
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: nora	RADICAL: nor
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: Bom	RADICAL: bom
+PALAVRA: filha	RADICAL: filh
+PALAVRA: saias	RADICAL: sai
+PALAVRA: moças	RADICAL: moc
+PALAVRA: encontrem	RADICAL: encontr
+PALAVRA: noutro	RADICAL: noutr
+PALAVRA: campo	RADICAL: camp
+VERSICULO: 23
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: ajuntou	RADICAL: ajunt
+PALAVRA: moças	RADICAL: moc
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: respigar	RADICAL: respig
+PALAVRA: fim	RADICAL: fim
+PALAVRA: sega	RADICAL: seg
+PALAVRA: cevada	RADICAL: cev
+PALAVRA: trigo	RADICAL: trig
+PALAVRA: morava	RADICAL: mor
+PALAVRA: sogra	RADICAL: sogr
+LIVRO E CAPITULO: $RUTE [3]
+VERSICULO: 1
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: filha	RADICAL: filh
+PALAVRA: hei	RADICAL: hei
+PALAVRA: buscar	RADICAL: busc
+PALAVRA: descanso	RADICAL: descans
+PALAVRA: fiques	RADICAL: fiqu
+PALAVRA: bem	RADICAL: bem
+VERSICULO: 2
+PALAVRA: Ora	RADICAL: ora
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: cujas	RADICAL: cuj
+PALAVRA: moças	RADICAL: moc
+PALAVRA: estiveste	RADICAL: estiv
+PALAVRA: parentela	RADICAL: parentel
+PALAVRA: Eis	RADICAL: ei
+PALAVRA: noite	RADICAL: noit
+PALAVRA: vai	RADICAL: vai
+PALAVRA: joeirar	RADICAL: joeir
+PALAVRA: cevada	RADICAL: cev
+PALAVRA: eira	RADICAL: eir
+VERSICULO: 3
+PALAVRA: Lava-te	RADICAL: lava-t
+PALAVRA: unge-te	RADICAL: unge-t
+PALAVRA: veste	RADICAL: vest
+PALAVRA: melhores	RADICAL: melhor
+PALAVRA: vestidos	RADICAL: vest
+PALAVRA: desce	RADICAL: desc
+PALAVRA: eira	RADICAL: eir
+PALAVRA: dês	RADICAL: de
+PALAVRA: conhecer	RADICAL: conhec
+PALAVRA: homem	RADICAL: hom
+PALAVRA: acabado	RADICAL: acab
+PALAVRA: comer	RADICAL: com
+PALAVRA: beber	RADICAL: beb
+VERSICULO: 4
+PALAVRA: deitar	RADICAL: deit
+PALAVRA: notarás	RADICAL: not
+PALAVRA: lugar	RADICAL: lug
+PALAVRA: deita	RADICAL: deit
+PALAVRA: então	RADICAL: ent
+PALAVRA: entrarás	RADICAL: entr
+PALAVRA: descobrir-lhe-ás	RADICAL: descobrir-lhe-
+PALAVRA: pés	RADICAL: pe
+PALAVRA: deitarás	RADICAL: deit
+PALAVRA: dirá	RADICAL: d
+PALAVRA: deves	RADICAL: dev
+VERSICULO: 5
+PALAVRA: Respondeu-lhe	RADICAL: respondeu-lh
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: disseres	RADICAL: diss
+PALAVRA: farei	RADICAL: far
+VERSICULO: 6
+PALAVRA: Então	RADICAL: ent
+PALAVRA: desceu	RADICAL: desc
+PALAVRA: eira	RADICAL: eir
+PALAVRA: fez	RADICAL: fez
+PALAVRA: conforme	RADICAL: conform
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: ordenado	RADICAL: orden
+VERSICULO: 7
+PALAVRA: Havendo	RADICAL: hav
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: comido	RADICAL: com
+PALAVRA: bebido	RADICAL: beb
+PALAVRA: estando	RADICAL: est
+PALAVRA: coração	RADICAL: coracao
+PALAVRA: alegre	RADICAL: alegr
+PALAVRA: veio	RADICAL: vei
+PALAVRA: deitar-se	RADICAL: deitar-s
+PALAVRA: pé	RADICAL: pe
+PALAVRA: meda	RADICAL: med
+PALAVRA: mansinho	RADICAL: mans
+PALAVRA: descobriu-lhe	RADICAL: descobriu-lh
+PALAVRA: pés	RADICAL: pe
+PALAVRA: deitou	RADICAL: deit
+VERSICULO: 8
+PALAVRA: Ora	RADICAL: ora
+PALAVRA: meia-noite	RADICAL: meia-noit
+PALAVRA: homem	RADICAL: hom
+PALAVRA: estremeceu	RADICAL: estremec
+PALAVRA: voltou-se	RADICAL: voltou-s
+PALAVRA: viu	RADICAL: viu
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: deitada	RADICAL: deit
+PALAVRA: pés	RADICAL: pe
+VERSICULO: 9
+PALAVRA: perguntou	RADICAL: pergunt
+PALAVRA: és	RADICAL: es
+PALAVRA: respondeu	RADICAL: respond
+PALAVRA: Sou	RADICAL: sou
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: serva	RADICAL: serv
+PALAVRA: estende	RADICAL: estend
+PALAVRA: capa	RADICAL: cap
+PALAVRA: serva	RADICAL: serv
+PALAVRA: és	RADICAL: es
+PALAVRA: remidor	RADICAL: remi
+VERSICULO: 10
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Bendita	RADICAL: bendit
+PALAVRA: sejas	RADICAL: sej
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: filha	RADICAL: filh
+PALAVRA: mostraste	RADICAL: mostr
+PALAVRA: mais	RADICAL: mais
+PALAVRA: bondade	RADICAL: bondad
+PALAVRA: dantes	RADICAL: dant
+PALAVRA: visto	RADICAL: vist
+PALAVRA: mancebo	RADICAL: manceb
+PALAVRA: foste	RADICAL: fost
+PALAVRA: quer	RADICAL: qu
+PALAVRA: pobre	RADICAL: pobr
+PALAVRA: quer	RADICAL: qu
+PALAVRA: rico	RADICAL: ric
+VERSICULO: 11
+PALAVRA: filha	RADICAL: filh
+PALAVRA: temas	RADICAL: tem
+PALAVRA: disseres	RADICAL: diss
+PALAVRA: farei	RADICAL: far
+PALAVRA: cidade	RADICAL: cidad
+PALAVRA: povo	RADICAL: pov
+PALAVRA: sabe	RADICAL: sab
+PALAVRA: és	RADICAL: es
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: virtuosa	RADICAL: virt
+VERSICULO: 12
+PALAVRA: Ora	RADICAL: ora
+PALAVRA: bem	RADICAL: bem
+PALAVRA: verdade	RADICAL: verdad
+PALAVRA: sou	RADICAL: sou
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: mais	RADICAL: mais
+PALAVRA: chegado	RADICAL: cheg
+VERSICULO: 13
+PALAVRA: Fica-te	RADICAL: fica-t
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: noite	RADICAL: noit
+PALAVRA: manhã	RADICAL: manh
+PALAVRA: cumprir	RADICAL: cumpr
+PALAVRA: contigo	RADICAL: contig
+PALAVRA: deveres	RADICAL: dev
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: faça	RADICAL: fac
+PALAVRA: quiser	RADICAL: quis
+PALAVRA: cumprir	RADICAL: cumpr
+PALAVRA: então	RADICAL: ent
+PALAVRA: farei	RADICAL: far
+PALAVRA: tão	RADICAL: tao
+PALAVRA: certamente	RADICAL: cert
+PALAVRA: vive	RADICAL: viv
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: deita-te	RADICAL: deita-t
+PALAVRA: manhã	RADICAL: manh
+VERSICULO: 14
+PALAVRA: Ficou	RADICAL: fic
+PALAVRA: deitada	RADICAL: deit
+PALAVRA: pés	RADICAL: pe
+PALAVRA: manhã	RADICAL: manh
+PALAVRA: levantou-se	RADICAL: levantou-s
+PALAVRA: possível	RADICAL: possivel
+PALAVRA: pessoa	RADICAL: pesso
+PALAVRA: reconhecer	RADICAL: reconhec
+PALAVRA: porquanto	RADICAL: porquant
+PALAVRA: saiba	RADICAL: saib
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: veio	RADICAL: vei
+PALAVRA: eira	RADICAL: eir
+VERSICULO: 15
+PALAVRA: mais	RADICAL: mais
+PALAVRA: Traze	RADICAL: traz
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: capa	RADICAL: cap
+PALAVRA: cobres	RADICAL: cobr
+PALAVRA: segura-a	RADICAL: segura-
+PALAVRA: Segurou-a	RADICAL: segurou-
+PALAVRA: mediu	RADICAL: med
+PALAVRA: seis	RADICAL: seil
+PALAVRA: medidas	RADICAL: med
+PALAVRA: cevada	RADICAL: cev
+PALAVRA: lhas	RADICAL: lha
+PALAVRA: pôs	RADICAL: po
+PALAVRA: ombro	RADICAL: ombr
+PALAVRA: Então	RADICAL: ent
+PALAVRA: cidade	RADICAL: cidad
+VERSICULO: 16
+PALAVRA: chegou	RADICAL: cheg
+PALAVRA: sogra	RADICAL: sogr
+PALAVRA: perguntou	RADICAL: pergunt
+PALAVRA: houveste	RADICAL: houv
+PALAVRA: filha	RADICAL: filh
+PALAVRA: contou	RADICAL: cont
+PALAVRA: homem	RADICAL: hom
+PALAVRA: fizera	RADICAL: fiz
+VERSICULO: 17
+PALAVRA: mais	RADICAL: mais
+PALAVRA: seis	RADICAL: seil
+PALAVRA: medidas	RADICAL: med
+PALAVRA: cevada	RADICAL: cev
+PALAVRA: deu	RADICAL: deu
+PALAVRA: dizendo	RADICAL: diz
+PALAVRA: voltarás	RADICAL: volt
+PALAVRA: vazia	RADICAL: vaz
+PALAVRA: sogra	RADICAL: sogr
+VERSICULO: 18
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: Espera	RADICAL: esper
+PALAVRA: filha	RADICAL: filh
+PALAVRA: saibas	RADICAL: saib
+PALAVRA: irá	RADICAL: 
+PALAVRA: terminar	RADICAL: termin
+PALAVRA: caso	RADICAL: cas
+PALAVRA: homem	RADICAL: hom
+PALAVRA: descansará	RADICAL: descans
+PALAVRA: tiver	RADICAL: tiv
+PALAVRA: concluído	RADICAL: conclu
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: negócio	RADICAL: negoci
+LIVRO E CAPITULO: $RUTE [4]
+VERSICULO: 1
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: subiu	RADICAL: sub
+PALAVRA: porta	RADICAL: port
+PALAVRA: cidade	RADICAL: cidad
+PALAVRA: assentou-se	RADICAL: assentou-s
+PALAVRA: ali	RADICAL: ali
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: havia	RADICAL: hav
+PALAVRA: falado	RADICAL: fal
+PALAVRA: ia	RADICAL: ia
+PALAVRA: passando	RADICAL: pass
+PALAVRA: disse-lhe	RADICAL: disse-lh
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: amigo	RADICAL: amig
+PALAVRA: vem	RADICAL: vem
+PALAVRA: cá	RADICAL: ca
+PALAVRA: assenta-te	RADICAL: assenta-t
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: virou	RADICAL: vir
+PALAVRA: assentou	RADICAL: assent
+VERSICULO: 2
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: tomou	RADICAL: tom
+PALAVRA: dez	RADICAL: dez
+PALAVRA: homens	RADICAL: hom
+PALAVRA: dentre	RADICAL: dentr
+PALAVRA: anciãos	RADICAL: anc
+PALAVRA: cidade	RADICAL: cidad
+PALAVRA: Sentai-vos	RADICAL: sentai-v
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: sentaram	RADICAL: sent
+VERSICULO: 3
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: voltou	RADICAL: volt
+PALAVRA: terra	RADICAL: terr
+PALAVRA: moabitas	RADICAL: moabit
+PALAVRA: vendeu	RADICAL: vend
+PALAVRA: parte	RADICAL: part
+PALAVRA: terra	RADICAL: terr
+PALAVRA: pertencia	RADICAL: pertenc
+PALAVRA: Elimeleque	RADICAL: elimelequ
+PALAVRA: irmão	RADICAL: irm
+VERSICULO: 4
+PALAVRA: Resolvi	RADICAL: resolv
+PALAVRA: informar-te	RADICAL: informar-t
+PALAVRA: dizer-te	RADICAL: dizer-t
+PALAVRA: Compra-a	RADICAL: compra-
+PALAVRA: presença	RADICAL: presenc
+PALAVRA: sentados	RADICAL: sent
+PALAVRA: aqui	RADICAL: aqu
+PALAVRA: presença	RADICAL: presenc
+PALAVRA: anciãos	RADICAL: anc
+PALAVRA: povo	RADICAL: pov
+PALAVRA: hás	RADICAL: ha
+PALAVRA: redimi-la	RADICAL: redimi-l
+PALAVRA: redime-a	RADICAL: redime-
+PALAVRA: declara-mo	RADICAL: declara-m
+PALAVRA: saiba	RADICAL: saib
+PALAVRA: senão	RADICAL: senao
+PALAVRA: redima	RADICAL: red
+PALAVRA: Então	RADICAL: ent
+PALAVRA: redimirei	RADICAL: redim
+VERSICULO: 5
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: dia	RADICAL: dia
+PALAVRA: comprares	RADICAL: compr
+PALAVRA: campo	RADICAL: camp
+PALAVRA: mão	RADICAL: mao
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: tomarás	RADICAL: tom
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: falecido	RADICAL: falec
+PALAVRA: suscitar	RADICAL: suscit
+PALAVRA: nome	RADICAL: nom
+PALAVRA: herança	RADICAL: heranc
+VERSICULO: 6
+PALAVRA: Então	RADICAL: ent
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: poderei	RADICAL: pod
+PALAVRA: redimi-lo	RADICAL: redimi-l
+PALAVRA: mim	RADICAL: mim
+PALAVRA: prejudique	RADICAL: prejudiqu
+PALAVRA: herança	RADICAL: heranc
+PALAVRA: toma	RADICAL: tom
+PALAVRA: direito	RADICAL: direit
+PALAVRA: remissão	RADICAL: remiss
+VERSICULO: 7
+PALAVRA: Outrora	RADICAL: outr
+PALAVRA: Israel	RADICAL: israel
+PALAVRA: confirmar	RADICAL: confirm
+PALAVRA: qualquer	RADICAL: qualqu
+PALAVRA: negócio	RADICAL: negoci
+PALAVRA: relativo	RADICAL: relat
+PALAVRA: remissão	RADICAL: remiss
+PALAVRA: permuta	RADICAL: permut
+PALAVRA: homem	RADICAL: hom
+PALAVRA: descalçava	RADICAL: descalc
+PALAVRA: sapato	RADICAL: sapat
+PALAVRA: dava	RADICAL: dav
+PALAVRA: próximo	RADICAL: proxim
+PALAVRA: testemunho	RADICAL: testemunh
+PALAVRA: Israel	RADICAL: israel
+VERSICULO: 8
+PALAVRA: Dizendo	RADICAL: diz
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Compra-a	RADICAL: compra-
+PALAVRA: descalçou	RADICAL: descalc
+PALAVRA: sapato	RADICAL: sapat
+VERSICULO: 9
+PALAVRA: Então	RADICAL: ent
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: anciãos	RADICAL: anc
+PALAVRA: povo	RADICAL: pov
+PALAVRA: Sois	RADICAL: soil
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: testemunhas	RADICAL: testemunh
+PALAVRA: comprei	RADICAL: compr
+PALAVRA: Elimeleque	RADICAL: elimelequ
+PALAVRA: Quiliom	RADICAL: quiliom
+PALAVRA: Malom	RADICAL: malom
+PALAVRA: mão	RADICAL: mao
+PALAVRA: Noêmi	RADICAL: noem
+VERSICULO: 10
+PALAVRA: tomei	RADICAL: tom
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: moabita	RADICAL: moabit
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: Malom	RADICAL: malom
+PALAVRA: suscitar	RADICAL: suscit
+PALAVRA: nome	RADICAL: nom
+PALAVRA: falecido	RADICAL: falec
+PALAVRA: herança	RADICAL: heranc
+PALAVRA: nome	RADICAL: nom
+PALAVRA: desarraigado	RADICAL: desarraig
+PALAVRA: dentre	RADICAL: dentr
+PALAVRA: irmãos	RADICAL: irm
+PALAVRA: porta	RADICAL: port
+PALAVRA: lugar	RADICAL: lug
+PALAVRA: sois	RADICAL: soil
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: testemunhas	RADICAL: testemunh
+VERSICULO: 11
+PALAVRA: povo	RADICAL: pov
+PALAVRA: porta	RADICAL: port
+PALAVRA: anciãos	RADICAL: anc
+PALAVRA: responderam	RADICAL: respond
+PALAVRA: Somos	RADICAL: som
+PALAVRA: testemunhas	RADICAL: testemunh
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: faça	RADICAL: fac
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: entra	RADICAL: entr
+PALAVRA: casa	RADICAL: cas
+PALAVRA: Raquel	RADICAL: raquel
+PALAVRA: Léia	RADICAL: lei
+PALAVRA: juntas	RADICAL: junt
+PALAVRA: edificaram	RADICAL: edific
+PALAVRA: casa	RADICAL: cas
+PALAVRA: Israel	RADICAL: israel
+PALAVRA: Porta-te	RADICAL: porta-t
+PALAVRA: valorosamente	RADICAL: valor
+PALAVRA: Efrata	RADICAL: efrat
+PALAVRA: faze-te	RADICAL: faze-t
+PALAVRA: nome	RADICAL: nom
+PALAVRA: afamado	RADICAL: afam
+PALAVRA: Belém	RADICAL: belem
+VERSICULO: 12
+PALAVRA: casa	RADICAL: cas
+PALAVRA: casa	RADICAL: cas
+PALAVRA: Pérez	RADICAL: perez
+PALAVRA: Tamar	RADICAL: tam
+PALAVRA: deu	RADICAL: deu
+PALAVRA: Judá	RADICAL: jud
+PALAVRA: posteridade	RADICAL: poster
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: der	RADICAL: der
+PALAVRA: moça	RADICAL: moc
+VERSICULO: 13
+PALAVRA: Assim	RADICAL: assim
+PALAVRA: tomou	RADICAL: tom
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: mulher	RADICAL: mulh
+PALAVRA: conheceu	RADICAL: conhec
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: permitiu	RADICAL: permit
+PALAVRA: Rute	RADICAL: rut
+PALAVRA: conceber	RADICAL: conceb
+PALAVRA: teve	RADICAL: tev
+PALAVRA: filho	RADICAL: filh
+VERSICULO: 14
+PALAVRA: Disseram	RADICAL: diss
+PALAVRA: então	RADICAL: ent
+PALAVRA: mulheres	RADICAL: mulh
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: Bendito	RADICAL: bendit
+PALAVRA: Senhor	RADICAL: senh
+PALAVRA: deixou	RADICAL: deix
+PALAVRA: hoje	RADICAL: hoj
+PALAVRA: remidor	RADICAL: remi
+PALAVRA: torne-se	RADICAL: torne-s
+PALAVRA: nome	RADICAL: nom
+PALAVRA: afamado	RADICAL: afam
+PALAVRA: Israel	RADICAL: israel
+VERSICULO: 15
+PALAVRA: restaurador	RADICAL: restaur
+PALAVRA: vida	RADICAL: vid
+PALAVRA: consolador	RADICAL: consol
+PALAVRA: velhice	RADICAL: velh
+PALAVRA: nora	RADICAL: nor
+PALAVRA: ama	RADICAL: ama
+PALAVRA: deu	RADICAL: deu
+PALAVRA: luz	RADICAL: luz
+PALAVRA: melhor	RADICAL: melhor
+PALAVRA: sete	RADICAL: set
+PALAVRA: filhos	RADICAL: filh
+VERSICULO: 16
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: tomou	RADICAL: tom
+PALAVRA: menino	RADICAL: menin
+PALAVRA: pô-lo	RADICAL: po-l
+PALAVRA: regaço	RADICAL: regac
+PALAVRA: ama	RADICAL: ama
+VERSICULO: 17
+PALAVRA: vizinhas	RADICAL: vi
+PALAVRA: deram-lhe	RADICAL: deram-lh
+PALAVRA: nome	RADICAL: nom
+PALAVRA: dizendo	RADICAL: diz
+PALAVRA: Noêmi	RADICAL: noem
+PALAVRA: nasceu	RADICAL: nasc
+PALAVRA: filho	RADICAL: filh
+PALAVRA: chamaram	RADICAL: cham
+PALAVRA: menino	RADICAL: menin
+PALAVRA: Obede	RADICAL: obed
+PALAVRA: pai	RADICAL: pai
+PALAVRA: Jessé	RADICAL: jesse
+PALAVRA: pai	RADICAL: pai
+PALAVRA: Davi	RADICAL: dav
+VERSICULO: 18
+PALAVRA: gerações	RADICAL: ger
+PALAVRA: Pérez	RADICAL: perez
+PALAVRA: Pérez	RADICAL: perez
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Hezrom	RADICAL: hezrom
+VERSICULO: 19
+PALAVRA: Hezrom	RADICAL: hezrom
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Rão	RADICAL: rao
+PALAVRA: Rão	RADICAL: rao
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Aminadabe	RADICAL: aminadab
+VERSICULO: 20
+PALAVRA: Aminadabe	RADICAL: aminadab
+PALAVRA: gereu	RADICAL: ger
+PALAVRA: Nasom	RADICAL: nasom
+PALAVRA: Nasom	RADICAL: nasom
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Salmom	RADICAL: salmom
+VERSICULO: 21
+PALAVRA: Salmom	RADICAL: salmom
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: Boaz	RADICAL: boaz
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Obede	RADICAL: obed
+VERSICULO: 22
+PALAVRA: Obede	RADICAL: obed
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Jessé	RADICAL: jesse
+PALAVRA: Jessé	RADICAL: jesse
+PALAVRA: gerou	RADICAL: ger
+PALAVRA: Davi	RADICAL: dav
