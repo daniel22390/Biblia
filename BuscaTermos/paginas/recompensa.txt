@@ -1,0 +1,119 @@
+<!DOCTYPE html><html
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head><meta
+http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta
+http-equiv="X-UA-Compatible" content="IE=edge"/><meta
+name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><title>Sinônimo de Recompensa - Sinônimos</title><link
+rel="canonical" href="https://www.sinonimos.com.br/recompensa/" /><meta
+name="description" content="Sinônimos de Recompensa no Dicionário de Sinônimos. Recompensa é sinônimo de: favor, gratificação, retribuição, galardão, prêmio, paga, re ..." /><link
+href="https://static.sinonimos.com.br/assets/sinonimos.031.css" rel="stylesheet" type="text/css" /><link
+href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'/><link
+rel="alternate" type="application/rss+xml" title="RSS do Dicionário de Sinônimos" href="/rss.php"/><meta
+property="fb:admins" content="806619650" /><meta
+property="og:title" content="Sinônimos de Recompensa" /><meta
+property="og:url" content="https://www.sinonimos.com.br/recompensa/" /><meta
+property="og:image" content="https://static.sinonimos.com.br/ogimage.png" /><meta
+property="og:site_name" content="Sinônimos" /><meta
+property="og:description" content="Sinônimos de Recompensa: favor, gratificação, retribuição, galardão, prêmio, paga, remuneração, presente, pagamento ..." /><link
+rel="search" type="application/opensearchdescription+xml" href="/opensearch.php" title="Busca no Dicionário de Sinônimos" /><meta
+property="og:type" content="article"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-32x32.png" sizes="32x32"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/android-chrome-192x192.png" sizes="192x192"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-96x96.png" sizes="96x96"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-16x16.png" sizes="16x16"/><link
+rel="manifest" href="/manifest.json"/><meta
+name="msapplication-TileColor" content="#524c43"/><meta
+name="msapplication-TileImage" content="CDN/mstile-144x144.png"/><meta
+name="theme-color" content="#ffffff"/><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-10605777-47','auto');ga('send','pageview');</script> <script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script> <script type='text/javascript'>var browserWidth=window.innerWidth&&document.documentElement.clientWidth?Math.min(window.innerWidth,document.documentElement.clientWidth):window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;googletag.cmd.push(function(){var mapping_mrec_detalhe=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[300,250]).build();googletag.defineSlot('/1062898/sinonimos.com.br_sidebar_detalhe_Mrec',[300,250],'div-gpt-ad-1453719359222-0').defineSizeMapping(mapping_mrec_detalhe).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);googletag.pubads().enableSingleRequest();googletag.enableServices();});</script> </head><body> <script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"21145335"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script> <noscript> <img
+src="https://sb.scorecardresearch.com/p?c1=2&c2=21145335&cv=2.0&cj=1" alt="comscore" /> </noscript><div
+class="header"><div
+class="container"><div
+class="row"><div
+class="col-xs-5 col-md-6"><div
+id="logo"><a
+href="/">sinônimos<span>.com.br</span></a></div><div
+id="slogan"><a
+href="/">Dicionário de Sinônimos Online</a></div></div><div
+class="col-xs-7 col-md-6 s-wrap"><form
+action="/search.php" id="searchForm" method="get"> <input
+id="q" name="q" type="text" placeholder="Buscar sinônimos..." value="recompensa"/> <button
+type="submit" id="botao"><span></span></button></form><div
+class="sites"> <a
+href="/"  title="Dicionário de Sinônimos">Sinônimos</a> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <script type="text/javascript"></script> </div></div></div></div><div
+class="container" id="page"><div
+class="row" id="content"><div
+class="col-xs-12 col-sm-8 palavra-small"><h1 class="h-palavra">Sinônimo de recompensa</h1><div
+class="share-btns"><div
+class="bt-fbshare"> <a
+class="fb-share-text"
+onclick="javascript:SGSocial.fbShare({type: 'mensagem', href: 'https://www.sinonimos.com.br/recompensa/', notracking: true})"
+rel="nofollow"><span></span>Compartilhar</a> <span
+class=" fbv-base share-top"></span></div><a
+class="bt-twitter" title="Tweetar" target="_blank"
+onclick="javascript:window.open('https://twitter.com/share?text=Sin%C3%B4nimos+de+Recompensa+no+Dicion%C3%A1rio+de+Sin%C3%B4nimos.+Recompensa+%C3%A9+sin%C3%B4nimo+de%3A+favor%2C+gratifica%C3%A7%C3%A3o%2C...&url=https://www.sinonimos.com.br/recompensa/', '', 'width=845,height=650')"><span></span></a> <a
+class="bt-whatsapp" href="whatsapp://send?text=Sin%C3%B4nimos de Recompensa no Dicion%C3%A1rio de Sin%C3%B4nimos. Recompensa %C3%A9 sin%C3%B4nimo de%3A favor%2C gratifica%C3%A7%C3%A3o%2C retribui%C3%A7%C3%A3o%2C galard%C3%A3o%2C pr%C3%AAmio%2C paga%2C re... https%3A%2F%2Fwww.sinonimos.com.br%2Frecompensa%2F"><span></span></a></div><p
+id="total"><strong>14 sinônimos de recompensa</strong> para 2 sentidos da palavra <strong>recompensa</strong>:</p><div
+class='s-wrapper'><div
+class="sentido">Retribuição por alguma ação:</div><p
+class="sinonimos"><em>1</em> <a
+href="/favor/" class="sinonimo">favor</a>, <a
+href="/gratificacao/" class="sinonimo">gratificação</a>, <a
+href="/retribuicao/" class="sinonimo">retribuição</a>, <a
+href="/galardao/" class="sinonimo">galardão</a>, <a
+href="/premio/" class="sinonimo">prêmio</a>, <a
+href="/paga/" class="sinonimo">paga</a>, <a
+href="/remuneracao/" class="sinonimo">remuneração</a>, <a
+href="/presente/" class="sinonimo">presente</a>, <a
+href="/pagamento/" class="sinonimo">pagamento</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Compensação por algum prejuízo:</div><p
+class="sinonimos"><em>2</em> <a
+href="/compensacao/" class="sinonimo">compensação</a>, <a
+href="/ressarcimento/" class="sinonimo">ressarcimento</a>, <a
+href="/restituicao/" class="sinonimo">restituição</a>, <a
+href="/reparacao/" class="sinonimo">reparação</a>, <a
+href="/indenizacao/" class="sinonimo">indenização</a>.</p></div></div><div
+class="col-xs-4" id="sidebar"><div
+class="dfp-detalhe"><div
+id='div-gpt-ad-1453719359222-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1453719359222-0');});</script> </div></div></div><div
+class="col-xs-12"><div
+id="ligacoes"> <span> « </span><a
+href="/recomendar/" title="sinônimos de recomendar">recomendar</a> <span> « </span><a
+href="/recomendavel/" title="sinônimos de recomendável">recomendável</a> <span> « </span> <strong>recompensa</strong> <span> » </span> <a
+href="/recompensacao/" title="sinônimos de recompensação">recompensação</a><span> » </span> <a
+href="/recompensado/" title="sinônimos de recompensado">recompensado</a><span> » </span></div></div></div><div
+class="row" id="footer"><div
+class="col-xs-12 col-sm-9"><div
+id="links"> <input
+type="checkbox" id="menu-input" value="button" /><div
+class="footer-wrapper"><div
+id="partners"> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <a
+href="/contato.php?a=e">Encontrou um Erro?</a><span> &middot; </span><a
+href="/contato.php?a=s">Sugerir Sinônimos</a><span> · </span><a
+href="/sinonimos-populares/">Sinônimos Populares</a><span> · </span><a
+href="/sobre.html">Sobre</a><span> · </span><a
+href="/politica-privacidade.html">Política de Privacidade</a><span> · </span><a
+href="/contato.php">Contato</a><span
+class="hidden-xs"></span></div></div><div
+id="menu"><label
+for="menu-input" onclick="window.setTimeout( function(){window.scrollTo(0,document.body.scrollHeight)},0);"></label></div><div
+id="about"><div
+class="hidden-xs"><p>O <strong>Dicionário de Sinônimos</strong> online de português do Brasil. <a
+href="https://www.sinonimos.com.br/">Dicionário de Sinônimos</a> é parte do <a
+href="https://www.dicio.com.br/" rel="nofollow co-worker">Dicio.com.br</a></p></div><p>&copy; 2011 - 2017 <a
+href="https://www.7graus.com/" rel="nofollow co-worker">7Graus</a><span
+class="hidden-xs"> - Todos os direitos reservados.</span></p></div></div><div
+class="col-xs-12 col-sm-3"> <a
+class="google-play" href='https://play.google.com/store/apps/details?id=com.cbcnos.sinonimos&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+alt='Disponível no Google Play' src='/assets/google-play-badge.png' srcset='/assets/google-play-badge@2x.png 2x' width="134" height="40"/></a></div></div></div> <script>var clm={"opts":{"show_top":true}};</script> <script src="https://static.sinonimos.com.br/assets/sinonimos.031.min.js" defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:'pub-7683395268562108',enable_page_level_ads:true,vignettes:{google_ad_channel:'2916660478'},overlays:{google_ad_channel:'7486460871'}});</script> <script>var sgsocialinit_has_run=false;function SGSocialInit(){if(sgsocialinit_has_run)
+return
+sgsocialinit_has_run=true;SGSocial._fb_counters.push(['.share-top','https://www.sinonimos.com.br/recompensa/']);SGSocial.init();}
+if(typeof(SGSocial)!='undefined')
+SGSocialInit();document.addEventListener('SGsocialReady',SGSocialInit,false);</script> </body></html> <script type="text/javascript">var id='recompensa';var t='palavra';var request=new XMLHttpRequest();request.open('POST','/hits.php',true);request.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');request.send('t='+t+'&id='+id);</script>

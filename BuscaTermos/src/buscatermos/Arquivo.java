@@ -15,6 +15,7 @@ import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 /**
  *Classe de persistencia de elementos
@@ -26,39 +27,39 @@ public class Arquivo {
         
     }
     
-    public void salvaPaginas(){
+    public void salvaPagina(String termo){
         URL url;
         InputStream is = null;
         BufferedReader br;
         String line;
 
         try {
-            File f = new File( "paginas/teste.txt" );
+            
+            url = new URL("https://www.sinonimos.com.br/" + termo + "/");
+            is = url.openStream();  // throws an IOException
+            br = new BufferedReader(new InputStreamReader(is, StandardCharsets.ISO_8859_1));
+
+            File f = new File( "paginas/" + termo + ".txt" );
             OutputStream os = (OutputStream) new FileOutputStream( f );
             OutputStreamWriter osw = new OutputStreamWriter( os, "ISO-8859-1" );
             PrintWriter pw = new PrintWriter( osw );
             
-            url = new URL("https://www.sinonimos.com.br/briga/");
-            is = url.openStream();  // throws an IOException
-            br = new BufferedReader(new InputStreamReader(is, StandardCharsets.ISO_8859_1));
-
             while ((line = br.readLine()) != null) {
                 pw.println(line);
-                System.out.println(line);
             }
             
             pw.close(); 
             osw.close();
             os.close();
         } catch (MalformedURLException mue) {
-             mue.printStackTrace();
+             System.err.println(termo);
         } catch (IOException ioe) {
-             ioe.printStackTrace();
+             System.err.println(termo);
         } finally {
             try {
                 if (is != null) is.close();
             } catch (IOException ioe) {
-                
+                System.err.println(termo);
             }
         }
     }

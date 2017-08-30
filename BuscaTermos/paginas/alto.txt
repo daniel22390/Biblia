@@ -1,0 +1,251 @@
+<!DOCTYPE html><html
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head><meta
+http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta
+http-equiv="X-UA-Compatible" content="IE=edge"/><meta
+name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><title>Sinônimo de Alto - Sinônimos</title><link
+rel="canonical" href="https://www.sinonimos.com.br/alto/" /><meta
+name="description" content="Sinônimos de Alto no Dicionário de Sinônimos. Alto é sinônimo de: elevado, grande, crescido, desenvolvido, ereto, empinado, su ..." /><link
+href="https://static.sinonimos.com.br/assets/sinonimos.031.css" rel="stylesheet" type="text/css" /><link
+href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'/><link
+rel="alternate" type="application/rss+xml" title="RSS do Dicionário de Sinônimos" href="/rss.php"/><meta
+property="fb:admins" content="806619650" /><meta
+property="og:title" content="Sinônimos de Alto" /><meta
+property="og:url" content="https://www.sinonimos.com.br/alto/" /><meta
+property="og:image" content="https://static.sinonimos.com.br/ogimage.png" /><meta
+property="og:site_name" content="Sinônimos" /><meta
+property="og:description" content="Sinônimos de Alto: elevado, grande, crescido, desenvolvido, ereto, empinado, suspenso, erguido, levantado, av ..." /><link
+rel="search" type="application/opensearchdescription+xml" href="/opensearch.php" title="Busca no Dicionário de Sinônimos" /><meta
+property="og:type" content="article"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-32x32.png" sizes="32x32"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/android-chrome-192x192.png" sizes="192x192"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-96x96.png" sizes="96x96"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-16x16.png" sizes="16x16"/><link
+rel="manifest" href="/manifest.json"/><meta
+name="msapplication-TileColor" content="#524c43"/><meta
+name="msapplication-TileImage" content="CDN/mstile-144x144.png"/><meta
+name="theme-color" content="#ffffff"/><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-10605777-47','auto');ga('send','pageview');</script> <script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script> <script type='text/javascript'>var browserWidth=window.innerWidth&&document.documentElement.clientWidth?Math.min(window.innerWidth,document.documentElement.clientWidth):window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;googletag.cmd.push(function(){var mapping_lb_bottom=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[728,90]).addSize([991,0],[[728,90],[970,90]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_LB_Bottom_ROS',[[728,90],[970,90]],'div-gpt-ad-1417021075558-0').defineSizeMapping(mapping_lb_bottom).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_detalhe=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[160,600]).addSize([1046,0],[[160,600],[300,600]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_sidebar_detalhe',[[160,600],[300,600]],'div-gpt-ad-1453713589433-0').defineSizeMapping(mapping_mrec_detalhe).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_mobile=googletag.sizeMapping().addSize([0,0],[300,250]).addSize([768,0],[]).build();if(browserWidth<769){googletag.defineSlot('/1062898/Sinonimos.com.br_Sidebar_New_detalhe_mobile',[300,250],'div-gpt-ad-1461752325130-0').defineSizeMapping(mapping_mrec_mobile).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);}
+googletag.pubads().enableSingleRequest();googletag.enableServices();});</script> </head><body> <script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"21145335"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script> <noscript> <img
+src="https://sb.scorecardresearch.com/p?c1=2&c2=21145335&cv=2.0&cj=1" alt="comscore" /> </noscript><div
+class="header"><div
+class="container"><div
+class="row"><div
+class="col-xs-5 col-md-6"><div
+id="logo"><a
+href="/">sinônimos<span>.com.br</span></a></div><div
+id="slogan"><a
+href="/">Dicionário de Sinônimos Online</a></div></div><div
+class="col-xs-7 col-md-6 s-wrap"><form
+action="/search.php" id="searchForm" method="get"> <input
+id="q" name="q" type="text" placeholder="Buscar sinônimos..." value="alto"/> <button
+type="submit" id="botao"><span></span></button></form><div
+class="sites"> <a
+href="/"  title="Dicionário de Sinônimos">Sinônimos</a> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <script type="text/javascript"></script> </div></div></div></div><div
+class="container" id="page"><div
+class="row" id="content"><div
+class="col-xs-12 col-sm-8"><h1 class="h-palavra">Sinônimo de alto</h1><div
+class="share-btns"><div
+class="bt-fbshare"> <a
+class="fb-share-text"
+onclick="javascript:SGSocial.fbShare({type: 'mensagem', href: 'https://www.sinonimos.com.br/alto/', notracking: true})"
+rel="nofollow"><span></span>Compartilhar</a> <span
+class=" fbv-base share-top"></span></div><a
+class="bt-twitter" title="Tweetar" target="_blank"
+onclick="javascript:window.open('https://twitter.com/share?text=Sin%C3%B4nimos+de+Alto+no+Dicion%C3%A1rio+de+Sin%C3%B4nimos.+Alto+%C3%A9+sin%C3%B4nimo+de%3A+elevado%2C+grande%2C+crescido%2C+desenvolvido%2C...&url=https://www.sinonimos.com.br/alto/', '', 'width=845,height=650')"><span></span></a> <a
+class="bt-whatsapp" href="whatsapp://send?text=Sin%C3%B4nimos de Alto no Dicion%C3%A1rio de Sin%C3%B4nimos. Alto %C3%A9 sin%C3%B4nimo de%3A elevado%2C grande%2C crescido%2C desenvolvido%2C ereto%2C empinado%2C su... https%3A%2F%2Fwww.sinonimos.com.br%2Falto%2F"><span></span></a></div><p
+id="total"><strong>100 sinônimos de alto</strong> para 15 sentidos da palavra <strong>alto</strong>:</p><div
+class='s-wrapper'><div
+class="sentido">Com muita altura:</div><p
+class="sinonimos"><em>1</em> <a
+href="/elevado/" class="sinonimo">elevado</a>, <a
+href="/grande/" class="sinonimo">grande</a>, <a
+href="/crescido/" class="sinonimo">crescido</a>, <a
+href="/desenvolvido/" class="sinonimo">desenvolvido</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Levantado:</div><p
+class="sinonimos"><em>2</em> <a
+href="/ereto/" class="sinonimo">ereto</a>, <a
+href="/empinado/" class="sinonimo">empinado</a>, <a
+href="/suspenso/" class="sinonimo">suspenso</a>, <a
+href="/erguido/" class="sinonimo">erguido</a>, <a
+href="/levantado/" class="sinonimo">levantado</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Superior:</div><p
+class="sinonimos"><em>3</em> <a
+href="/avancado/" class="sinonimo">avançado</a>, <a
+href="/superior/" class="sinonimo">superior</a>, <a
+href="/adiantado/" class="sinonimo">adiantado</a>, <a
+href="/maximo/" class="sinonimo">máximo</a>, <a
+href="/supremo/" class="sinonimo">supremo</a>, <a
+href="/melhor/" class="sinonimo">melhor</a>, <a
+href="/suprassumo/" class="sinonimo">suprassumo</a>.</p></div><div
+id='div-gpt-ad-1461752325130-0' class='dfp-detalhe-m'> <script type='text/javascript'>if(browserWidth<769){googletag.cmd.push(function(){googletag.display('div-gpt-ad-1461752325130-0');});}</script> </div><div
+class='s-wrapper'><div
+class="sentido">Sério:</div><p
+class="sinonimos"><em>4</em> <a
+href="/significativo/" class="sinonimo">significativo</a>, <a
+href="/pesado/" class="sinonimo">pesado</a>, <a
+href="/grave/" class="sinonimo">grave</a>, <a
+href="/relevante/" class="sinonimo">relevante</a>, <a
+href="/serio/" class="sinonimo">sério</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Excelente:</div><p
+class="sinonimos"><em>5</em> <a
+href="/excelente/" class="sinonimo">excelente</a>, <a
+href="/respeitavel/" class="sinonimo">respeitável</a>, <a
+href="/soberbo/" class="sinonimo">soberbo</a>, <a
+href="/grandioso/" class="sinonimo">grandioso</a>, <a
+href="/altivo/" class="sinonimo">altivo</a>, <a
+href="/esplendido/" class="sinonimo">esplêndido</a>, <a
+href="/veneravel/" class="sinonimo">venerável</a>, <a
+href="/ilustre/" class="sinonimo">ilustre</a>, <a
+href="/celebre/" class="sinonimo">célebre</a>, <a
+href="/sublime/" class="sinonimo">sublime</a>, <a
+href="/insigne/" class="sinonimo">insigne</a>, <a
+href="/nobre/" class="sinonimo">nobre</a>, <a
+href="/magnifico/" class="sinonimo">magnífico</a>, <a
+href="/importante/" class="sinonimo">importante</a>, <a
+href="/supino/" class="sinonimo">supino</a>, <a
+href="/preclaro/" class="sinonimo">preclaro</a>, <a
+href="/sobranceiro/" class="sinonimo">sobranceiro</a>, <a
+href="/eminente/" class="sinonimo">eminente</a>, <a
+href="/excelso/" class="sinonimo">excelso</a>, <a
+href="/sumidade/" class="sinonimo">sumidade</a>, <a
+href="/suntuoso/" class="sinonimo">suntuoso</a>, <a
+href="/poderoso/" class="sinonimo">poderoso</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">De difícil compreensão:</div><p
+class="sinonimos"><em>6</em> <a
+href="/enigmatico/" class="sinonimo">enigmático</a>, <a
+href="/transcendente/" class="sinonimo">transcendente</a>, <a
+href="/incompreensivel/" class="sinonimo">incompreensível</a>, <a
+href="/insondavel/" class="sinonimo">insondável</a>, <a
+href="/inacessivel/" class="sinonimo">inacessível</a>, <a
+href="/dificil/" class="sinonimo">difícil</a>, <a
+href="/impenetravel/" class="sinonimo">impenetrável</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Arrojado:</div><p
+class="sinonimos"><em>7</em> <a
+href="/audaz/" class="sinonimo">audaz</a>, <a
+href="/heroico/" class="sinonimo">heroico</a>, <a
+href="/extremo/" class="sinonimo">extremo</a>, <a
+href="/destemido/" class="sinonimo">destemido</a>, <a
+href="/arrojado/" class="sinonimo">arrojado</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">De preço elevado:</div><p
+class="sinonimos"><em>8</em> <a
+href="/exagerado/" class="sinonimo">exagerado</a>, <a
+href="/excessivo/" class="sinonimo">excessivo</a>, <a
+href="/caro/" class="sinonimo">caro</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Som agudo:</div><p
+class="sinonimos"><em>9</em> <a
+href="/profundo/" class="sinonimo">profundo</a>, <a
+href="/forte/" class="sinonimo">forte</a>, <a
+href="/intenso/" class="sinonimo">intenso</a>, <a
+href="/agudo/" class="sinonimo">agudo</a>, <a
+href="/penetrante/" class="sinonimo">penetrante</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Afastado:</div><p
+class="sinonimos"><em>10</em> <a
+href="/afastado/" class="sinonimo">afastado</a>, <a
+href="/remoto/" class="sinonimo">remoto</a>, <a
+href="/longinquo/" class="sinonimo">longínquo</a>, <a
+href="/distante/" class="sinonimo">distante</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Cimo:</div><p
+class="sinonimos"><em>11</em> <a
+href="/pico/" class="sinonimo">pico</a>, <a
+href="/vertice/" class="sinonimo">vértice</a>, <a
+href="/topo/" class="sinonimo">topo</a>, <a
+href="/cume/" class="sinonimo">cume</a>, <a
+href="/cima/" class="sinonimo">cima</a>, <a
+href="/cimo/" class="sinonimo">cimo</a>, <a
+href="/cimeira/" class="sinonimo">cimeira</a>, <a
+href="/fastigio/" class="sinonimo">fastígio</a>, <a
+href="/cumeeira/" class="sinonimo">cumeeira</a>, <a
+href="/cimalha/" class="sinonimo">cimalha</a>, <a
+href="/cocuruto/" class="sinonimo">cocuruto</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Monte:</div><p
+class="sinonimos"><em>12</em> <a
+href="/colina/" class="sinonimo">colina</a>, <a
+href="/monte/" class="sinonimo">monte</a>, <a
+href="/morro/" class="sinonimo">morro</a>, <a
+href="/outeiro/" class="sinonimo">outeiro</a>, <a
+href="/elevacao/" class="sinonimo">elevação</a>, <a
+href="/protuberancia/" class="sinonimo">protuberância</a>, <a
+href="/saliencia/" class="sinonimo">saliência</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Embriagado:</div><p
+class="sinonimos"><em>13</em> <a
+href="/ebrio/" class="sinonimo">ébrio</a>, <a
+href="/temulento/" class="sinonimo">temulento</a>, <a
+href="/embriagado/" class="sinonimo">embriagado</a>, <a
+href="/enfrascado/" class="sinonimo">enfrascado</a>, <a
+href="/bebado/" class="sinonimo">bêbado</a>, <a
+href="/tocado/" class="sinonimo">tocado</a>, <a
+href="/grosso/" class="sinonimo">grosso</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Céu:</div><p
+class="sinonimos"><em>14</em> <a
+href="/zenite/" class="sinonimo">zênite</a>, <a
+href="/altura/" class="sinonimo">altura</a>, <a
+href="/ar/" class="sinonimo">ar</a>, <a
+href="/ceu/" class="sinonimo">céu</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Alto mar:</div><p
+class="sinonimos"><em>15</em> <a
+href="/amplo/" class="sinonimo">amplo</a>, <a
+href="/extenso/" class="sinonimo">extenso</a>, <a
+href="/vasto/" class="sinonimo">vasto</a>, <a
+href="/fundo/" class="sinonimo">fundo</a>.</p></div><div
+class="possiveis">Relacionada</div><p
+class="possiveis-sinonimos"><a
+href="/alto-falante/" class="sinonimo">alto-falante</a></p></div><div
+class="col-xs-4" id="sidebar"><div
+class="dfp-detalhe comp"><div
+id='div-gpt-ad-1453713589433-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1453713589433-0');});</script> </div></div></div><div
+class="col-xs-12 dfp-bottom"><div
+id='div-gpt-ad-1417021075558-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1417021075558-0');});</script> </div></div><div
+class="col-xs-12"><div
+id="ligacoes"> <span> « </span><a
+href="/altivissimo/" title="sinônimos de altivíssimo">altivíssimo</a> <span> « </span><a
+href="/altivo/" title="sinônimos de altivo">altivo</a> <span> « </span> <strong>alto</strong> <span> » </span> <a
+href="/alto-falante/" title="sinônimos de alto-falante">alto-falante</a><span> » </span> <a
+href="/alto-mar/" title="sinônimos de alto-mar">alto-mar</a><span> » </span></div></div></div><div
+class="row" id="footer"><div
+class="col-xs-12 col-sm-9"><div
+id="links"> <input
+type="checkbox" id="menu-input" value="button" /><div
+class="footer-wrapper"><div
+id="partners"> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <a
+href="/contato.php?a=e">Encontrou um Erro?</a><span> &middot; </span><a
+href="/contato.php?a=s">Sugerir Sinônimos</a><span> · </span><a
+href="/sinonimos-populares/">Sinônimos Populares</a><span> · </span><a
+href="/sobre.html">Sobre</a><span> · </span><a
+href="/politica-privacidade.html">Política de Privacidade</a><span> · </span><a
+href="/contato.php">Contato</a><span
+class="hidden-xs"></span></div></div><div
+id="menu"><label
+for="menu-input" onclick="window.setTimeout( function(){window.scrollTo(0,document.body.scrollHeight)},0);"></label></div><div
+id="about"><div
+class="hidden-xs"><p>O <strong>Dicionário de Sinônimos</strong> online de português do Brasil. <a
+href="https://www.sinonimos.com.br/">Dicionário de Sinônimos</a> é parte do <a
+href="https://www.dicio.com.br/" rel="nofollow co-worker">Dicio.com.br</a></p></div><p>&copy; 2011 - 2017 <a
+href="https://www.7graus.com/" rel="nofollow co-worker">7Graus</a><span
+class="hidden-xs"> - Todos os direitos reservados.</span></p></div></div><div
+class="col-xs-12 col-sm-3"> <a
+class="google-play" href='https://play.google.com/store/apps/details?id=com.cbcnos.sinonimos&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+alt='Disponível no Google Play' src='/assets/google-play-badge.png' srcset='/assets/google-play-badge@2x.png 2x' width="134" height="40"/></a></div></div></div> <script>var clm={"opts":{"show_top":true}};</script> <script src="https://static.sinonimos.com.br/assets/sinonimos.031.min.js" defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:'pub-7683395268562108',enable_page_level_ads:true,vignettes:{google_ad_channel:'2916660478'},overlays:{google_ad_channel:'7486460871'}});</script> <script>var sgsocialinit_has_run=false;function SGSocialInit(){if(sgsocialinit_has_run)
+return
+sgsocialinit_has_run=true;SGSocial._fb_counters.push(['.share-top','https://www.sinonimos.com.br/alto/']);SGSocial.init();}
+if(typeof(SGSocial)!='undefined')
+SGSocialInit();document.addEventListener('SGsocialReady',SGSocialInit,false);</script> </body></html> <script type="text/javascript">var id='alto';var t='palavra';var request=new XMLHttpRequest();request.open('POST','/hits.php',true);request.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');request.send('t='+t+'&id='+id);</script>

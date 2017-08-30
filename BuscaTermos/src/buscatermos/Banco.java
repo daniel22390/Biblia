@@ -5,9 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  * Acesso ao banco da Biblia
@@ -27,14 +24,18 @@ public class Banco {
     }
     
     public void recebeTermos(Connection conn){
+        Arquivo arq = new Arquivo();
+        
         try {
             Statement stmt = conn.createStatement();
             ResultSet rs;
  
-            rs = stmt.executeQuery("SELECT termo FROM Termo");
+            rs = stmt.executeQuery("SELECT idTermo, termo FROM Termo");
             while ( rs.next() ) {
                 String termo = rs.getString("termo");
-                System.out.println(termo);
+                String idTermo = rs.getString("idTermo");
+                System.out.println(idTermo + ": " + termo);
+                arq.salvaPagina(termo);
             }
             conn.close();
         } catch (Exception e) {

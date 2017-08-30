@@ -1,0 +1,227 @@
+<!DOCTYPE html><html
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head><meta
+http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta
+http-equiv="X-UA-Compatible" content="IE=edge"/><meta
+name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><title>Sinônimo de Limpo - Sinônimos</title><link
+rel="canonical" href="https://www.sinonimos.com.br/limpo/" /><meta
+name="description" content="Sinônimos de Limpo no Dicionário de Sinônimos. Limpo é sinônimo de: descontaminado, imaculado, terso, lavado, asseado, impoluto, ..." /><link
+href="https://static.sinonimos.com.br/assets/sinonimos.031.css" rel="stylesheet" type="text/css" /><link
+href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'/><link
+rel="alternate" type="application/rss+xml" title="RSS do Dicionário de Sinônimos" href="/rss.php"/><meta
+property="fb:admins" content="806619650" /><meta
+property="og:title" content="Sinônimos de Limpo" /><meta
+property="og:url" content="https://www.sinonimos.com.br/limpo/" /><meta
+property="og:image" content="https://static.sinonimos.com.br/ogimage.png" /><meta
+property="og:site_name" content="Sinônimos" /><meta
+property="og:description" content="Sinônimos de Limpo: descontaminado, imaculado, terso, lavado, asseado, impoluto, inconspurcado, cuidado, higiê ..." /><link
+rel="search" type="application/opensearchdescription+xml" href="/opensearch.php" title="Busca no Dicionário de Sinônimos" /><meta
+property="og:type" content="article"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-32x32.png" sizes="32x32"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/android-chrome-192x192.png" sizes="192x192"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-96x96.png" sizes="96x96"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-16x16.png" sizes="16x16"/><link
+rel="manifest" href="/manifest.json"/><meta
+name="msapplication-TileColor" content="#524c43"/><meta
+name="msapplication-TileImage" content="CDN/mstile-144x144.png"/><meta
+name="theme-color" content="#ffffff"/><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-10605777-47','auto');ga('send','pageview');</script> <script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script> <script type='text/javascript'>var browserWidth=window.innerWidth&&document.documentElement.clientWidth?Math.min(window.innerWidth,document.documentElement.clientWidth):window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;googletag.cmd.push(function(){var mapping_lb_bottom=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[728,90]).addSize([991,0],[[728,90],[970,90]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_LB_Bottom_ROS',[[728,90],[970,90]],'div-gpt-ad-1417021075558-0').defineSizeMapping(mapping_lb_bottom).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_detalhe=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[160,600]).addSize([1046,0],[[160,600],[300,600]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_sidebar_detalhe',[[160,600],[300,600]],'div-gpt-ad-1453713589433-0').defineSizeMapping(mapping_mrec_detalhe).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_mobile=googletag.sizeMapping().addSize([0,0],[300,250]).addSize([768,0],[]).build();if(browserWidth<769){googletag.defineSlot('/1062898/Sinonimos.com.br_Sidebar_New_detalhe_mobile',[300,250],'div-gpt-ad-1461752325130-0').defineSizeMapping(mapping_mrec_mobile).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);}
+googletag.pubads().enableSingleRequest();googletag.enableServices();});</script> </head><body> <script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"21145335"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script> <noscript> <img
+src="https://sb.scorecardresearch.com/p?c1=2&c2=21145335&cv=2.0&cj=1" alt="comscore" /> </noscript><div
+class="header"><div
+class="container"><div
+class="row"><div
+class="col-xs-5 col-md-6"><div
+id="logo"><a
+href="/">sinônimos<span>.com.br</span></a></div><div
+id="slogan"><a
+href="/">Dicionário de Sinônimos Online</a></div></div><div
+class="col-xs-7 col-md-6 s-wrap"><form
+action="/search.php" id="searchForm" method="get"> <input
+id="q" name="q" type="text" placeholder="Buscar sinônimos..." value="limpo"/> <button
+type="submit" id="botao"><span></span></button></form><div
+class="sites"> <a
+href="/"  title="Dicionário de Sinônimos">Sinônimos</a> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <script type="text/javascript"></script> </div></div></div></div><div
+class="container" id="page"><div
+class="row" id="content"><div
+class="col-xs-12 col-sm-8"><h1 class="h-palavra">Sinônimo de limpo</h1><div
+class="share-btns"><div
+class="bt-fbshare"> <a
+class="fb-share-text"
+onclick="javascript:SGSocial.fbShare({type: 'mensagem', href: 'https://www.sinonimos.com.br/limpo/', notracking: true})"
+rel="nofollow"><span></span>Compartilhar</a> <span
+class=" fbv-base share-top"></span></div><a
+class="bt-twitter" title="Tweetar" target="_blank"
+onclick="javascript:window.open('https://twitter.com/share?text=Sin%C3%B4nimos+de+Limpo+no+Dicion%C3%A1rio+de+Sin%C3%B4nimos.+Limpo+%C3%A9+sin%C3%B4nimo+de%3A+descontaminado%2C+imaculado%2C+terso%2C+lavado%2C...&url=https://www.sinonimos.com.br/limpo/', '', 'width=845,height=650')"><span></span></a> <a
+class="bt-whatsapp" href="whatsapp://send?text=Sin%C3%B4nimos de Limpo no Dicion%C3%A1rio de Sin%C3%B4nimos. Limpo %C3%A9 sin%C3%B4nimo de%3A descontaminado%2C imaculado%2C terso%2C lavado%2C asseado%2C impoluto%2C... https%3A%2F%2Fwww.sinonimos.com.br%2Flimpo%2F"><span></span></a></div><p
+id="total"><strong>93 sinônimos de limpo</strong> para 11 sentidos da palavra <strong>limpo</strong>:</p><div
+class='s-wrapper'><div
+class="sentido">Que não está sujo:</div><p
+class="sinonimos"><em>1</em> <a
+href="/descontaminado/" class="sinonimo">descontaminado</a>, <a
+href="/imaculado/" class="sinonimo">imaculado</a>, <a
+href="/terso/" class="sinonimo">terso</a>, <a
+href="/lavado/" class="sinonimo">lavado</a>, <a
+href="/asseado/" class="sinonimo">asseado</a>, <a
+href="/impoluto/" class="sinonimo">impoluto</a>, <a
+href="/inconspurcado/" class="sinonimo">inconspurcado</a>, <a
+href="/cuidado/" class="sinonimo">cuidado</a>, <a
+href="/higienico/" class="sinonimo">higiênico</a>, <a
+href="/abstergido/" class="sinonimo">abstergido</a>, <a
+href="/absterso/" class="sinonimo">absterso</a>, <a
+href="/despoluido/" class="sinonimo">despoluído</a>, <a
+href="/purificado/" class="sinonimo">purificado</a>, <a
+href="/dessujo/" class="sinonimo">dessujo</a>, <a
+href="/higienizado/" class="sinonimo">higienizado</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Céu limpo:</div><p
+class="sinonimos"><em>2</em> <a
+href="/aberto/" class="sinonimo">aberto</a>, <a
+href="/desanuviado/" class="sinonimo">desanuviado</a>, <a
+href="/transparente/" class="sinonimo">transparente</a>, <a
+href="/limpido/" class="sinonimo">límpido</a>, <a
+href="/sereno/" class="sinonimo">sereno</a>, <a
+href="/claro/" class="sinonimo">claro</a>, <a
+href="/alvo/" class="sinonimo">alvo</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Que está isento de culpas:</div><p
+class="sinonimos"><em>3</em> <a
+href="/livre/" class="sinonimo">livre</a>, <a
+href="/despojado/" class="sinonimo">despojado</a>, <a
+href="/expurgado/" class="sinonimo">expurgado</a>, <a
+href="/liberado/" class="sinonimo">liberado</a>, <a
+href="/isento/" class="sinonimo">isento</a>, <a
+href="/despido/" class="sinonimo">despido</a>, <a
+href="/desprovido/" class="sinonimo">desprovido</a>, <a
+href="/destituido/" class="sinonimo">destituído</a>.</p></div><div
+id='div-gpt-ad-1461752325130-0' class='dfp-detalhe-m'> <script type='text/javascript'>if(browserWidth<769){googletag.cmd.push(function(){googletag.display('div-gpt-ad-1461752325130-0');});}</script> </div><div
+class='s-wrapper'><div
+class="sentido">Que não está sob a influência de substâncias:</div><p
+class="sinonimos"><em>4</em> <a
+href="/inteiro/" class="sinonimo">inteiro</a>, <a
+href="/intato/" class="sinonimo">intato</a>, <a
+href="/incolume/" class="sinonimo">incólume</a>, <a
+href="/invulnerado/" class="sinonimo">invulnerado</a>, <a
+href="/ileso/" class="sinonimo">ileso</a>, <a
+href="/sobrio/" class="sinonimo">sóbrio</a>, <a
+href="/inatingido/" class="sinonimo">inatingido</a>, <a
+href="/indene/" class="sinonimo">indene</a>, <a
+href="/salvo/" class="sinonimo">salvo</a>, <a
+href="/sao/" class="sinonimo">são</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Que está sem dinheiro:</div><p
+class="sinonimos"><em>5</em> <a
+href="/pronto/" class="sinonimo">pronto</a>, <a
+href="/pobre/" class="sinonimo">pobre</a>, <a
+href="/duro/" class="sinonimo">duro</a>, <a
+href="/liso/" class="sinonimo">liso</a>, <a
+href="/arruinado/" class="sinonimo">arruinado</a>, <a
+href="/quebrado/" class="sinonimo">quebrado</a>, <a
+href="/teso/" class="sinonimo">teso</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Terreno limpo:</div><p
+class="sinonimos"><em>6</em> <a
+href="/limpado/" class="sinonimo">limpado</a>, <a
+href="/mondado/" class="sinonimo">mondado</a>, <a
+href="/podado/" class="sinonimo">podado</a>, <span>esmondado</span>, <a
+href="/capinado/" class="sinonimo">capinado</a>, <span>alimpado</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Que é honesto:</div><p
+class="sinonimos"><em>7</em> <a
+href="/confiavel/" class="sinonimo">confiável</a>, <a
+href="/direito/" class="sinonimo">direito</a>, <a
+href="/integro/" class="sinonimo">íntegro</a>, <a
+href="/escrupuloso/" class="sinonimo">escrupuloso</a>, <a
+href="/bom/" class="sinonimo">bom</a>, <a
+href="/puro/" class="sinonimo">puro</a>, <a
+href="/virtuoso/" class="sinonimo">virtuoso</a>, <a
+href="/serio/" class="sinonimo">sério</a>, <a
+href="/probo/" class="sinonimo">probo</a>, <a
+href="/digno/" class="sinonimo">digno</a>, <a
+href="/decente/" class="sinonimo">decente</a>, <a
+href="/honesto/" class="sinonimo">honesto</a>, <a
+href="/honrado/" class="sinonimo">honrado</a>, <a
+href="/casto/" class="sinonimo">casto</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Que está esmerado:</div><p
+class="sinonimos"><em>8</em> <a
+href="/esmerado/" class="sinonimo">esmerado</a>, <a
+href="/caprichado/" class="sinonimo">caprichado</a>, <a
+href="/aprimorado/" class="sinonimo">aprimorado</a>, <a
+href="/bem-acabado/" class="sinonimo">bem-acabado</a>, <a
+href="/bem-feito/" class="sinonimo">bem-feito</a>, <a
+href="/primoroso/" class="sinonimo">primoroso</a>, <a
+href="/perfeito/" class="sinonimo">perfeito</a>, <a
+href="/impecavel/" class="sinonimo">impecável</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Som que se ouve bem:</div><p
+class="sinonimos"><em>9</em> <a
+href="/marcante/" class="sinonimo">marcante</a>, <a
+href="/nitido/" class="sinonimo">nítido</a>, <a
+href="/sonoro/" class="sinonimo">sonoro</a>, <a
+href="/distinto/" class="sinonimo">distinto</a>, <a
+href="/cristalino/" class="sinonimo">cristalino</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Que é correto:</div><p
+class="sinonimos"><em>10</em> <a
+href="/definido/" class="sinonimo">definido</a>, <a
+href="/certo/" class="sinonimo">certo</a>, <a
+href="/preciso/" class="sinonimo">preciso</a>, <a
+href="/correto/" class="sinonimo">correto</a>, <a
+href="/incontroverso/" class="sinonimo">incontroverso</a>, <a
+href="/explicito/" class="sinonimo">explícito</a>, <a
+href="/exato/" class="sinonimo">exato</a>, <a
+href="/escorreito/" class="sinonimo">escorreito</a>, <a
+href="/apurado/" class="sinonimo">apurado</a>.</p></div><div
+class='s-wrapper'><div
+class="sentido">De forma limpa:</div><p
+class="sinonimos"><em>11</em> <a
+href="/honestamente/" class="sinonimo">honestamente</a>, <a
+href="/decentemente/" class="sinonimo">decentemente</a>, <a
+href="/corretamente/" class="sinonimo">corretamente</a>, <a
+href="/dignamente/" class="sinonimo">dignamente</a>.</p></div></div><div
+class="col-xs-4" id="sidebar"><div
+class="dfp-detalhe comp"><div
+id='div-gpt-ad-1453713589433-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1453713589433-0');});</script> </div></div></div><div
+class="col-xs-12 dfp-bottom"><div
+id='div-gpt-ad-1417021075558-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1417021075558-0');});</script> </div></div><div
+class="col-xs-12"><div
+id="ligacoes"> <span> « </span><a
+href="/limpidez/" title="sinônimos de limpidez">limpidez</a> <span> « </span><a
+href="/limpido/" title="sinônimos de límpido">límpido</a> <span> « </span> <strong>limpo</strong> <span> » </span> <a
+href="/linda/" title="sinônimos de linda">linda</a><span> » </span> <a
+href="/lindar/" title="sinônimos de lindar">lindar</a><span> » </span></div></div></div><div
+class="row" id="footer"><div
+class="col-xs-12 col-sm-9"><div
+id="links"> <input
+type="checkbox" id="menu-input" value="button" /><div
+class="footer-wrapper"><div
+id="partners"> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <a
+href="/contato.php?a=e">Encontrou um Erro?</a><span> &middot; </span><a
+href="/contato.php?a=s">Sugerir Sinônimos</a><span> · </span><a
+href="/sinonimos-populares/">Sinônimos Populares</a><span> · </span><a
+href="/sobre.html">Sobre</a><span> · </span><a
+href="/politica-privacidade.html">Política de Privacidade</a><span> · </span><a
+href="/contato.php">Contato</a><span
+class="hidden-xs"></span></div></div><div
+id="menu"><label
+for="menu-input" onclick="window.setTimeout( function(){window.scrollTo(0,document.body.scrollHeight)},0);"></label></div><div
+id="about"><div
+class="hidden-xs"><p>O <strong>Dicionário de Sinônimos</strong> online de português do Brasil. <a
+href="https://www.sinonimos.com.br/">Dicionário de Sinônimos</a> é parte do <a
+href="https://www.dicio.com.br/" rel="nofollow co-worker">Dicio.com.br</a></p></div><p>&copy; 2011 - 2017 <a
+href="https://www.7graus.com/" rel="nofollow co-worker">7Graus</a><span
+class="hidden-xs"> - Todos os direitos reservados.</span></p></div></div><div
+class="col-xs-12 col-sm-3"> <a
+class="google-play" href='https://play.google.com/store/apps/details?id=com.cbcnos.sinonimos&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+alt='Disponível no Google Play' src='/assets/google-play-badge.png' srcset='/assets/google-play-badge@2x.png 2x' width="134" height="40"/></a></div></div></div> <script>var clm={"opts":{"show_top":true}};</script> <script src="https://static.sinonimos.com.br/assets/sinonimos.031.min.js" defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:'pub-7683395268562108',enable_page_level_ads:true,vignettes:{google_ad_channel:'2916660478'},overlays:{google_ad_channel:'7486460871'}});</script> <script>var sgsocialinit_has_run=false;function SGSocialInit(){if(sgsocialinit_has_run)
+return
+sgsocialinit_has_run=true;SGSocial._fb_counters.push(['.share-top','https://www.sinonimos.com.br/limpo/']);SGSocial.init();}
+if(typeof(SGSocial)!='undefined')
+SGSocialInit();document.addEventListener('SGsocialReady',SGSocialInit,false);</script> </body></html> <script type="text/javascript">var id='limpo';var t='palavra';var request=new XMLHttpRequest();request.open('POST','/hits.php',true);request.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');request.send('t='+t+'&id='+id);</script>

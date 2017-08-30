@@ -1,0 +1,135 @@
+<!DOCTYPE html><html
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"><head><meta
+http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta
+http-equiv="X-UA-Compatible" content="IE=edge"/><meta
+name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/><title>Sinônimo de Fizer - Sinônimos</title><link
+rel="canonical" href="https://www.sinonimos.com.br/fizer/" /><meta
+name="description" content="Sinônimos de Fizer no Dicionário de Sinônimos. Fizer é sinônimo de: criar, conceber, formar, gerar, constituir, elaborar, instit ..." /><link
+href="https://static.sinonimos.com.br/assets/sinonimos.031.css" rel="stylesheet" type="text/css" /><link
+href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'/><link
+rel="alternate" type="application/rss+xml" title="RSS do Dicionário de Sinônimos" href="/rss.php"/><meta
+property="fb:admins" content="806619650" /><meta
+property="og:title" content="Sinônimos de Fizer" /><meta
+property="og:url" content="https://www.sinonimos.com.br/fizer/" /><meta
+property="og:image" content="https://static.sinonimos.com.br/ogimage.png" /><meta
+property="og:site_name" content="Sinônimos" /><meta
+property="og:description" content="Sinônimos de Fizer: criar, conceber, formar, gerar, constituir, elaborar, instituir, estabelecer, implementar, ..." /><link
+rel="search" type="application/opensearchdescription+xml" href="/opensearch.php" title="Busca no Dicionário de Sinônimos" /><meta
+property="og:type" content="article"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-32x32.png" sizes="32x32"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/android-chrome-192x192.png" sizes="192x192"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-96x96.png" sizes="96x96"/><link
+rel="icon" type="image/png" href="https://static.sinonimos.com.br/favicon-16x16.png" sizes="16x16"/><link
+rel="manifest" href="/manifest.json"/><meta
+name="msapplication-TileColor" content="#524c43"/><meta
+name="msapplication-TileImage" content="CDN/mstile-144x144.png"/><meta
+name="theme-color" content="#ffffff"/><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-10605777-47','auto');ga('set','contentGroup1','conjugacao');ga('send','pageview');</script> <script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script> <script type='text/javascript'>var browserWidth=window.innerWidth&&document.documentElement.clientWidth?Math.min(window.innerWidth,document.documentElement.clientWidth):window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;googletag.cmd.push(function(){var mapping_lb_bottom=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[728,90]).addSize([991,0],[[728,90],[970,90]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_LB_Bottom_ROS',[[728,90],[970,90]],'div-gpt-ad-1417021075558-0').defineSizeMapping(mapping_lb_bottom).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_detalhe=googletag.sizeMapping().addSize([0,0],[]).addSize([768,0],[160,600]).addSize([1046,0],[[160,600],[300,600]]).build();googletag.defineSlot('/1062898/Sinonimos.com.br_sidebar_detalhe',[[160,600],[300,600]],'div-gpt-ad-1453713589433-0').defineSizeMapping(mapping_mrec_detalhe).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);var mapping_mrec_mobile=googletag.sizeMapping().addSize([0,0],[300,250]).addSize([768,0],[]).build();if(browserWidth<769){googletag.defineSlot('/1062898/Sinonimos.com.br_Sidebar_New_detalhe_mobile',[300,250],'div-gpt-ad-1461752325130-0').defineSizeMapping(mapping_mrec_mobile).addService(googletag.pubads()).setCollapseEmptyDiv(true,true);}
+googletag.pubads().enableSingleRequest();googletag.enableServices();});</script> </head><body> <script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"21145335"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script> <noscript> <img
+src="https://sb.scorecardresearch.com/p?c1=2&c2=21145335&cv=2.0&cj=1" alt="comscore" /> </noscript><div
+class="header"><div
+class="container"><div
+class="row"><div
+class="col-xs-5 col-md-6"><div
+id="logo"><a
+href="/">sinônimos<span>.com.br</span></a></div><div
+id="slogan"><a
+href="/">Dicionário de Sinônimos Online</a></div></div><div
+class="col-xs-7 col-md-6 s-wrap"><form
+action="/search.php" id="searchForm" method="get"> <input
+id="q" name="q" type="text" placeholder="Buscar sinônimos..." value="fizer"/> <button
+type="submit" id="botao"><span></span></button></form><div
+class="sites"> <a
+href="/"  title="Dicionário de Sinônimos">Sinônimos</a> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <script type="text/javascript"></script> </div></div></div></div><div
+class="container" id="page"><div
+class="row" id="content"><div
+class="col-xs-12 col-sm-8"><h1 class="h-palavra">Sinônimo de fizer</h1><div
+class="share-btns"><div
+class="bt-fbshare"> <a
+class="fb-share-text"
+onclick="javascript:SGSocial.fbShare({type: 'mensagem', href: 'https://www.sinonimos.com.br/fizer/', notracking: true})"
+rel="nofollow"><span></span>Compartilhar</a> <span
+class=" fbv-base share-top"></span></div><a
+class="bt-twitter" title="Tweetar" target="_blank"
+onclick="javascript:window.open('https://twitter.com/share?text=Sin%C3%B4nimos+de+Fizer+no+Dicion%C3%A1rio+de+Sin%C3%B4nimos.+Fizer+%C3%A9+sin%C3%B4nimo+de%3A+criar%2C+conceber%2C+formar%2C+gerar%2C+constituir%2C...&url=https://www.sinonimos.com.br/fizer/', '', 'width=845,height=650')"><span></span></a> <a
+class="bt-whatsapp" href="whatsapp://send?text=Sin%C3%B4nimos de Fizer no Dicion%C3%A1rio de Sin%C3%B4nimos. Fizer %C3%A9 sin%C3%B4nimo de%3A criar%2C conceber%2C formar%2C gerar%2C constituir%2C elaborar%2C instit... https%3A%2F%2Fwww.sinonimos.com.br%2Ffizer%2F"><span></span></a></div><p
+id="total"><strong>74 sinônimos de fizer</strong> para 10 sentidos da palavra <strong>fizer</strong>:</p><div
+class='s-wrapper'><div
+class="sentido">Criar:</div><p
+class="sinonimos"><em>1</em> <span>criar</span>, <span>conceber</span>, <span>formar</span>, <span>gerar</span>, <span>constituir</span>, <span>elaborar</span>, <span>instituir</span>, <span>estabelecer</span>, <span>implementar</span>, <span>produzir</span>, <span>parir</span>, <span>engendrar</span>, <span>forjar</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Realizar:</div><p
+class="sinonimos"><em>2</em> <span>realizar</span>, <span>exercer</span>, <span>executar</span>, <span>efetuar</span>, <span>efetivar</span>, <span>empreender</span>, <span>praticar</span>, <span>cometer</span>, <span>desempenhar</span>, <span>prestar</span>, <span>consumar</span>, <span>formalizar</span>, <span>calcular</span>, <span>perpetrar</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Fabricar:</div><p
+class="sinonimos"><em>3</em> <span>fabricar</span>, <span>confeccionar</span>, <a
+href="/compuser/" class="sinonimo">compuser</a>, <span>construir</span>, <span>manufaturar</span>, <span>montar</span>, <span>obrar</span>, <span>manipular</span>, <span>engenhar</span>.</p></div><div
+id='div-gpt-ad-1461752325130-0' class='dfp-detalhe-m'> <script type='text/javascript'>if(browserWidth<769){googletag.cmd.push(function(){googletag.display('div-gpt-ad-1461752325130-0');});}</script> </div><div
+class='s-wrapper'><div
+class="sentido">Preparar:</div><p
+class="sinonimos"><em>4</em> <span>preparar</span>, <span>arrumar</span>, <span>arranjar</span>, <span>dispuser</span>, <span>ajeitar</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Causar:</div><p
+class="sinonimos"><em>5</em> <span>causar</span>, <span>ocasionar</span>, <span>provocar</span>, <span>acarretar</span>, <span>levar</span>, <span>despertar</span>, <span>mover</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Agir:</div><p
+class="sinonimos"><em>6</em> <span>agir</span>, <span>proceder</span>, <span>atuar</span>, <span>representar</span>, <span>fingir</span>, <span>simular</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Ganhar:</div><p
+class="sinonimos"><em>7</em> <span>ganhar</span>, <span>obtiver</span>, <span>lucrar</span>, <span>conseguir</span>, <span>acertar</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Dizer:</div><p
+class="sinonimos"><em>8</em> <span>disser</span>, <span>proferir</span>, <span>expressar</span>, <span>pronunciar</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Completar:</div><p
+class="sinonimos"><em>9</em> <span>completar</span>, <a
+href="/perfizer/" class="sinonimo">perfizer</a>, <span>atingir</span>, <span>contar</span>, <span>chegar</span>, <span>passar</span>, <span>decorrer</span>, <span>houver</span>.</p></div><div
+class='s-wrapper'><div
+class="sentido">Cursar:</div><p
+class="sinonimos"><em>10</em> <span>cursar</span>, <span>estudar</span>, <span>tirar</span>.</p></div></div><div
+class="col-xs-4" id="sidebar"><div
+class="dfp-detalhe comp"><div
+id='div-gpt-ad-1453713589433-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1453713589433-0');});</script> </div></div></div><div
+class="col-xs-12 dfp-bottom"><div
+id='div-gpt-ad-1417021075558-0'> <script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1417021075558-0');});</script> </div></div><div
+class="col-xs-12"><div
+id="ligacoes"> <span> « </span><a
+href="/fixidez/" title="sinônimos de fixidez">fixidez</a> <span> « </span><a
+href="/fixo/" title="sinônimos de fixo">fixo</a> <span> « </span> <strong>fizer</strong> <span> » </span> <a
+href="/flabelo/" title="sinônimos de flabelo">flabelo</a><span> » </span> <a
+href="/flacido/" title="sinônimos de flácido">flácido</a><span> » </span></div></div></div><div
+class="row" id="footer"><div
+class="col-xs-12 col-sm-9"><div
+id="links"> <input
+type="checkbox" id="menu-input" value="button" /><div
+class="footer-wrapper"><div
+id="partners"> <a
+href="https://www.dicio.com.br/" rel="nofollow" title="Dicionário Online de Português">Dicionário</a> <a
+href="http://www.antonimos.com.br/" rel="nofollow" title="Dicionário de Antônimos">Antônimos</a> <a
+href="https://www.conjugacao.com.br/" rel="nofollow" title="Conjugação de Verbos">Conjugação</a> <a
+href="https://duvidas.dicio.com.br/" rel="nofollow" title="Dúvidas de Português">Dúvidas de Português</a></div> <a
+href="/contato.php?a=e">Encontrou um Erro?</a><span> &middot; </span><a
+href="/contato.php?a=s">Sugerir Sinônimos</a><span> · </span><a
+href="/sinonimos-populares/">Sinônimos Populares</a><span> · </span><a
+href="/sobre.html">Sobre</a><span> · </span><a
+href="/politica-privacidade.html">Política de Privacidade</a><span> · </span><a
+href="/contato.php">Contato</a><span
+class="hidden-xs"></span></div></div><div
+id="menu"><label
+for="menu-input" onclick="window.setTimeout( function(){window.scrollTo(0,document.body.scrollHeight)},0);"></label></div><div
+id="about"><div
+class="hidden-xs"><p>O <strong>Dicionário de Sinônimos</strong> online de português do Brasil. <a
+href="https://www.sinonimos.com.br/">Dicionário de Sinônimos</a> é parte do <a
+href="https://www.dicio.com.br/" rel="nofollow co-worker">Dicio.com.br</a></p></div><p>&copy; 2011 - 2017 <a
+href="https://www.7graus.com/" rel="nofollow co-worker">7Graus</a><span
+class="hidden-xs"> - Todos os direitos reservados.</span></p></div></div><div
+class="col-xs-12 col-sm-3"> <a
+class="google-play" href='https://play.google.com/store/apps/details?id=com.cbcnos.sinonimos&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+alt='Disponível no Google Play' src='/assets/google-play-badge.png' srcset='/assets/google-play-badge@2x.png 2x' width="134" height="40"/></a></div></div></div> <script>var clm={"opts":{"show_top":true}};</script> <script src="https://static.sinonimos.com.br/assets/sinonimos.031.min.js" defer></script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:'pub-7683395268562108',enable_page_level_ads:true,vignettes:{google_ad_channel:'2916660478'},overlays:{google_ad_channel:'7486460871'}});</script> <script>var sgsocialinit_has_run=false;function SGSocialInit(){if(sgsocialinit_has_run)
+return
+sgsocialinit_has_run=true;SGSocial._fb_counters.push(['.share-top','https://www.sinonimos.com.br/fizer/']);SGSocial.init();}
+if(typeof(SGSocial)!='undefined')
+SGSocialInit();document.addEventListener('SGsocialReady',SGSocialInit,false);</script> </body></html> <script type="text/javascript">var id='fizer';var t='conjugacao';var request=new XMLHttpRequest();request.open('POST','/hits.php',true);request.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');request.send('t='+t+'&id='+id);</script>
