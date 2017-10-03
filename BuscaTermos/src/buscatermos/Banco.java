@@ -10,6 +10,8 @@ import java.sql.Statement;
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Acesso ao banco da Biblia
@@ -143,4 +145,6 @@ public class Banco {
             System.err.println(e.getMessage());
         }
       }
+      
+    
 }
