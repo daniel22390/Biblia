@@ -1,0 +1,56 @@
+<div class="container">
+   <div class="row">
+      <div class="col-md-8 mx-auto" style="margin-top: 30px;">
+         <%= form_tag("/resultados", method: "get", :id => 'envia_termos') do %>
+         <div class="input-group input-group-lg">
+            <span class="input-group-btn">
+               <ul class="dropdown-menu">
+                  <li><a role="button" class="nlk-search-type" data-radio="#target-nlk" data-value="in NML Website" data-action="/" data-param="s" data-target="_self">NML Website - services, resources, activities, news...</a></li>
+                  <li><a role="button" class="nlk-search-type" data-radio="#target-medvik" data-value="in Medvik Portal" data-action="http://www.medvik.cz/bmc/opensearch.do" data-param="q" data-target="_self">Medvik - library catalogs, Czech articles</a></li>
+                  <li><a role="button" class="nlk-search-type" data-radio="#target-summon" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self">Summon - online resources and full texts</a></li>
+               </ul>
+            </span>
+            <input id="nlk-search-str" name="termos" type="text" maxlength="200" class="form-control" placeholder="Digite aqui os termos" data-def="Enter a query" required>
+            <span class="input-group-btn"> 
+            <button class="btn btn-primary" type="submit" id="nlk-search-submit">
+            <i class="fa fa-search"></i>
+            </button> 
+            </span>    
+         </div>
+         <div class="adv-search-target">
+            <label class="radio-inline">
+            <input type="checkbox" name="exata" id="target-nlk" value="exata" checked class="nlk-search-type nlk-radio" data-value="in NML Website" data-action="/" data-param="s" data-target="_self"> Exata
+            </label>
+            <label class="radio-inline" style="margin-left: 10px;">
+            <input type="checkbox" name="sinonimo" id="target-medvik" value="sinonimo" class="nlk-search-type nlk-radio" data-value="in Medvik Portal" data-action="http://www.medvik.cz/bmc/opensearch.do" data-param="q" data-target="_self" checked> Sinônimos
+            </label>
+            <label class="radio-inline" style="margin-left: 10px;">
+            <input type="checkbox" name="antonimo" id="target-summon" value="antonimo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Antônimos
+            </label>
+            <label class="radio-inline" style="margin-left: 10px;">
+            <input type="checkbox" name="verbo" id="target-summon" value="verbo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Verbos
+            </label>
+            <label class="radio-inline" style="margin-left: 10px;">
+            <input type="checkbox" name="radical" id="target-summon" value="radical" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Radical
+            </label>
+         </div>
+         <% end %>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-12">
+         <div class="list-group">
+            <% @resultado.each do |resposta| -%>
+            <button type="button" class="list-group-item list-group-item-action">
+               <div class="col-md-12 text-primary">
+                  <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
+               </div>
+               <div class="col-md-12">
+                  <%= resposta["texto"] %>
+               </div>
+            </button>
+            <% end -%>
+         </div>
+      </div>
+   </div>
+</div>

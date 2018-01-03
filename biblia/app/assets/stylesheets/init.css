@@ -1,0 +1,49 @@
+#adv-search {
+    padding: 10px 0 0 0;
+}
+
+#adv-search .nlk-dropdown {
+    left: -220px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+#nlk-search-submit {
+  width: 70px;
+  padding-left: 5px;
+  padding-right: 5px;  
+}
+
+#nlk-search-str {
+  min-width: 500px;
+}
+
+.adv-search-target {
+    margin: 20px 0 0 0;
+    font-size: smaller;
+}
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+}
+.navbar_top{
+    height: 5%;
+    position: absolute;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
