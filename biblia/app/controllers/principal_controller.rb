@@ -11,4 +11,8 @@ class PrincipalController < ApplicationController
 		end
 			
 	end
+
+	def cadastra_usuario
+		puts params
+	end
 end

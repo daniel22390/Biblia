@@ -16,5 +16,86 @@
     <div id="content">
       <%= yield %>
     </div>
+    <div class="modal fade modal_cadastro" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <%= form_tag("/cadastra_usuario", method: "post", :class => 'cadastra_usuario') do %>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">Cadastro de Usuário</h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-center" style="margin-bottom: 30px; color: #0000FF;">Muito obrigado pela sua avaliação de nosso sistema. Por favor, cadastre-se para podermos registrar sua avaliação.</p>
+              <div class='row'>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="usuario[nome]" placeholder="Nome">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="usuario[email]" placeholder="Ex.: joaodasilva@****.com">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="nivel">Qual seu nível de conhecimento bíblico?</label>
+                    <div id='nivel'>
+                      <label class="radio-inline">
+                        <input type="radio" name="usuario[nivel]" id="inlineRadio1" value="3"> alto
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="usuario[nivel]" id="inlineRadio2" value="2"> médio
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="usuario[nivel]" id="inlineRadio3" value="1"> baixo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario[login]" placeholder="Ex.:joao123">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="senha_cadastro">Senha</label>
+                    <input type="password" class="form-control" id="senha_cadastro" name="usuario[password]" placeholder="Senha">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="senha2">Repita a senha</label>
+                    <input type="password" class="form-control" id="senha2" name="usuario[password_confirmation]" placeholder="Senha">
+                  </div>
+                </div>
+              </div>
+              <div class="row msg_erro_cadastro" style="display:none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="alert alert-danger alert-dismissible" role="alert">
+                     <div class="text-center"><strong>Erro!</strong> <p id="msg_cadastro"></p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row msg_sucesso_cadastro" style="display:none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="alert alert-success alert-dismissible" role="alert">
+                     <div class="text-center"> <p id="msg_cadastro_2"></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
