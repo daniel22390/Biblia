@@ -24,7 +24,6 @@ $(document).ready(function(){
    	var method = $(this).attr("method");
    	var action = $(this).attr("action");
    	$.API.ajax(action, method, data, 'json', function(retorno){
-   		console.log(retorno);
    		if(retorno.status === "Error"){
 	   		$("#msg_cadastro").text(retorno.message);
 	   		$(".msg_sucesso_cadastro").hide();

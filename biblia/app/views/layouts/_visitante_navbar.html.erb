@@ -6,16 +6,18 @@
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dLabel" style="right: 0; left: auto; padding-left: 8px; padding-right: 8px; min-width: 250px;">
-        <div class="form-group">
-          <label for="login">Usuário</label>
-          <input type="text" class="form-control" id="login" placeholder="Usuário">
-        </div>
-        <div class="form-group">
-          <label for="senha">Senha</label>
-          <input type="password" class="form-control" id="senha" placeholder="Senha">
-        </div>
-        <a href="#" class="cadastrar" data-toggle="modal" data-target=".modal_cadastro">Cadastre-se</a>
-        <button type="button" class="btn btn-primary btn-lg btn-block logar">ENTRAR</button>
+        <%= form_tag("/login", method: "post", :class => 'loga_usuario') do %>
+          <div class="form-group">
+            <label for="login">Usuário</label>
+            <input type="text" class="form-control" id="login" placeholder="Usuário" name="logar[login]">
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" placeholder="Senha" name="logar[password]">
+          </div>
+          <a href="#" class="cadastrar" data-toggle="modal" data-target=".modal_cadastro">Cadastre-se</a>
+          <button type="submit" class="btn btn-primary btn-lg btn-block logar">ENTRAR</button>
+        <% end %>
       </ul>
     </div>
   </div>

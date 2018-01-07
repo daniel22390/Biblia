@@ -11,11 +11,16 @@
 
   <body>
   	<header>
-  		<%= render 'layouts/visitante_navbar' %> 
+      <% if user_signed_in? %>
+        <%= render 'layouts/usuario_navbar' %>
+      <% else %>
+        <%= render 'layouts/visitante_navbar' %> 
+      <% end %>
   	</header>
     <div id="content">
       <%= yield %>
     </div>
+
     <div class="modal fade modal_cadastro" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -94,6 +99,23 @@
               <button type="submit" class="btn btn-primary">Cadastrar</button>
             </div>
           <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal_pesos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content content_pesos">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Pesos de busca</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-center" style="margin-bottom: 30px; color: #0000FF;">Cadastre o peso para cada um dos contextos, de acordo com seu critério de busca. O valores devem ser fracionários de 0 a 1.</p>
+          </div>
+          <div class="modal-footer">
+
+          </div>
         </div>
       </div>
     </div>

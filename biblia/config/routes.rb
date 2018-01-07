@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root :to => "home#index"
   get 'resultados' => 'principal#envia_termos'
   post 'cadastra_usuario' => 'usuario#cadastra_usuario'
+  post 'login' => 'usuario_sessao#login'
 end
