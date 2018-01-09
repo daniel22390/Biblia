@@ -10,7 +10,7 @@
                   <li><a role="button" class="nlk-search-type" data-radio="#target-summon" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self">Summon - online resources and full texts</a></li>
                </ul>
             </span>
-            <input id="nlk-search-str" name="termos" type="text" maxlength="200" class="form-control" placeholder="Digite aqui os termos" data-def="Enter a query" required>
+            <input id="nlk-search-str" name="termos" type="text" maxlength="200" class="form-control" placeholder="Digite aqui os termos" data-def="Enter a query" value="<%= params[:termos] %>" required>
             <span class="input-group-btn"> 
             <button class="btn btn-primary" type="submit" id="nlk-search-submit">
             <i class="fa fa-search"></i>
@@ -19,25 +19,40 @@
          </div>
          <div class="adv-search-target">
             <label class="radio-inline">
-            <input type="checkbox" name="exata" id="target-nlk" value="exata" checked class="nlk-search-type nlk-radio" data-value="in NML Website" data-action="/" data-param="s" data-target="_self"> Exata
+            <input type="checkbox" name="exata" id="target-nlk" value="exata" class="nlk-search-type nlk-radio" data-value="in NML Website" data-action="/" data-param="s" data-target="_self" <%= if(params[:exata])
+                      "checked"
+                    end
+                    %>> Exata
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="sinonimo" id="target-medvik" value="sinonimo" class="nlk-search-type nlk-radio" data-value="in Medvik Portal" data-action="http://www.medvik.cz/bmc/opensearch.do" data-param="q" data-target="_self" checked> Sinônimos
+            <input type="checkbox" name="sinonimo" id="target-medvik" value="sinonimo" class="nlk-search-type nlk-radio" data-value="in Medvik Portal" data-action="http://www.medvik.cz/bmc/opensearch.do" data-param="q" data-target="_self" <%= if(params[:sinonimo])
+                      "checked"
+                    end
+                    %>> Sinônimos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="antonimo" id="target-summon" value="antonimo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Antônimos
+            <input type="checkbox" name="antonimo" id="target-summon" value="antonimo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:antonimo])
+                      "checked"
+                    end
+                    %>> Antônimos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="verbo" id="target-summon" value="verbo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Verbos
+            <input type="checkbox" name="verbo" id="target-summon" value="verbo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:verbo])
+                      "checked"
+                    end
+                    %>> Verbos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="radical" id="target-summon" value="radical" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self"> Radical
+            <input type="checkbox" name="radical" id="target-summon" value="radical" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:radical])
+                      "checked"
+                    end
+                    %>> Radical
             </label>
          </div>
          <% end %>
       </div>
    </div>
-   <div class="row">
+   <div class="row" style="margin-bottom: 10px;">
       <div class="col-md-12">
          <div class="list-group">
             <% @resultado.each do |resposta| -%>
@@ -52,5 +67,33 @@
             <% end -%>
          </div>
       </div>
+   </div>
+   <div>
+      <nav aria-label="Page navigation example" class="text-center">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <% (1..(@array_resposta.length / 10)).take(10).each do |i| %>
+            <% if(!params[:pagina] && i == 1) %>
+               <li class="page-item active"><a class="page-link" href="#"><%= i %></a></li>
+            <% else %>
+               <li class="page-item"><a class="page-link" href="#"><%= i %></a></li>
+            <% end %>
+          <% end %>
+          <% if((@array_resposta.length / 10) > 10) %>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+         <% end %>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
    </div>
 </div>

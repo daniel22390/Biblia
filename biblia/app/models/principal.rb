@@ -68,11 +68,11 @@ class Principal
 				end
 			end
 
-			if aparicao == 0
-				puts termo
-				puts versiculo
-				puts "-------"
-			end
+			#if aparicao == 0
+			#	puts termo
+			#	puts versiculo
+			#	puts "-------"
+			#end
 
 			versiculo_id = hash.as_json["versiculo_id"]
 			termo_id = hash.as_json['termo_id']
@@ -308,13 +308,11 @@ class Principal
 
 		ranking_exatas = @pesoExatas.sort_by { |versiculo, valor| valor }.reverse
 
-		puts ranking_exatas
-
+		@versiculo_banco = Array.new
 		ranking_exatas.each do |versiculo, valor|
-			puts "#{versiculo} #{valor}"
 			@versiculo_banco.push(@texto_versiculos[versiculo])
 		end
-
+		@versiculo_banco
 	end
 
 	def busca_versiculo
