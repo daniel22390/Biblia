@@ -104,20 +104,83 @@
     </div>
 
     <div class="modal fade modal_pesos" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content content_pesos">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center">Pesos de busca</h4>
-          </div>
-          <div class="modal-body">
-            <p class="text-center" style="margin-bottom: 30px; color: #0000FF;">Cadastre o peso para cada um dos contextos, de acordo com seu critério de busca. O valores devem ser fracionários de 0 a 1.</p>
-          </div>
-          <div class="modal-footer">
-
+      <%= form_tag("/atualiza_usuario", method: "put", :class => 'atualiza_usuario') do %>
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content content_pesos">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">Pesos de busca</h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-center" style="margin-bottom: 30px; color: #0000FF;">Cadastre o peso para cada um dos contextos, de acordo com seu critério de busca. O valores devem ser fracionários de 0 a 1.</p>
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="peso_exata">Peso para busca exata</label>
+                    <input type="number" step="0.01" class="form-control" id="peso_exata" placeholder="Ex.: 0,67" name="usuario[pesoExata]" value="<%= if(user_signed_in?)
+                      current_user.pesoExata
+                    end
+                    %>">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="peso_sinonimo">Peso para busca por sinônimo</label>
+                    <input type="number" step="0.01" class="form-control" id="peso_sinonimo" placeholder="Ex.: 0,67" name="usuario[pesoSinonimo]" value="<%= if(user_signed_in?)
+                      current_user.pesoSinonimo
+                    end
+                    %>">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="peso_antonimo">Peso para busca por antônimo</label>
+                    <input type="number" step="0.01" class="form-control" id="peso_antonimo" placeholder="Ex.: 0,67" name="usuario[pesoAntonimo]" value="<%= if(user_signed_in?)
+                      current_user.pesoAntonimo
+                    end
+                       %>">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="peso_flexao">Peso para busca verbal</label>
+                    <input type="number" step="0.01" class="form-control" id="peso_flexao" placeholder="Ex.: 0,67" name="usuario[pesoFlexao]" value="<%= if(user_signed_in?)
+                    current_user.pesoFlexao
+                      end
+                     %>">
+                  </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="form-group">
+                    <label for="peso_radical">Peso para busca por radical</label>
+                    <input type="number" step="0.01" class="form-control" id="peso_radical" placeholder="Ex.: 0,67" name="usuario[pesoRadical]" value="<%= if(user_signed_in?)
+                          current_user.pesoRadical
+                        end
+                      %>">
+                  </div>
+                </div>
+              </div>
+              <div class="row msg_erro_atualiza" style="display:none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="alert alert-danger alert-dismissible" role="alert">
+                     <div class="text-center"><strong>Erro!</strong> <p id="msg_atualiza"></p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row msg_sucesso_atualiza" style="display:none;">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="alert alert-success alert-dismissible" role="alert">
+                     <div class="text-center"> <p id="msg_atualiza_2"></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
           </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </body>
 </html>

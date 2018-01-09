@@ -21,8 +21,30 @@ class UsuarioController < ApplicationController
 		end
 	end
 
+	def atualiza_usuario
+		retorno = Hash.new
+		retorno[:status] = ""
+		retorno[:message] = ""
+		retorno[:data] = ""
+
+		@atualiza_usuario = Usuario.update(current_user.id, usuario_params)
+
+		if(@atualiza_usuario.valid?)
+			retorno[:status] = "Success"
+		  	retorno[:message] = "Pesos atualizados com sucesso!"
+		  	retorno = JSON.generate(retorno)
+			render json: retorno
+		else
+			retorno[:status] = "Error"
+		  	retorno[:message] = @cadastra_usuario.errors.first[1]
+		  	retorno = JSON.generate(retorno)
+			render json: retorno
+		end
+
+	end
+
 	def usuario_params
-      params.require(:usuario).permit(:nome, :email, :login, :nivel, :password, :password_confirmation)
+      params.require(:usuario).permit(:nome, :email, :login, :nivel, :password, :password_confirmation, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao)
     end
 
 end

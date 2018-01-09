@@ -6,6 +6,11 @@ class UsuarioSessaoController < ApplicationController
 		redirect_to root_path	
 	end
 
+	def logout
+		usuario_sessao.destroy
+		redirect_to root_path, :notice => 'Logout efetuado com sucesso. Ate logo!'
+	end
+
 	def login_params
       params.require(:logar).permit(:login, :password)
     end

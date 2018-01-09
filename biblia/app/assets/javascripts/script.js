@@ -41,4 +41,29 @@ $(document).ready(function(){
    		$(".msg_erro_cadastro").show();
    	});
    });
+
+   $(".atualiza_usuario").submit(function(ev){
+   	ev.preventDefault();
+
+   	var data = $(this).serialize();
+   	var method = $(this).attr("method");
+   	var action = $(this).attr("action");
+   	$.API.ajax(action, method, data, 'json', function(retorno){
+   		if(retorno.status === "Error"){
+	   		$("#msg_atualiza").text(retorno.message);
+	   		$(".msg_sucesso_atualiza").hide();
+	   		$(".msg_erro_atualiza").show();
+	   	}
+	   	else if(retorno.status = "Success"){
+	   		$("#msg_atualiza_2").text(retorno.message);
+	   		$(".msg_erro_atualiza").hide();
+	   		$(".msg_sucesso_atualiza").show();
+	   	}
+   	}, 
+   	function(xhr,status,error){
+   		 $("#msg_atualiza").text(error);
+   		$(".msg_sucesso_atualiza").hide();
+   		$(".msg_erro_atualiza").show();
+   	});
+   });
 });
