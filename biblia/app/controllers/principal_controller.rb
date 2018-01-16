@@ -4,7 +4,7 @@ class PrincipalController < ApplicationController
 
 	def envia_termos
 		
-		@resposta_principal = Principal.new(params)
+		@resposta_principal = Principal.new(params, current_user)
 
 		if @resposta_principal.valid?
 			@resultado = @resposta_principal.busca_exata

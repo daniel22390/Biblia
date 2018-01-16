@@ -7,7 +7,7 @@ class Principal
 
 	validates_presence_of :termos, :message => "É necessária a entrada de algum termo para pesquisa."
 
-	def initialize(attributes = {})
+	def initialize(attributes = {}, current_user)
 		@termos = attributes[:termos]
 		@exata = attributes[:exata]
 		@sinonimo = attributes[:sinonimo]
@@ -18,7 +18,9 @@ class Principal
 		@rankingSinonimos = Hash.new
 		@numeroExatas = Hash.new
 		@numeroSinonimos = Hash.new
+		@current_user = current_user.as_json
 		@caracteres = ["?", "!", "@", "#", "$", "%", "&", "*", "/", "?", "(", ")", ",", ".", ":", ";", "]", "[", "}", "{", "=", "+"]
+		@resultado_secundario = Hash.new
 	end
 
 	def busca
@@ -103,6 +105,7 @@ class Principal
 				termo = Termo.where(:termo => value).select("idTermo").first
 
 				if @sinonimo && termo
+
 					sinonimos = Termo_has_sinonimo.where(:sinonimo => termo).as_json
 					sinonimos.each do |sinonimo|
 						valor_sinonimo = Termo.find(sinonimo["termo_id"]).as_json
@@ -125,7 +128,22 @@ class Principal
 								if !@numeroExatas[verso["versiculo_id"]][valor_sinonimo["termo"]]
 									@numeroExatas[verso["versiculo_id"]][valor_sinonimo["termo"]] = 0.0;
 								end
-						  		@numeroExatas[verso["versiculo_id"]][valor_sinonimo["termo"]] += 5
+
+						  		@numeroExatas[verso["versiculo_id"]][valor_sinonimo["termo"]] += verso["aparicoes"] * (@current_user["pesoSinonimo"].to_f * 10)
+								
+								if(!@resultado_secundario[verso["versiculo_id"]])
+									@resultado_secundario[verso["versiculo_id"]] = {};
+									@resultado_secundario[verso["versiculo_id"]][:sinonimos] = {}
+									@resultado_secundario[verso["versiculo_id"]][:sinonimos][valor_sinonimo["termo"]] = verso["aparicoes"]
+								else
+									if(!@resultado_secundario[verso["versiculo_id"]][:sinonimos])
+										@resultado_secundario[verso["versiculo_id"]][:sinonimos] = {}
+										@resultado_secundario[verso["versiculo_id"]][:sinonimos][valor_sinonimo["termo"]] = verso["aparicoes"]
+									else
+										@resultado_secundario[verso["versiculo_id"]][:sinonimos][valor_sinonimo["termo"]] = verso["aparicoes"]
+									end
+								end
+								
 							end
 						end
 					end
@@ -154,7 +172,21 @@ class Principal
 								if !@numeroExatas[verso["versiculo_id"]][valor_antonimo["termo"]]
 									@numeroExatas[verso["versiculo_id"]][valor_antonimo["termo"]] = 0.0;
 								end
-						  		@numeroExatas[verso["versiculo_id"]][valor_antonimo["termo"]] += 1
+
+						  		@numeroExatas[verso["versiculo_id"]][valor_antonimo["termo"]] += verso["aparicoes"] * (@current_user["pesoAntonimo"].to_f * 10)
+
+								if(!@resultado_secundario[verso["versiculo_id"]])
+									@resultado_secundario[verso["versiculo_id"]] = {}
+									@resultado_secundario[verso["versiculo_id"]][:antonimos] = {}
+									@resultado_secundario[verso["versiculo_id"]][:antonimos][valor_antonimo["termo"]] = verso["aparicoes"]
+								else
+									if(!@resultado_secundario[verso["versiculo_id"]][:antonimos])
+										@resultado_secundario[verso["versiculo_id"]][:antonimos] = {}
+										@resultado_secundario[verso["versiculo_id"]][:antonimos][valor_antonimo["termo"]] = verso["aparicoes"]
+									else
+										@resultado_secundario[verso["versiculo_id"]][:antonimos][valor_antonimo["termo"]] = verso["aparicoes"]
+									end
+								end
 							end
 						end
 					end
@@ -187,7 +219,20 @@ class Principal
 										if !@numeroExatas[verso["versiculo_id"]][verbo["termo"]]
 											@numeroExatas[verso["versiculo_id"]][verbo["termo"]] = 0.0;
 										end
-								  		@numeroExatas[verso["versiculo_id"]][verbo["termo"]] += 3
+								  		@numeroExatas[verso["versiculo_id"]][verbo["termo"]] += verso["aparicoes"] * (@current_user["pesoFlexao"].to_f * 10)
+
+										if(!@resultado_secundario[verso["versiculo_id"]])
+											@resultado_secundario[verso["versiculo_id"]] = {}
+											@resultado_secundario[verso["versiculo_id"]][:flexoes] = {}
+											@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+										else
+											if(!@resultado_secundario[verso["versiculo_id"]][:flexoes])
+												@resultado_secundario[verso["versiculo_id"]][:flexoes] = {}
+												@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+											else
+												@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+											end
+										end
 									end
 								end
 							end
@@ -222,7 +267,21 @@ class Principal
 								if !@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]]
 									@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] = 0.0;
 								end
-						  		@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] += (i * 2).to_f
+						  		@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] += verso["aparicoes"] * (@current_user["pesoRadical"].to_f * 10)
+							
+
+								if(!@resultado_secundario[verso["versiculo_id"]])
+									@resultado_secundario[verso["versiculo_id"]] = {}
+									@resultado_secundario[verso["versiculo_id"]][:radicais] = {}
+									@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+								else
+									if(!@resultado_secundario[verso["versiculo_id"]][:radicais])
+										@resultado_secundario[verso["versiculo_id"]][:radicais] = {}
+										@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+									else
+										@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+									end
+								end
 							end
 						end
 					end
@@ -249,13 +308,27 @@ class Principal
 							result = Versiculo.find(verso["versiculo_id"]).as_json
 							texto = result["texto"]
 							@texto_versiculos[result["idVersiculo"]] = result
-						  	@numeroExatas[verso["versiculo_id"]][value] += 10
+						  	@numeroExatas[verso["versiculo_id"]][value] += verso["aparicoes"] * (@current_user["pesoExata"].to_f * 10)
+
+							if(!@resultado_secundario[verso["versiculo_id"]])
+								@resultado_secundario[verso["versiculo_id"]] = {}
+								@resultado_secundario[verso["versiculo_id"]][:exatas] = {}
+								@resultado_secundario[verso["versiculo_id"]][:exatas][value] = verso["aparicoes"]
+							else
+								if(!@resultado_secundario[verso["versiculo_id"]][:exatas])
+									@resultado_secundario[verso["versiculo_id"]][:exatas] = {}
+									@resultado_secundario[verso["versiculo_id"]][:exatas][value] = verso["aparicoes"]
+								else
+									@resultado_secundario[verso["versiculo_id"]][:exatas][value] = verso["aparicoes"]
+								end
+							end
 						end
 					end
 				end
 			end
 		end
 
+		puts @resultado_secundario
 		@pesoExatas = {}
 
 		@numeroExatas.each do |key, versiculo|
