@@ -8,6 +8,7 @@ class PrincipalController < ApplicationController
 
 		if @resposta_principal.valid?
 			@resultado = @resposta_principal.busca_exata
+			@result_modal = @resposta_principal.resultado_secundario
 
 		else
 			@resultado = Hash.new

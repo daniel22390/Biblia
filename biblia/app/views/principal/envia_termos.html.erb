@@ -56,7 +56,7 @@
       <div class="col-md-12">
          <div class="list-group resultados">
             <% @resultado[0...10].each do |resposta| -%>
-            <button type="button" class="list-group-item list-group-item-action">
+            <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action">
                <div class="col-md-12 text-primary">
                   <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
                </div>
@@ -77,13 +77,68 @@
    </div>
 </div>
 
+
+
 <script type="text/javascript">
   var tamanho = <%= @resultado.length %>;
-  var versiculos = [];
+  var versiculos = {};
+  var informacoes = {};
 
   <% @resultado.each do |resposta| -%>
-      versiculos.push('<button type="button" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12"><%= resposta["texto"] %></div></button>');
-    <% end -%>
+    versiculos['<%= "#{resposta["idVersiculo"]}" %>'] = '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12"><%= resposta["texto"] %></div></button>';
+  <% end -%>
+
+  <% @result_modal.each do |index, resposta| -%>
+    informacoes['<%= "#{index}" %>'] = {};
+
+    <% if(resposta[:exatas]) %>
+      var resposta_exatas = [];
+      <% resposta[:exatas].each do |termo, aparicoes| -%>
+        resposta_exatas.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["exatas"] = resposta_exatas;
+    <% end %>
+
+    <% if(resposta[:sinonimos]) %>
+      var resposta_sinonimos = [];
+      <% resposta[:sinonimos].each do |termo, aparicoes| -%>
+        resposta_sinonimos.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["sinonimos"] = resposta_sinonimos;
+    <% end %>
+
+    <% if(resposta[:antonimos]) %>
+      var resposta_antonimos = [];
+      <% resposta[:antonimos].each do |termo, aparicoes| -%>
+        resposta_antonimos.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["antonimos"] = resposta_antonimos;
+    <% end %>
+
+    <% if(resposta[:flexoes]) %>
+      var resposta_flexoes = [];
+      <% resposta[:flexoes].each do |termo, aparicoes| -%>
+        resposta_flexoes.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["flexoes"] = resposta_flexoes;
+    <% end %>
+
+    <% if(resposta[:radicais]) %>
+      var resposta_radicais = [];
+      <% resposta[:radicais].each do |termo, aparicoes| -%>
+        resposta_radicais.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["radicais"] = resposta_radicais;
+    <% end %>
+
+    <% if(resposta[:exatasCompleta]) %>
+      var resposta_exatasCompleta = [];
+      <% resposta[:exatasCompleta].each do |termo, aparicoes| -%>
+        resposta_exatasCompleta.push({termo: '<%= "#{termo}" %>', aparicoes: '<%= "#{aparicoes}" %>'})
+      <% end %>
+      informacoes['<%= "#{index}" %>']["exatasCompleta"] = resposta_exatasCompleta;
+    <% end %>
+  <% end -%>
 
   var paginas = '<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
   for(i = 0; i < (tamanho / 10); i++){
@@ -110,6 +165,12 @@
 
     $(".page-item").removeClass("active");
     $(this).parent().addClass("active");
+  });
+
+  $(".list-group .list-group-item").click(function(ev){
+    console.log($(this).attr("idVersiculo"));
+
+
   });
 
 </script>

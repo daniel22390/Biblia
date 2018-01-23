@@ -3,7 +3,7 @@ class Principal
 	require "i18n"
 	include ActiveModel::Model
 
-	attr_accessor :termos, :exata, :sinonimo, :antonimo, :verbo, :radical, :caracteres
+	attr_accessor :termos, :exata, :sinonimo, :antonimo, :verbo, :radical, :caracteres, :resultado_secundario
 
 	validates_presence_of :termos, :message => "É necessária a entrada de algum termo para pesquisa."
 
@@ -98,6 +98,8 @@ class Principal
 		@totalAparicaoSinonimos = {}
 		@texto_versiculos = {}
 		@texto_versiculos_sinonimos = {}
+
+		busca_versiculo
 
 		termos.each do |value|
 			stopword = Stopword.where(:stopword => value).first
@@ -328,7 +330,6 @@ class Principal
 			end
 		end
 
-		puts @resultado_secundario
 		@pesoExatas = {}
 
 		@numeroExatas.each do |key, versiculo|
@@ -385,13 +386,40 @@ class Principal
 		ranking_exatas.each do |versiculo, valor|
 			@versiculo_banco.push(@texto_versiculos[versiculo])
 		end
+
 		@versiculo_banco
 	end
 
 	def busca_versiculo
 		@versiculo_banco = Versiculo.where("texto like :termos", {:termos => "%#{@termos}%"}).as_json
 		@versiculo_banco.each do |versiculo|
-			@rankingExatas1[versiculo["idVersiculo"]] = 0
+			result = versiculo
+			texto = result["texto"]
+			@texto_versiculos[result["idVersiculo"]] = result
+
+			if !@numeroExatas[result["idVersiculo"]]
+				@numeroExatas[result["idVersiculo"]] = {};
+			end
+
+			if !@numeroExatas[result["idVersiculo"]][@termos]
+				@numeroExatas[result["idVersiculo"]][@termos] = 0.0;
+			end
+
+			@numeroExatas[result["idVersiculo"]][@termos] +=  (@current_user["pesoExata"].to_f * 100)	
+
+			if(!@resultado_secundario[result["idVersiculo"]])
+					@resultado_secundario[result["idVersiculo"]] = {}
+					@resultado_secundario[result["idVersiculo"]][:exatasCompleta] = {}
+					@resultado_secundario[result["idVersiculo"]][:exatasCompleta][@termos] = 1
+			else
+				if(!@resultado_secundario[result["idVersiculo"]][:exatasCompleta])
+					@resultado_secundario[result["idVersiculo"]][:exatasCompleta] = {}
+					@resultado_secundario[result["idVersiculo"]][:exatasCompleta][@termos] = 1
+				else
+					@resultado_secundario[result["idVersiculo"]][:exatasCompleta][@termos] = 1
+				end
+			end
+
 		end
 		
 	end
