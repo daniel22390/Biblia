@@ -104,7 +104,7 @@ class Principal
 		termos.each do |value|
 			stopword = Stopword.where(:stopword => value).first
 			if !stopword
-				termo = Termo.where(:termo => value).select("idTermo").first
+				termo = Termo.where(:termo => value).first
 
 				if @sinonimo && termo
 
@@ -205,42 +205,46 @@ class Principal
 						
 						verbos.each do |verbo_hash|
 							verbo = Termo.find(verbo_hash["termo_id"])
-							versiculos =  Versiculo_has_termo.where(:termo => verbo["idTermo"]).as_json
 
-							if ((verbo["termo"] != flexao["termo"]) || controle_flexao)
-								versiculos.each do |verso|
-									if !@rankingExatas1[verso["versiculo_id"]]
+							if(verbo['termo'] != termo['termo'])
+								
+								versiculos =  Versiculo_has_termo.where(:termo => verbo["idTermo"]).as_json
 
-										result = Versiculo.find(verso["versiculo_id"]).as_json
-										texto = result["texto"]
-										@texto_versiculos[result["idVersiculo"]] = result
-								  		if !@numeroExatas[verso["versiculo_id"]]
-											@numeroExatas[verso["versiculo_id"]] = {};
-										end
+								if ((verbo["termo"] != flexao["termo"]) || controle_flexao)
+									versiculos.each do |verso|
+										if !@rankingExatas1[verso["versiculo_id"]]
 
-										if !@numeroExatas[verso["versiculo_id"]][verbo["termo"]]
-											@numeroExatas[verso["versiculo_id"]][verbo["termo"]] = 0.0;
-										end
-								  		@numeroExatas[verso["versiculo_id"]][verbo["termo"]] += verso["aparicoes"] * (@current_user["pesoFlexao"].to_f * 10)
+											result = Versiculo.find(verso["versiculo_id"]).as_json
+											texto = result["texto"]
+											@texto_versiculos[result["idVersiculo"]] = result
+									  		if !@numeroExatas[verso["versiculo_id"]]
+												@numeroExatas[verso["versiculo_id"]] = {};
+											end
 
-										if(!@resultado_secundario[verso["versiculo_id"]])
-											@resultado_secundario[verso["versiculo_id"]] = {}
-											@resultado_secundario[verso["versiculo_id"]][:flexoes] = {}
-											@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
-										else
-											if(!@resultado_secundario[verso["versiculo_id"]][:flexoes])
+											if !@numeroExatas[verso["versiculo_id"]][verbo["termo"]]
+												@numeroExatas[verso["versiculo_id"]][verbo["termo"]] = 0.0;
+											end
+									  		@numeroExatas[verso["versiculo_id"]][verbo["termo"]] += verso["aparicoes"] * (@current_user["pesoFlexao"].to_f * 10)
+
+											if(!@resultado_secundario[verso["versiculo_id"]])
+												@resultado_secundario[verso["versiculo_id"]] = {}
 												@resultado_secundario[verso["versiculo_id"]][:flexoes] = {}
 												@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
 											else
-												@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+												if(!@resultado_secundario[verso["versiculo_id"]][:flexoes])
+													@resultado_secundario[verso["versiculo_id"]][:flexoes] = {}
+													@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+												else
+													@resultado_secundario[verso["versiculo_id"]][:flexoes][verbo["termo"]] = verso["aparicoes"]
+												end
 											end
 										end
 									end
 								end
-							end
 
-							if ( verbo["termo"] == flexao["termo"] ) && controle_flexao
-								controle_flexao = false
+								if ( verbo["termo"] == flexao["termo"] ) && controle_flexao
+									controle_flexao = false
+								end
 							end
 
 						end
@@ -254,34 +258,38 @@ class Principal
 					termos_radicais = Termo.where(:radical => radical["idRadical"]).as_json
 
 					termos_radicais.each do |termo_radical|
-						versiculos =  Versiculo_has_termo.where(:termo => termo_radical["idTermo"])
 
-						versiculos.each do |verso|
-							if !@rankingExatas1[verso["versiculo_id"]]
+						if termo_radical['termo'] != termo["termo"]
 
-								result = Versiculo.find(verso["versiculo_id"]).as_json
-								texto = result["texto"]
-								@texto_versiculos[result["idVersiculo"]] = result
-						  		if !@numeroExatas[verso["versiculo_id"]]
-									@numeroExatas[verso["versiculo_id"]] = {};
-								end
+							versiculos =  Versiculo_has_termo.where(:termo => termo_radical["idTermo"])
 
-								if !@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]]
-									@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] = 0.0;
-								end
-						  		@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] += verso["aparicoes"] * (@current_user["pesoRadical"].to_f * 10)
-							
+							versiculos.each do |verso|
+								if !@rankingExatas1[verso["versiculo_id"]]
 
-								if(!@resultado_secundario[verso["versiculo_id"]])
-									@resultado_secundario[verso["versiculo_id"]] = {}
-									@resultado_secundario[verso["versiculo_id"]][:radicais] = {}
-									@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
-								else
-									if(!@resultado_secundario[verso["versiculo_id"]][:radicais])
+									result = Versiculo.find(verso["versiculo_id"]).as_json
+									texto = result["texto"]
+									@texto_versiculos[result["idVersiculo"]] = result
+							  		if !@numeroExatas[verso["versiculo_id"]]
+										@numeroExatas[verso["versiculo_id"]] = {};
+									end
+
+									if !@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]]
+										@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] = 0.0;
+									end
+							  		@numeroExatas[verso["versiculo_id"]][termo_radical["termo"]] += verso["aparicoes"] * (@current_user["pesoRadical"].to_f * 10)
+								
+
+									if(!@resultado_secundario[verso["versiculo_id"]])
+										@resultado_secundario[verso["versiculo_id"]] = {}
 										@resultado_secundario[verso["versiculo_id"]][:radicais] = {}
 										@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
 									else
-										@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+										if(!@resultado_secundario[verso["versiculo_id"]][:radicais])
+											@resultado_secundario[verso["versiculo_id"]][:radicais] = {}
+											@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+										else
+											@resultado_secundario[verso["versiculo_id"]][:radicais][termo_radical["termo"]] = verso["aparicoes"]
+										end
 									end
 								end
 							end
@@ -290,7 +298,7 @@ class Principal
 				end
 
 
-				if termo
+				if termo && @exata
 					versiculos = Versiculo_has_termo.where(:termo => termo).as_json
 					if versiculos.length > 0
 						@totalAparicao[value] = (versiculos.length * 10).to_f
@@ -386,7 +394,7 @@ class Principal
 		ranking_exatas.each do |versiculo, valor|
 			@versiculo_banco.push(@texto_versiculos[versiculo])
 		end
-
+		
 		@versiculo_banco
 	end
 

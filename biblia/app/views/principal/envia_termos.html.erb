@@ -57,7 +57,7 @@
          <div class="list-group resultados">
             <% @resultado[0...10].each do |resposta| -%>
             <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action">
-               <div class="col-md-12 text-primary">
+               <div class="col-md-12 text-primary cabecalho">
                   <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
                </div>
                <div class="col-md-12">
@@ -76,16 +76,65 @@
       </nav>
    </div>
 </div>
-
+<div class="modal fade modal_detalhes" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title titulo_detalhes">kjadsfads</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="exatos_completo col-md-12">
+            <p class="text-center" style="color: blue;">O texto foi encontrado de maneira exata. Devido a isso, sua pontuação aumenta em relação aos demais versículos.</p>
+          </div>
+          <div class="exatos col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Exatos</div>
+              <div class="panel-body content_exatos"></div>
+            </div>
+          </div>
+          <div class="sinonimos col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Sinônimos</div>
+              <div class="panel-body content_sinonimos"></div>
+            </div>
+          </div>
+          <div class="antonimos col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Antônimos</div>
+              <div class="panel-body content_antonimos"></div>
+            </div>
+          </div>
+          <div class="flexoes col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Flexões</div>
+              <div class="panel-body content_flexoes"></div>
+            </div>
+          </div>
+          <div class="radicais col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">Radicais</div>
+              <div class="panel-body content_radicais"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script type="text/javascript">
   var tamanho = <%= @resultado.length %>;
-  var versiculos = {};
+  var versiculos = [];
   var informacoes = {};
 
   <% @resultado.each do |resposta| -%>
-    versiculos['<%= "#{resposta["idVersiculo"]}" %>'] = '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12"><%= resposta["texto"] %></div></button>';
+    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12"><%= resposta["texto"] %></div></button>'});
   <% end -%>
 
   <% @result_modal.each do |index, resposta| -%>
@@ -159,7 +208,7 @@
     var pagina = parseInt($(this).text());
     var buttons = "";
     for (var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
-      buttons += versiculos[i];
+      buttons += versiculos[i].html;
     }
     $(".resultados").html(buttons);
 
@@ -167,10 +216,90 @@
     $(this).parent().addClass("active");
   });
 
-  $(".list-group .list-group-item").click(function(ev){
-    console.log($(this).attr("idVersiculo"));
+  $('body').on("click", ".list-group .list-group-item", function(ev){
 
+    var _idVersiculo = $(this).attr("idVersiculo");
+    var _detalhes = informacoes[_idVersiculo];
+    var _cabecalho = $(this).find(".cabecalho").text();
+    $(".titulo_detalhes").text(_cabecalho);
+    console.log(_detalhes);
 
+    if(!_detalhes.exatasCompleta || _detalhes.exatasCompleta.length == 0){
+      $(".exatos_completo").hide();
+    }
+    else{
+      $(".exatos_completo").show();
+    }
+
+    if(!_detalhes.exatas || _detalhes.exatas.length == 0){
+      $(".exatos").hide();
+    }
+    else{
+      var _termos = "";
+      $.each(_detalhes.exatas, function(k, v){
+        _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+      });
+      $(".content_exatos").html(_termos);
+      $(".exatos").show();
+    }
+
+    if(!_detalhes.sinonimos || _detalhes.sinonimos.length == 0){
+      $(".sinonimos").hide();
+    }
+    else{
+      var _termos = "";
+      $.each(_detalhes.sinonimos, function(k, v){
+        _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+      });
+      $(".content_sinonimos").html(_termos);
+      $(".sinonimos").show();
+    }
+
+    if(!_detalhes.antonimos || _detalhes.antonimos.length == 0){
+      $(".antonimos").hide();
+    }
+    else{
+      var _termos = "";
+      $.each(_detalhes.antonimos, function(k, v){
+        _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+      });
+      $(".content_antonimos").html(_termos);
+      $(".antonimos").show();
+    }
+
+    if(!_detalhes.flexoes || _detalhes.flexoes.length == 0){
+      $(".flexoes").hide();
+    }
+    else{
+      var _termos = "";
+      $.each(_detalhes.flexoes, function(k, v){
+        _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+      });
+      $(".content_flexoes").html(_termos);
+      $(".flexoes").show();
+    }
+
+    if(!_detalhes.radicais || _detalhes.radicais.length == 0){
+      $(".radicais").hide();
+    }
+    else{
+      var _termos = "";
+      $.each(_detalhes.radicais, function(k, v){
+        _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+      });
+      $(".content_radicais").html(_termos);
+      $(".radicais").show();
+    }
+
+    var _pesoExata = <%= @usuario.as_json['pesoExata'] %>;
+    var _pesoSinonimo = <%= @usuario.as_json['pesoSinonimo'] %>;
+    var _pesoAntonimo = <%= @usuario.as_json['pesoAntonimo'] %>;
+    var _pesoFlexao = <%= @usuario.as_json['pesoFlexao'] %>;
+    var _pesoRadical = <%= @usuario.as_json['pesoRadical'] %>;
+
+    //gerar o calculo para exibicao. Sugestao: fazer o calculo para cada box: numero de aparicoes total * peso do box.
+    //Caso um versiculo tenha sido achado em axatos completo, não fazer a verificacao do mesmo em busca por exatos de cada termo.
+    $('.modal_detalhes').modal('show');
   });
 
 </script>

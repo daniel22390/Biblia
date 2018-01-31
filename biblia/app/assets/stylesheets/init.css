@@ -61,3 +61,28 @@
 .resposta{
     display: inline-block;
 }
+
+.grupo_resultados{
+    border: solid 1px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.chip .valor {
+    background-color: #ccc;
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 30px;
+    width: 50px;
+    border-radius: 40%;
+}
