@@ -92,31 +92,39 @@
             <div class="panel panel-default">
               <div class="panel-heading">Exatos</div>
               <div class="panel-body content_exatos"></div>
+              <div class="panel-footer footer_exatos text-center"></div>
             </div>
           </div>
           <div class="sinonimos col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">Sinônimos</div>
               <div class="panel-body content_sinonimos"></div>
+              <div class="panel-footer footer_sinonimos text-center"></div>
             </div>
           </div>
           <div class="antonimos col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">Antônimos</div>
               <div class="panel-body content_antonimos"></div>
+              <div class="panel-footer footer_antonimos text-center"></div>
             </div>
           </div>
           <div class="flexoes col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">Flexões</div>
               <div class="panel-body content_flexoes"></div>
+              <div class="panel-footer footer_flexoes text-center"></div>
             </div>
           </div>
           <div class="radicais col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">Radicais</div>
               <div class="panel-body content_radicais"></div>
+              <div class="panel-footer footer_radicais text-center"></div>
             </div>
+          </div>
+          <div class="pontuacao_geral col-md-12">
+            <h3 class="text-center valor_geral" style="color: blue;"></h3>
           </div>
         </div>
       </div>
@@ -224,11 +232,20 @@
     $(".titulo_detalhes").text(_cabecalho);
     console.log(_detalhes);
 
+    var _pesoExata = <%= @usuario.as_json['pesoExata'] %>;
+    var _pesoSinonimo = <%= @usuario.as_json['pesoSinonimo'] %>;
+    var _pesoAntonimo = <%= @usuario.as_json['pesoAntonimo'] %>;
+    var _pesoFlexao = <%= @usuario.as_json['pesoFlexao'] %>;
+    var _pesoRadical = <%= @usuario.as_json['pesoRadical'] %>;
+    var total_Geral = 0.00;
+
     if(!_detalhes.exatasCompleta || _detalhes.exatasCompleta.length == 0){
       $(".exatos_completo").hide();
+      $(".pontuacao_geral").show();
     }
     else{
       $(".exatos_completo").show();
+      $(".pontuacao_geral").hide();
     }
 
     if(!_detalhes.exatas || _detalhes.exatas.length == 0){
@@ -236,9 +253,14 @@
     }
     else{
       var _termos = "";
+      var total_aparicoes = 0;
       $.each(_detalhes.exatas, function(k, v){
         _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+        total_aparicoes += parseInt(v.aparicoes);
       });
+      
+      $(".footer_exatos").html("Pontuação de termos exatos: " + total_aparicoes + " x " + _pesoExata + " = " + (total_aparicoes * _pesoExata).toFixed(2));
+      total_Geral += parseFloat((total_aparicoes * _pesoExata));
       $(".content_exatos").html(_termos);
       $(".exatos").show();
     }
@@ -248,9 +270,13 @@
     }
     else{
       var _termos = "";
+      var total_aparicoes = 0;
       $.each(_detalhes.sinonimos, function(k, v){
         _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+        total_aparicoes += parseInt(v.aparicoes);
       });
+      $(".footer_sinonimos").html("Pontuação de termos sinônimos: " + total_aparicoes + " x " + _pesoSinonimo + " = " + (total_aparicoes * _pesoSinonimo).toFixed(2));
+      total_Geral += parseFloat((total_aparicoes * _pesoSinonimo));
       $(".content_sinonimos").html(_termos);
       $(".sinonimos").show();
     }
@@ -260,9 +286,13 @@
     }
     else{
       var _termos = "";
+      var total_aparicoes = 0;
       $.each(_detalhes.antonimos, function(k, v){
         _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+        total_aparicoes += parseInt(v.aparicoes);
       });
+      $(".footer_antonimos").html("Pontuação de termos antônimos: " + total_aparicoes + " x " + _pesoAntonimo + " = " + (total_aparicoes * _pesoAntonimo).toFixed(2));
+      total_Geral += parseFloat((total_aparicoes * _pesoAntonimo));
       $(".content_antonimos").html(_termos);
       $(".antonimos").show();
     }
@@ -272,9 +302,13 @@
     }
     else{
       var _termos = "";
+      var total_aparicoes = 0;
       $.each(_detalhes.flexoes, function(k, v){
         _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+        total_aparicoes += parseInt(v.aparicoes);
       });
+      $(".footer_flexoes").html("Pontuação de termos por flexão verbal: " + total_aparicoes + " x " + _pesoFlexao + " = " + (total_aparicoes * _pesoFlexao).toFixed(2));
+      total_Geral += parseFloat((total_aparicoes * _pesoFlexao));
       $(".content_flexoes").html(_termos);
       $(".flexoes").show();
     }
@@ -284,21 +318,20 @@
     }
     else{
       var _termos = "";
+      var total_aparicoes = 0;
       $.each(_detalhes.radicais, function(k, v){
         _termos += '<div class="chip"><div class="valor text-center">'+ v.aparicoes +'</div>'+ v.termo +'</div>';
+        total_aparicoes += parseInt(v.aparicoes);
       });
+      $(".footer_radicais").html("Pontuação de termos por radical: " + total_aparicoes + " x " + _pesoRadical + " = " + (total_aparicoes * _pesoRadical).toFixed(2));
+      total_Geral += parseFloat((total_aparicoes * _pesoRadical));
       $(".content_radicais").html(_termos);
       $(".radicais").show();
     }
 
-    var _pesoExata = <%= @usuario.as_json['pesoExata'] %>;
-    var _pesoSinonimo = <%= @usuario.as_json['pesoSinonimo'] %>;
-    var _pesoAntonimo = <%= @usuario.as_json['pesoAntonimo'] %>;
-    var _pesoFlexao = <%= @usuario.as_json['pesoFlexao'] %>;
-    var _pesoRadical = <%= @usuario.as_json['pesoRadical'] %>;
+    $(".valor_geral").text("Pontuação total: " + (total_Geral).toFixed(2));
 
     //gerar o calculo para exibicao. Sugestao: fazer o calculo para cada box: numero de aparicoes total * peso do box.
-    //Caso um versiculo tenha sido achado em axatos completo, não fazer a verificacao do mesmo em busca por exatos de cada termo.
     $('.modal_detalhes').modal('show');
   });
 

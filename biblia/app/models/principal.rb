@@ -14,9 +14,9 @@ class Principal
 		@antonimo = attributes[:antonimo]
 		@verbo = attributes[:verbo]
 		@radical = attributes[:radical]
-		@rankingExatas1 = Hash.new
 		@rankingSinonimos = Hash.new
 		@numeroExatas = Hash.new
+		@hashCompletas = Hash.new
 		@numeroSinonimos = Hash.new
 		@current_user = current_user.as_json
 		@caracteres = ["?", "!", "@", "#", "$", "%", "&", "*", "/", "?", "(", ")", ",", ".", ":", ";", "]", "[", "}", "{", "=", "+"]
@@ -118,7 +118,7 @@ class Principal
 							@totalAparicao[value] = 0.0
 						end
 						versiculos.each do |verso|
-							if !@rankingExatas1[verso["versiculo_id"]]
+							if !@hashCompletas[verso["versiculo_id"]]
 
 								result = Versiculo.find(verso["versiculo_id"]).as_json
 								texto = result["texto"]
@@ -162,7 +162,7 @@ class Principal
 							@totalAparicao[value] = 0.0
 						end
 						versiculos.each do |verso|
-							if !@rankingExatas1[verso["versiculo_id"]]
+							if !@hashCompletas[verso["versiculo_id"]]
 
 								result = Versiculo.find(verso["versiculo_id"]).as_json
 								texto = result["texto"]
@@ -212,7 +212,7 @@ class Principal
 
 								if ((verbo["termo"] != flexao["termo"]) || controle_flexao)
 									versiculos.each do |verso|
-										if !@rankingExatas1[verso["versiculo_id"]]
+										if !@hashCompletas[verso["versiculo_id"]]
 
 											result = Versiculo.find(verso["versiculo_id"]).as_json
 											texto = result["texto"]
@@ -264,7 +264,7 @@ class Principal
 							versiculos =  Versiculo_has_termo.where(:termo => termo_radical["idTermo"])
 
 							versiculos.each do |verso|
-								if !@rankingExatas1[verso["versiculo_id"]]
+								if !@hashCompletas[verso["versiculo_id"]]
 
 									result = Versiculo.find(verso["versiculo_id"]).as_json
 									texto = result["texto"]
@@ -306,7 +306,7 @@ class Principal
 						@totalAparicao[value] = 0.0
 					end
 					versiculos.each do |verso|
-						if !@rankingExatas1[verso["versiculo_id"]]
+						if !@hashCompletas[verso["versiculo_id"]]
 							if !@numeroExatas[verso["versiculo_id"]]
 								@numeroExatas[verso["versiculo_id"]] = {};
 							end
@@ -391,6 +391,11 @@ class Principal
 		ranking_exatas = @pesoExatas.sort_by { |versiculo, valor| valor }.reverse
 
 		@versiculo_banco = Array.new
+
+		@hashCompletas.each do |versiculo, valor|
+			@versiculo_banco.push(@texto_versiculos[versiculo])
+		end
+		
 		ranking_exatas.each do |versiculo, valor|
 			@versiculo_banco.push(@texto_versiculos[versiculo])
 		end
@@ -405,15 +410,9 @@ class Principal
 			texto = result["texto"]
 			@texto_versiculos[result["idVersiculo"]] = result
 
-			if !@numeroExatas[result["idVersiculo"]]
-				@numeroExatas[result["idVersiculo"]] = {};
+			if !@hashCompletas[result["idVersiculo"]]
+				@hashCompletas[result["idVersiculo"]] = {:completo => true}
 			end
-
-			if !@numeroExatas[result["idVersiculo"]][@termos]
-				@numeroExatas[result["idVersiculo"]][@termos] = 0.0;
-			end
-
-			@numeroExatas[result["idVersiculo"]][@termos] +=  (@current_user["pesoExata"].to_f * 100)	
 
 			if(!@resultado_secundario[result["idVersiculo"]])
 					@resultado_secundario[result["idVersiculo"]] = {}
