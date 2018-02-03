@@ -66,4 +66,16 @@ $(document).ready(function(){
    		$(".msg_erro_atualiza").show();
    	});
    });
+
+   $("#envia_termos").submit(function(ev){
+   	swal({
+	  title: 'Aguarde...',
+	  text: 'Buscando dados do servidor!',
+	  onOpen: () => {
+	    swal.showLoading();
+	    $("#nlk-search-submit").prop("disabled", true);
+	  }
+	}).then((result) => {
+	})
+   });
 });
