@@ -71,11 +71,12 @@ $(document).ready(function(){
    	swal({
 	  title: 'Aguarde...',
 	  text: 'Buscando dados do servidor!',
+	  width: "50%",
 	  onOpen: () => {
 	    swal.showLoading();
 	    $("#nlk-search-submit").prop("disabled", true);
 	  }
 	}).then((result) => {
-	})
+	});
    });
 });

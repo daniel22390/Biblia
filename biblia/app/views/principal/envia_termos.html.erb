@@ -60,7 +60,7 @@
                <div class="col-md-12 text-primary cabecalho">
                   <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
                </div>
-               <div class="col-md-12">
+               <div class="col-md-12 texto">
                   <%= resposta["texto"] %>
                </div>
             </button>
@@ -81,13 +81,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title titulo_detalhes">kjadsfads</h4>
+        <h4 class="modal-title titulo_detalhes"></h4>
       </div>
       <div class="modal-body">
+        <div class="row">
+          <div class="versiculo_clicado col-md-12 text-center" style="margin-top: 10px; margin-bottom: 15px;">
+          </div>
+          <div class="col-md-12 busca_efetuada">
+            
+          </div>
+        </div>
         <div class="row">
           <div class="exatos_completo col-md-12">
             <p class="text-center" style="color: blue;">O texto foi encontrado de maneira exata. Devido a isso, sua pontuação aumenta em relação aos demais versículos.</p>
           </div>
+          
           <div class="exatos col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">Exatos</div>
@@ -142,7 +150,7 @@
   var informacoes = {};
 
   <% @resultado.each do |resposta| -%>
-    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12"><%= resposta["texto"] %></div></button>'});
+    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12 texto"><%= resposta["texto"] %></div></button>'});
   <% end -%>
 
   <% @result_modal.each do |index, resposta| -%>
@@ -239,6 +247,9 @@
     var _pesoRadical = <%= @usuario.as_json['pesoRadical'] %>;
     var total_Geral = 0.00;
 
+    $(".versiculo_clicado").html('<em>"'+ $(this).find(".texto").text() + '"</em>');
+    $(".busca_efetuada").html("<div class='text-center' style='margin-bottom: 10px;'><h4><strong>BUSCA EFETUADA: " + $("#nlk-search-str").val() + "</strong></h4></div>");
+
     if(!_detalhes.exatasCompleta || _detalhes.exatasCompleta.length == 0){
       $(".exatos_completo").hide();
       $(".pontuacao_geral").show();
@@ -334,5 +345,5 @@
     //gerar o calculo para exibicao. Sugestao: fazer o calculo para cada box: numero de aparicoes total * peso do box.
     $('.modal_detalhes').modal('show');
   });
-
+  
 </script>
