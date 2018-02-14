@@ -45,7 +45,6 @@
 .inner {
     margin-left: auto;
     margin-right: auto; 
-    width: /*whatever width you want*/;
 }
 
 
@@ -91,4 +90,8 @@
 }
 .swal2-title{
     font-size: 2.5rem;
+}
+.monBouton{
+     background-image : image-url("like.png");
+     width: 60px;
 }

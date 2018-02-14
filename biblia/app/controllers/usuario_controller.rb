@@ -43,6 +43,10 @@ class UsuarioController < ApplicationController
 
 	end
 
+	def remove_mensagem
+		@remove_mensagem = Usuario.update(current_user.id, :mensagem => 'N')
+	end
+
 	def usuario_params
       params.require(:usuario).permit(:nome, :email, :login, :nivel, :password, :password_confirmation, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao)
     end

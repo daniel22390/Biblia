@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   put 'atualiza_usuario' => 'usuario#atualiza_usuario'
   post 'login' => 'usuario_sessao#login'
   post 'logout' => 'usuario_sessao#logout'
+  post 'mensagem_inicial' => 'usuario#remove_mensagem'
 end
