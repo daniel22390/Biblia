@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post 'login' => 'usuario_sessao#login'
   post 'logout' => 'usuario_sessao#logout'
   post 'mensagem_inicial' => 'usuario#remove_mensagem'
+  post 'salva_pesquisa' => 'pesquisa#cadastra_pesquisa'
 end

@@ -55,8 +55,8 @@
    <div class="row" style="margin-bottom: 10px;">
       <div class="col-md-12">
          <div class="list-group resultados">
-            <% @resultado[0...10].each do |resposta| -%>
-            <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action">
+            <% @resultado[0...10].each_with_index do |resposta, index| -%>
+            <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" position="<%= index + 1 %>" class="list-group-item list-group-item-action">
                <div class="col-md-12 text-primary cabecalho">
                   <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
                </div>
@@ -79,66 +79,87 @@
 <div class="modal fade modal_detalhes" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title titulo_detalhes"></h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="versiculo_clicado col-md-12 text-center" style="margin-top: 10px; margin-bottom: 15px;">
+      <%= form_tag("/salva_pesquisa", method: "post", :id => 'envia_pesquisa') do %>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title titulo_detalhes"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="versiculo_clicado col-md-12 text-center" style="margin-top: 10px; margin-bottom: 15px;">
+            </div>
+            <div class="col-md-12 busca_efetuada">
+              
+            </div>
           </div>
-          <div class="col-md-12 busca_efetuada">
+          <div class="row">
+            <div class="exatos_completo col-md-12">
+              <p class="text-center" style="color: blue;">O texto foi encontrado de maneira exata. Devido a isso, sua pontuação aumenta em relação aos demais versículos.</p>
+            </div>
             
+            <div class="exatos col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Exatos</div>
+                <div class="panel-body content_exatos"></div>
+                <div class="panel-footer footer_exatos text-center"></div>
+              </div>
+            </div>
+            <div class="sinonimos col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Sinônimos</div>
+                <div class="panel-body content_sinonimos"></div>
+                <div class="panel-footer footer_sinonimos text-center"></div>
+              </div>
+            </div>
+            <div class="antonimos col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Antônimos</div>
+                <div class="panel-body content_antonimos"></div>
+                <div class="panel-footer footer_antonimos text-center"></div>
+              </div>
+            </div>
+            <div class="flexoes col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Flexões</div>
+                <div class="panel-body content_flexoes"></div>
+                <div class="panel-footer footer_flexoes text-center"></div>
+              </div>
+            </div>
+            <div class="radicais col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Radicais</div>
+                <div class="panel-body content_radicais"></div>
+                <div class="panel-footer footer_radicais text-center"></div>
+              </div>
+            </div>
+            <div class="pontuacao_geral col-md-12">
+              <h3 class="text-center valor_geral" style="color: blue;"></h3>
+            </div>
+          </div>
+          <input type="hidden" id="buscaefetuada_pesquisa" name="pesquisa[buscaEfetuada]" value="">
+          <input type="hidden" id="ranking_pesquisa" name="pesquisa[ranking]" value="">
+          <input type="hidden" name="pesquisa[pesoExata]" value="<%= @usuario.as_json['pesoExata'] %>">
+          <input type="hidden" name="pesquisa[pesoSinonimo]" value="<%= @usuario.as_json['pesoSinonimo'] %>">
+          <input type="hidden" name="pesquisa[pesoAntonimo]" value="<%= @usuario.as_json['pesoAntonimo'] %>">
+          <input type="hidden" name="pesquisa[pesoRadical]" value="<%= @usuario.as_json['pesoRadical'] %>">
+          <input type="hidden" name="pesquisa[pesoFlexao]" value="<%= @usuario.as_json['pesoFlexao'] %>">
+          <input type="hidden" id="versiculo_pesquisa" name="pesquisa[versiculo_id]" value="">
+          <input type="hidden" name="pesquisa[usuario_id]" value="<%= @usuario.as_json['id'] %>">
+
+          <div class="row msg_avaliacao" style="display: none;">
+            <div class="col-md-12">
+              <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p class="text-center">Que bom que este versículo é relevante para você. Continue a avaliar-nos!</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="exatos_completo col-md-12">
-            <p class="text-center" style="color: blue;">O texto foi encontrado de maneira exata. Devido a isso, sua pontuação aumenta em relação aos demais versículos.</p>
-          </div>
-          
-          <div class="exatos col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">Exatos</div>
-              <div class="panel-body content_exatos"></div>
-              <div class="panel-footer footer_exatos text-center"></div>
-            </div>
-          </div>
-          <div class="sinonimos col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">Sinônimos</div>
-              <div class="panel-body content_sinonimos"></div>
-              <div class="panel-footer footer_sinonimos text-center"></div>
-            </div>
-          </div>
-          <div class="antonimos col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">Antônimos</div>
-              <div class="panel-body content_antonimos"></div>
-              <div class="panel-footer footer_antonimos text-center"></div>
-            </div>
-          </div>
-          <div class="flexoes col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">Flexões</div>
-              <div class="panel-body content_flexoes"></div>
-              <div class="panel-footer footer_flexoes text-center"></div>
-            </div>
-          </div>
-          <div class="radicais col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">Radicais</div>
-              <div class="panel-body content_radicais"></div>
-              <div class="panel-footer footer_radicais text-center"></div>
-            </div>
-          </div>
-          <div class="pontuacao_geral col-md-12">
-            <h3 class="text-center valor_geral" style="color: blue;"></h3>
-          </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>
+      <% end -%>
     </div>
   </div>
 </div>
@@ -149,8 +170,8 @@
   var versiculos = [];
   var informacoes = {};
 
-  <% @resultado.each do |resposta| -%>
-    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12 texto"><%= resposta["texto"] %></div></button>'});
+  <% @resultado.each_with_index do |resposta, index| -%>
+    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" position="<%= index + 1 %>" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12 texto"><%= resposta["texto"] %></div></button>'});
   <% end -%>
 
   <% @result_modal.each do |index, resposta| -%>
@@ -334,6 +355,11 @@
     $(".versiculo_clicado").html('<em>"'+ $(this).find(".texto").text() + '"</em>');
     $(".busca_efetuada").html("<div class='text-center' style='margin-bottom: 10px;'><h4><strong>BUSCA EFETUADA: " + $("#nlk-search-str").val() + "</strong></h4></div>");
 
+    $("#versiculo_pesquisa").val(_idVersiculo);
+    $("#buscaefetuada_pesquisa").val($("#nlk-search-str").val());
+    $("#ranking_pesquisa").val($(this).attr("position"));
+
+
     if(!_detalhes.exatasCompleta || _detalhes.exatasCompleta.length == 0){
       $(".exatos_completo").hide();
       $(".pontuacao_geral").show();
@@ -430,4 +456,21 @@
     $('.modal_detalhes').modal('show');
   });
   
+  $('body').on("submit", "#envia_pesquisa", function(ev){
+    ev.preventDefault();
+
+    var _data = $(this).serialize();
+    var _method = $(this).attr("method");
+    var _action = $(this).attr("action");
+    
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      $(".msg_avaliacao").show();
+    });
+  });
 </script>
