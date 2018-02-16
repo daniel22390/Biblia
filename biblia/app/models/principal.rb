@@ -3,7 +3,7 @@ class Principal
 	require "i18n"
 	include ActiveModel::Model
 
-	attr_accessor :termos, :exata, :sinonimo, :antonimo, :verbo, :radical, :caracteres, :resultado_secundario
+	attr_accessor :termos, :exata, :sinonimo, :antonimo, :verbo, :radical, :caracteres, :resultado_secundario, :versiculo_banco
 
 	validates_presence_of :termos, :message => "É necessária a entrada de algum termo para pesquisa."
 
@@ -96,7 +96,7 @@ class Principal
 
 		@totalAparicao = {}
 		@totalAparicaoSinonimos = {}
-		@texto_versiculos = {}
+		@texto_versiculos = Array.new
 		@texto_versiculos_sinonimos = {}
 
 		busca_versiculo
@@ -120,9 +120,10 @@ class Principal
 						versiculos.each do |verso|
 							if !@hashCompletas[verso["versiculo_id"]]
 
-								result = Versiculo.find(verso["versiculo_id"]).as_json
-								texto = result["texto"]
-								@texto_versiculos[result["idVersiculo"]] = result
+								# result = Versiculo.find(verso["versiculo_id"]).as_json
+								# texto = result["texto"]
+								# @texto_versiculos[result["idVersiculo"]] = result
+
 						  		if !@numeroExatas[verso["versiculo_id"]]
 									@numeroExatas[verso["versiculo_id"]] = {};
 								end
@@ -164,9 +165,9 @@ class Principal
 						versiculos.each do |verso|
 							if !@hashCompletas[verso["versiculo_id"]]
 
-								result = Versiculo.find(verso["versiculo_id"]).as_json
-								texto = result["texto"]
-								@texto_versiculos[result["idVersiculo"]] = result
+								# result = Versiculo.find(verso["versiculo_id"]).as_json
+								# texto = result["texto"]
+								# @texto_versiculos[result["idVersiculo"]] = result
 						  		if !@numeroExatas[verso["versiculo_id"]]
 									@numeroExatas[verso["versiculo_id"]] = {};
 								end
@@ -214,9 +215,9 @@ class Principal
 									versiculos.each do |verso|
 										if !@hashCompletas[verso["versiculo_id"]]
 
-											result = Versiculo.find(verso["versiculo_id"]).as_json
-											texto = result["texto"]
-											@texto_versiculos[result["idVersiculo"]] = result
+											# result = Versiculo.find(verso["versiculo_id"]).as_json
+											# texto = result["texto"]
+											# @texto_versiculos[result["idVersiculo"]] = result
 									  		if !@numeroExatas[verso["versiculo_id"]]
 												@numeroExatas[verso["versiculo_id"]] = {};
 											end
@@ -266,9 +267,9 @@ class Principal
 							versiculos.each do |verso|
 								if !@hashCompletas[verso["versiculo_id"]]
 
-									result = Versiculo.find(verso["versiculo_id"]).as_json
-									texto = result["texto"]
-									@texto_versiculos[result["idVersiculo"]] = result
+									# result = Versiculo.find(verso["versiculo_id"]).as_json
+									# texto = result["texto"]
+									# @texto_versiculos[result["idVersiculo"]] = result
 							  		if !@numeroExatas[verso["versiculo_id"]]
 										@numeroExatas[verso["versiculo_id"]] = {};
 									end
@@ -315,9 +316,9 @@ class Principal
 								@numeroExatas[verso["versiculo_id"]][value] = 0.0;
 							end
 
-							result = Versiculo.find(verso["versiculo_id"]).as_json
-							texto = result["texto"]
-							@texto_versiculos[result["idVersiculo"]] = result
+							# result = Versiculo.find(verso["versiculo_id"]).as_json
+							# texto = result["texto"]
+							# @texto_versiculos[result["idVersiculo"]] = result
 						  	@numeroExatas[verso["versiculo_id"]][value] += verso["aparicoes"] * (@current_user["pesoExata"].to_f * 10)
 
 							if(!@resultado_secundario[verso["versiculo_id"]])
@@ -391,16 +392,22 @@ class Principal
 		ranking_exatas = @pesoExatas.sort_by { |versiculo, valor| valor }.reverse
 
 		@versiculo_banco = Array.new
+		@versos = Array.new
 
 		@hashCompletas.each do |versiculo, valor|
-			@versiculo_banco.push(@texto_versiculos[versiculo])
+			@versiculo_banco.push(versiculo)
 		end
 		
 		ranking_exatas.each do |versiculo, valor|
-			@versiculo_banco.push(@texto_versiculos[versiculo])
+			@versiculo_banco.push(versiculo)
 		end
-		
-		@versiculo_banco
+
+		@versiculo_banco[0..10].each do |versiculo|
+			verso = Versiculo.find(versiculo).as_json
+			@versos.push(verso)
+		end
+
+		@versos
 	end
 
 	def busca_versiculo

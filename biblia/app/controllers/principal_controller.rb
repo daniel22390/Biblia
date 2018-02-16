@@ -9,11 +9,27 @@ class PrincipalController < ApplicationController
 		if @resposta_principal.valid?
 			@resultado = @resposta_principal.busca_exata
 			@result_modal = @resposta_principal.resultado_secundario
+			@ranking = @resposta_principal.versiculo_banco
 			@usuario = current_user
 		else
 			@resultado = Hash.new
 			@resultado[:erro] = @resposta_principal.errors.first[1]
 		end
 			
+	end
+
+	def getPagina
+		retorno = Hash.new
+		retorno[:data] = Array.new
+
+		versiculos = params[:versiculos]
+
+		versiculos.each do |versiculo|
+			verso = Versiculo.find(versiculo).as_json
+			retorno[:data].push(verso)
+		end
+
+		retorno = JSON.generate(retorno)
+		render json: retorno
 	end
 end

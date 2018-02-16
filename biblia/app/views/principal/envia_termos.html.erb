@@ -166,13 +166,14 @@
 
 
 <script type="text/javascript">
-  var tamanho = <%= @resultado.length %>;
+  var tamanho = <%= @result_modal.length %>;
   var versiculos = [];
   var informacoes = {};
 
-  <% @resultado.each_with_index do |resposta, index| -%>
-    versiculos.push({id: '<%= "#{resposta["idVersiculo"]}" %>', html: '<button type="button" position="<%= index + 1 %>" idVersiculo="<%= resposta["idVersiculo"] %>" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho"><%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %></div><div class="col-md-12 texto"><%= resposta["texto"] %></div></button>'});
-  <% end -%>
+  var ranking = [];
+  <% @ranking.each do |index, resposta| -%>
+    ranking.push('<%= "#{index}" %>');
+  <% end %>
 
   <% @result_modal.each do |index, resposta| -%>
     informacoes['<%= "#{index}" %>'] = {};
@@ -244,80 +245,132 @@
 
   $("body").on("click", ".page-link", function(ev){
     var pagina = parseInt($(this).text());
-    var buttons = "";
-    for (var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
-      buttons += versiculos[i].html;
-    }
-    $(".resultados").html(buttons);
 
-    $(".page-item").removeClass("active");
-    $(this).parent().addClass("active");
+     var _versos = [];
+    for(var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
+      _versos.push(ranking[i]);
+    }
+    var _data = _versos;
+
+    $.ajax({
+      method: "get",
+      url: "/pagina",
+      data: {versiculos: _data},
+      dataType: "json"
+    })
+    .done(function( msg ) {
+     var buttons = "";
+      $.each(msg.data, function(k, v){
+          buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
+      });
+
+      $(".resultados").html(buttons);
+
+      $(".page-item").removeClass("active");
+      $(".page-link").filter(function() {
+        return $(this).text() == pagina;
+      }).parent().addClass("active");
+    });
   });
 
   $("body").on("click", ".page-link-previous", function(ev){
     var pagina = parseInt($(".page-item.active .page-link").text()) - 1;
-    if(pagina != parseInt($(".page-link").first().text()) - 1){
-      var buttons = "";
-      for (var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
-        buttons += versiculos[i].html;
-      }
-      $(".resultados").html(buttons);
 
-      $(".page-item").removeClass("active");
-      $(".page-link").filter(function() {
-        return $(this).text() == pagina;
-      }).parent().addClass("active");
+    var _versos = [];
+    for(var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
+      _versos.push(ranking[i]);
     }
-    else{
-      var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
-      for(i = 0; i < (tamanho / 10); i++){
-        if(i == (parseInt($(".page-link").first().text())) - 2)
-          paginas += '<li class="page-item active"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
-        else if (i >= (parseInt($(".page-link").first().text()))){
-          paginas += '<li class="page-item"><a class="page-link-more" href="#">...</a></li>';
-          break;
+    var _data = _versos;
+
+    $.ajax({
+      method: "get",
+      url: "/pagina",
+      data: {versiculos: _data},
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      if(pagina != parseInt($(".page-link").first().text()) - 1){
+         var buttons = "";
+        $.each(msg.data, function(k, v){
+            buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
+        });
+
+        $(".resultados").html(buttons);
+
+        $(".page-item").removeClass("active");
+        $(".page-link").filter(function() {
+          return $(this).text() == pagina;
+        }).parent().addClass("active");
+      }
+      else{
+        var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
+        for(i = 0; i < (tamanho / 10); i++){
+          if(i == (parseInt($(".page-link").first().text())) - 2)
+            paginas += '<li class="page-item active"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
+          else if (i >= (parseInt($(".page-link").first().text()))){
+            paginas += '<li class="page-item"><a class="page-link-more" href="#">...</a></li>';
+            break;
+          }
+          else if(i >= (parseInt($(".page-link").first().text())) - 12 && i <= (parseInt($(".page-link").first().text()) - 2))
+            paginas += '<li class="page-item"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
         }
-        else if(i >= (parseInt($(".page-link").first().text())) - 12 && i <= (parseInt($(".page-link").first().text()) - 2))
-          paginas += '<li class="page-item"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
-      }
-      paginas += '<li class="page-item"><a class="page-link-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
+        paginas += '<li class="page-item"><a class="page-link-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
 
-      $(".pagination").html(paginas);
-      $(".page-link:last").trigger( "click" );
-    }
+        $(".pagination").html(paginas);
+        $(".page-link:last").trigger( "click" );
+      }
+    });
   });
 
   $("body").on("click", ".page-link-next", function(ev){
     var pagina = parseInt($(".page-item.active .page-link").text()) + 1;
-    if(pagina != (parseInt($(".page-link").last().text()) + 1)){
-      var buttons = "";
-      for (var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
-        buttons += versiculos[i].html;
-      }
-      $(".resultados").html(buttons);
 
-      $(".page-item").removeClass("active");
-      $(".page-link").filter(function() {
-        return $(this).text() == pagina;
-      }).parent().addClass("active");
+    var _versos = [];
+    for(var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
+      _versos.push(ranking[i]);
     }
-    else{
-      var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
-      for(i = 0; i < (tamanho / 10); i++){
-        if(i == (parseInt($(".page-link").last().text())))
-          paginas += '<li class="page-item active"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
-        else if (i >= (parseInt($(".page-link").last().text())) + 11){
-          paginas += '<li class="page-item"><a class="page-link-more" href="#">...</a></li>';
-          break;
+    var _data = _versos;
+
+    $.ajax({
+      method: "get",
+      url: "/pagina",
+      data: {versiculos: _data},
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      if(pagina != (parseInt($(".page-link").last().text()) + 1)){
+
+        var buttons = "";
+        $.each(msg.data, function(k, v){
+            buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
+        });
+
+        $(".resultados").html(buttons);
+
+        $(".page-item").removeClass("active");
+        $(".page-link").filter(function() {
+          return $(this).text() == pagina;
+        }).parent().addClass("active");
+      }
+      else{
+        var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
+        for(i = 0; i < (tamanho / 10); i++){
+          if(i == (parseInt($(".page-link").last().text())))
+            paginas += '<li class="page-item active"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
+          else if (i >= (parseInt($(".page-link").last().text())) + 11){
+            paginas += '<li class="page-item"><a class="page-link-more" href="#">...</a></li>';
+            break;
+          }
+          else if(i >= (parseInt($(".page-link").last().text())) && i <= (parseInt($(".page-link").last().text()) + 9))
+            paginas += '<li class="page-item"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
         }
-        else if(i >= (parseInt($(".page-link").last().text())) && i <= (parseInt($(".page-link").last().text()) + 9))
-          paginas += '<li class="page-item"><a class="page-link" href="#">'+ (i + 1) +'</a></li>';
-      }
-      paginas += '<li class="page-item"><a class="page-link-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
+        paginas += '<li class="page-item"><a class="page-link-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
 
-      $(".pagination").html(paginas);
-      $(".page-link:first").trigger( "click" );
-    }
+        $(".pagination").html(paginas);
+        $(".page-link:first").trigger( "click" );
+      }
+    });
+    
   });
 
   $("body").on("click", ".page-link-more", function(ev){

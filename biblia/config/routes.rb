@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post 'logout' => 'usuario_sessao#logout'
   post 'mensagem_inicial' => 'usuario#remove_mensagem'
   post 'salva_pesquisa' => 'pesquisa#cadastra_pesquisa'
+  get 'pagina' => 'principal#getPagina'
 end
