@@ -7,9 +7,10 @@ class PrincipalController < ApplicationController
 		@resposta_principal = Principal.new(params, current_user)
 
 		if @resposta_principal.valid?
-			@resultado = @resposta_principal.busca_exata
-			@result_modal = @resposta_principal.resultado_secundario
-			@ranking = @resposta_principal.versiculo_banco
+			@resposta_principal.busca_sinonimos
+				# @resultado = @resposta_principal.busca_exata
+				# @result_modal = @resposta_principal.resultado_secundario
+				# @ranking = @resposta_principal.versiculo_banco
 			@usuario = current_user
 		else
 			@resultado = Hash.new

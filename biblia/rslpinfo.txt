@@ -4,5 +4,5 @@ Error opening flow file '(null)'.
 Total steps loaded: 7
 Stems dictionary is on
 Named Entities is on. Dictionary loaded with 0 names.
-Unloading stem dictionary with 8 nodes, 0 words, using 0 Mb (max allowed was 300 Mb).
+Unloading stem dictionary with 5 nodes, 1 words, using 0 Mb (max allowed was 300 Mb).
 RSLP Stemmer unloaded.
