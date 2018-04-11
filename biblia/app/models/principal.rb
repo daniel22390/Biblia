@@ -40,20 +40,20 @@ class Principal
 					puts "sinonimos"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.aparicoes as aparicoes_termo	 FROM termos t1 LEFT JOIN termo_has_sinonimos ON t1.idTermo = termo_has_sinonimos.sinonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_sinonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json				
 					versiculos.each do |versiculo|
-						puts versiculo
-						@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
+						if(!versiculo["versiculo_id"].nil?)
+							@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
 
-						peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
-						peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
-						peso_cons_esq = 1 + (Math.log2 (1))
+							peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
+							peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
+							peso_cons_esq = 1 + (Math.log2 (1))
 
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoSinonimo"]
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
-
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoSinonimo"]
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+						end
 					end 
 				end
 
@@ -61,83 +61,108 @@ class Principal
 					puts "antonimos"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.aparicoes  as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_antonimos ON t1.idTermo = termo_has_antonimos.antonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_antonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json			
 					versiculos.each do |versiculo| 
-						puts versiculo
-						@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
+						if(!versiculo["versiculo_id"].nil?)
+							@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
 
-						peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
-						peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
-						peso_cons_esq = 1 + (Math.log2 (1))
+							peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
+							peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
+							peso_cons_esq = 1 + (Math.log2 (1))
 
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoAntonimo"]
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoAntonimo"]
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+						end
 					end 
 				end
 
 				if @verbo
 					puts "flexoes"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_flexaos tf1 ON t1.idTermo = tf1.termo_id LEFT JOIN termo_has_flexaos tf2 ON tf2.flexao_id = tf1.flexao_id LEFT JOIN termos t2 ON t2.idTermo = tf2.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'")
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_flexaos tf1 ON t1.idTermo = tf1.termo_id LEFT JOIN termo_has_flexaos tf2 ON tf2.flexao_id = tf1.flexao_id LEFT JOIN termos t2 ON t2.idTermo = tf2.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
-						@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
+						if(!versiculo["versiculo_id"].nil?)
+							@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
 
-						peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
-						peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
-						peso_cons_esq = 1 + (Math.log2 (1))
+							peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
+							peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
+							peso_cons_esq = 1 + (Math.log2 (1))
 
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoFlexao"]
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoFlexao"]
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+						end
 					end 
 				end
 
 				if @radical
 					puts "radicais"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termos t2 ON t2.radical_id = t1.radical_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'")
+					@radical_gerado = gera_radical(value)
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN radicals r1 ON r1.idRadical = t1.radical_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where r1.radical = '#{@radical_gerado}'").as_json
 					versiculos.each do |versiculo| 
-						@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
+						if(!versiculo["versiculo_id"].nil?)
+							@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
 
-						peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
-						peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
-						peso_cons_esq = 1 + (Math.log2 (1))
+							peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
+							peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
+							peso_cons_esq = 1 + (Math.log2 (1))
 
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoRadical"]
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoRadical"]
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+						end
 					end 
 				end
 
 				if @exata
 					puts "exatos"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where t1.termo = '#{value}'")
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
-						@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
+						if(!versiculo["versiculo_id"].nil?)
+							@versiculo_pontos[versiculo["versiculo_id"]] ||= {}
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] ||= 0.0
 
-						peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
-						peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
-						peso_cons_esq = 1 + (Math.log2 (1))
+							peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
+							peso_doc_dir = Math.log2 (31097 / versiculo["aparicoes_termo"])
+							peso_cons_esq = 1 + (Math.log2 (1))
 
-						@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoExatas"]
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
-						@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user["pesoExata"]
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+							@versiculo_pontos[versiculo["versiculo_id"]]['somatorio2'] += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+						end
 					end				
 				end
 
 			end
 		end
 
-		puts @versiculo_pontos
+		@array_versiculos = []
+		@ranking = []
+
+		@versiculo_pontos.each do |key, value|
+			total ||= 0.0
+			total = (value['multiplicatorio'] / ((Math.sqrt(value['somatorio1'])) * (Math.sqrt(value['somatorio2']))))
+			indice = (0...@array_versiculos.size).bsearch{|x| total >= @array_versiculos[x]}
+			if indice.blank?
+				@array_versiculos.push(total)
+				@ranking.push({:versiculo => key, :pontos => total})
+			else
+				@array_versiculos.insert(indice, total)
+				@ranking.insert(indice, {:versiculo => key, :pontos => total})
+			end
+			
+		end
+
+		puts @ranking
 		puts "acabou"
 	end
 
