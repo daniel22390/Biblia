@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post 'mensagem_inicial' => 'usuario#remove_mensagem'
   post 'salva_pesquisa' => 'pesquisa#cadastra_pesquisa'
   get 'pagina' => 'principal#getPagina'
+  get 'marcacao' => 'principal#gera_marcacao'
 end

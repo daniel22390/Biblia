@@ -7,10 +7,8 @@ class PrincipalController < ApplicationController
 		@resposta_principal = Principal.new(params, current_user)
 
 		if @resposta_principal.valid?
-			@resposta_principal.busca_sinonimos
-				# @resultado = @resposta_principal.busca_exata
-				# @result_modal = @resposta_principal.resultado_secundario
-				# @ranking = @resposta_principal.versiculo_banco
+			@resultado = @resposta_principal.busca
+			@ranking = @resposta_principal.ranking
 			@usuario = current_user
 		else
 			@resultado = Hash.new
@@ -32,5 +30,25 @@ class PrincipalController < ApplicationController
 
 		retorno = JSON.generate(retorno)
 		render json: retorno
+	end
+
+	def gera_marcacao
+		retorno = Hash.new
+		retorno[:status] = ""
+		retorno[:data] = ""
+		@marcacao = Marcacao.new(params)
+
+		if @marcacao.valid?
+			@resultado = @marcacao.gera_marcacao
+			retorno[:status] = "Success"
+		  	retorno[:data] = @resultado
+		  	retorno = JSON.generate(retorno)
+			render json: retorno
+		else
+			retorno[:status] = "erro"
+		  	retorno[:data] = @marcacao.errors.first[1]
+		  	retorno = JSON.generate(retorno)
+			render json: retorno
+		end
 	end
 end
