@@ -7,7 +7,7 @@ class PrincipalController < ApplicationController
 		@resposta_principal = Principal.new(params, current_user)
 
 		if @resposta_principal.valid?
-			@resultado = @resposta_principal.busca
+			@resultado = @resposta_principal.busca_tfidf
 			@ranking = @resposta_principal.ranking
 			@usuario = current_user
 		else
