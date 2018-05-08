@@ -7,7 +7,7 @@
                <ul class="dropdown-menu">
                   <li><a role="button" class="nlk-search-type" data-radio="#target-nlk" data-value="in NML Website" data-action="/" data-param="s" data-target="_self">NML Website - services, resources, activities, news...</a></li>
                   <li><a role="button" class="nlk-search-type" data-radio="#target-medvik" data-value="in Medvik Portal" data-action="http://www.medvik.cz/bmc/opensearch.do" data-param="q" data-target="_self">Medvik - library catalogs, Czech articles</a></li>
-                  <li><a role="button" class="nlk-search-type" data-radio="#target-summon" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self">Summon - online resources and full texts</a></li>
+                  <li><a role="button" class="nlk-search-type" data-radio="#target-summon1" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self">Summon - online resources and full texts</a></li>
                </ul>
             </span>
             <input id="nlk-search-str" name="termos" type="text" maxlength="200" class="form-control" placeholder="Digite aqui os termos" data-def="Enter a query" value="<%= params[:termos] %>" required>
@@ -31,19 +31,19 @@
                     %>> Sinônimos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="antonimo" id="target-summon" value="antonimo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:antonimo])
+            <input type="checkbox" name="antonimo" id="target-summon2" value="antonimo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:antonimo])
                       "checked"
                     end
                     %>> Antônimos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="verbo" id="target-summon" value="verbo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:verbo])
+            <input type="checkbox" name="verbo" id="target-summon3" value="verbo" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:verbo])
                       "checked"
                     end
                     %>> Verbos
             </label>
             <label class="radio-inline" style="margin-left: 10px;">
-            <input type="checkbox" name="radical" id="target-summon" value="radical" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:radical])
+            <input type="checkbox" name="radical" id="target-summon4" value="radical" class="nlk-search-type nlk-radio" data-value="in Summon" data-action="http://nlk.summon.serialssolutions.com/" data-param="q" data-target="_self" <%= if(params[:radical])
                       "checked"
                     end
                     %>> Radical
@@ -57,12 +57,24 @@
          <div class="list-group resultados">
             <% @resultado.each_with_index do |resposta, index| -%>
             <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" position="<%= index + 1 %>" class="list-group-item list-group-item-action">
-               <div class="col-md-12 text-primary cabecalho">
-                  <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
-               </div>
-               <div class="col-md-12 texto">
-                  <%= resposta["texto"] %>
-               </div>
+              <div class="col-md-10">
+                <div class="col-md-12 text-primary cabecalho">
+                    <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
+                </div>
+                <div class="col-md-12 texto">
+                    <%= resposta["texto"] %>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>
+                <div style="text-align: center;">
+                  <% if @ranking[index][:peso] == 1000 -%>
+                    Exato
+                  <% else -%>
+                    <%= @ranking[index][:peso] %>
+                  <% end -%>
+                </div>
+              </div>
             </button>
             <% end -%>
          </div>
@@ -168,6 +180,17 @@
 <script type="text/javascript">
   var tamanho = <%= @ranking.length %>;
 
+  var versiculos = {};
+  <% @ranking.each_with_index do |resposta, index| -%>
+    var _termos = {};
+    <% resposta[:termos].each do |key, termo| -%>
+      _termos[<%= key %>] = {termo: '<%= "#{ termo["termo"]}" %>', aparicoes: <%= "#{termo[:aparicoes]}" %>, aparicoes_termo: <%= "#{termo[:aparicoes_termo]}" %>, contexto: '<%= "#{termo[:contexto]}" %>'};
+    <% end -%>
+    versiculos[<%= "#{ resposta[:versiculo]}" %>] = _termos;
+  <% end -%>
+
+  console.log(versiculos);
+
   var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
   var limite;
   for(i = 0; i < (tamanho / 10); i++){
@@ -186,6 +209,7 @@
 
   //continuar fazendo a marcacao  no html dos contextos de cada versiculo
   //---------------------------------------------------------------------
+
 
   $.ajax({
     method: "get",
