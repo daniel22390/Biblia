@@ -40,9 +40,10 @@ class Principal
 
 				if @sinonimo
 					puts "sinonimos"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo, t2.aparicoes as aparicoes_termo	 FROM termos t1 LEFT JOIN termo_has_sinonimos ON t1.idTermo = termo_has_sinonimos.sinonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_sinonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json				
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes as aparicoes_termo	 FROM termos t1 LEFT JOIN termo_has_sinonimos ON t1.idTermo = termo_has_sinonimos.sinonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_sinonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json				
 					versiculos.each do |versiculo|
 						if(!versiculo["versiculo_id"].nil?)
+							#puts versiculo
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
 							# @versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
 							# @versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
@@ -64,7 +65,7 @@ class Principal
 								# puts "ijhiijoninjininijninijni"
 								# puts versiculo['termo'].as_json['termo']
 								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo'].as_json['termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoSinonimo"}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo[' termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoSinonimo", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -88,7 +89,7 @@ class Principal
 
 				if @antonimo
 					puts "antonimos"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo, t2.aparicoes  as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_antonimos ON t1.idTermo = termo_has_antonimos.antonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_antonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json			
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes  as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_antonimos ON t1.idTermo = termo_has_antonimos.antonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_antonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json			
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
@@ -105,7 +106,7 @@ class Principal
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoAntonimo"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
 								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo'].as_json['termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoAntonimo"}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' =>  versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoAntonimo", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -127,7 +128,7 @@ class Principal
 
 				if @verbo
 					puts "flexoes"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_flexaos tf1 ON t1.idTermo = tf1.termo_id LEFT JOIN termo_has_flexaos tf2 ON tf2.flexao_id = tf1.flexao_id LEFT JOIN termos t2 ON t2.idTermo = tf2.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_flexaos tf1 ON t1.idTermo = tf1.termo_id LEFT JOIN termo_has_flexaos tf2 ON tf2.flexao_id = tf1.flexao_id LEFT JOIN termos t2 ON t2.idTermo = tf2.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
@@ -140,7 +141,7 @@ class Principal
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoFlexao"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
 								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo'].as_json['termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoFlexao"}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo[' termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoFlexao", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -163,7 +164,7 @@ class Principal
 				if @radical
 					puts "radicais"
 					@radical_gerado = gera_radical(value)
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN radicals r1 ON r1.idRadical = t1.radical_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where r1.radical = '#{@radical_gerado}'").as_json
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo as termo_termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN radicals r1 ON r1.idRadical = t1.radical_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where r1.radical = '#{@radical_gerado}'").as_json
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
@@ -177,7 +178,7 @@ class Principal
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoRadical"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
 								
 								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo'].as_json['termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoRadical"}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoRadical", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -197,7 +198,7 @@ class Principal
 
 				if @exata
 					puts "exatos"
-					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where t1.termo = '#{value}'").as_json
+					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo as termo_termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
@@ -210,7 +211,7 @@ class Principal
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoExata"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
 								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo'].as_json['termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoExata"}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoExata", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))

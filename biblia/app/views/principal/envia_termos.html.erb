@@ -184,12 +184,12 @@
   <% @ranking.each_with_index do |resposta, index| -%>
     var _termos = {};
     <% resposta[:termos].each do |key, termo| -%>
-      _termos[<%= key %>] = {termo: '<%= "#{ termo["termo"]}" %>', aparicoes: <%= "#{termo[:aparicoes]}" %>, aparicoes_termo: <%= "#{termo[:aparicoes_termo]}" %>, contexto: '<%= "#{termo[:contexto]}" %>'};
+      _termos[<%= key %>] = {termo: '<%= "#{ termo["termo"]}" %>', aparicoes: <%= "#{termo[:aparicoes]}" %>, aparicoes_termo: <%= "#{termo[:aparicoes_termo]}" %>, contexto: '<%= "#{termo[:contexto]}" %>', pesquisa: '<%= "#{termo[:pesquisa]}" %>'};
     <% end -%>
     versiculos[<%= "#{ resposta[:versiculo]}" %>] = _termos;
   <% end -%>
 
-  console.log(versiculos);
+  geraMarcacao();
 
   var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
   var limite;
@@ -210,6 +210,12 @@
   //continuar fazendo a marcacao  no html dos contextos de cada versiculo
   //---------------------------------------------------------------------
 
+  function geraMarcacao(){
+    $.each($('.resultados .list-group-item'), function(k, v){
+      var _versiculo = $(v).attr("idversiculo");
+      console.log(_versiculo);
+    });
+  }
 
   $.ajax({
     method: "get",
