@@ -43,7 +43,7 @@ class Principal
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes as aparicoes_termo	 FROM termos t1 LEFT JOIN termo_has_sinonimos ON t1.idTermo = termo_has_sinonimos.sinonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_sinonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json				
 					versiculos.each do |versiculo|
 						if(!versiculo["versiculo_id"].nil?)
-							#puts versiculo
+							# puts versiculo
 							# @versiculo_pontos[versiculo["versiculo_id"]] ||= {}
 							# @versiculo_pontos[versiculo["versiculo_id"]]['multiplicatorio'] ||= 0.0
 							# @versiculo_pontos[versiculo["versiculo_id"]]['somatorio1'] ||= 0.0
@@ -64,8 +64,7 @@ class Principal
 								# end
 								# puts "ijhiijoninjininijninijni"
 								# puts versiculo['termo'].as_json['termo']
-								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo[' termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoSinonimo", 'pesquisa': value}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoSinonimo", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -105,7 +104,7 @@ class Principal
 							# end
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoAntonimo"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
-								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
+								# @hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
 								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' =>  versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoAntonimo", 'pesquisa': value}
 							end
 
@@ -140,8 +139,8 @@ class Principal
 							@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoFlexao"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
-								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo[' termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoFlexao", 'pesquisa': value}
+								# @hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoFlexao", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -177,8 +176,8 @@ class Principal
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoRadical"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
 								
-								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoRadical", 'pesquisa': value}
+								# @hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoRadical", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -210,8 +209,8 @@ class Principal
 							@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
 
 							if(@hash_geral[versiculo["versiculo_id"]]['termos'].nil? ||  @hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]].nil? || (@current_user["pesoExata"] > @current_user[@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]][:contexto]] ))
-								@hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
-								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo['termo_termo'] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoExata", 'pesquisa': value}
+								# @hash_geral[versiculo["versiculo_id"]]['termos'] ||= {}
+								@hash_geral[versiculo["versiculo_id"]]['termos'][versiculo["termo_id"]] = {'termo' => versiculo["termo_termo"] ,'aparicoes': versiculo["aparicoes"], 'aparicoes_termo': versiculo["aparicoes_termo"], 'contexto': "pesoExata", 'pesquisa': value}
 							end
 
 							# peso_doc_esq = 1 + (Math.log2 (versiculo["aparicoes"]))
@@ -247,28 +246,57 @@ class Principal
 				multiplicatorio = 0.0;
 				somatorio1 = 0.0;
 				somatorio2 = 0.0;
+				pesos = 0;
 				value['termos'].each do |key2, val2|
 					peso_doc_esq = 1 + (Math.log2 (val2[:aparicoes]))
 					peso_doc_dir = 1
 					peso_cons_esq = 1 + (Math.log2 (1))
+					pesos +=  @current_user[val2[:contexto]]
 
 					multiplicatorio += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir * @current_user[val2[:contexto]]
 					somatorio1 += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
 					somatorio2 += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
 				end
 
+				# if(value['termos'].length > 1 && key == 13277	)
+				# 	puts 'length---'
+				# 	puts value['termos'].length
+				# 	multiplicatorio = 0.0;
+				# 	somatorio1 = 0.0;
+				# 	somatorio2 = 0.0;
+				# 	pesos = 0.0;
+				# 	value['termos'].each do |key2, val2|
+				# 		puts val2["termo"]
+				# 		puts val2[:contexto]
+				# 		peso_doc_esq = 1 + (Math.log2 (val2[:aparicoes])) 
+				# 		peso_doc_dir = 1
+				# 		peso_cons_esq = 1 + (Math.log2 (1))
+				# 		pesos += @current_user[val2[:contexto]]
+
+				# 		multiplicatorio += peso_doc_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+				# 		somatorio1 += peso_doc_esq * peso_doc_dir * peso_doc_esq * peso_doc_dir
+				# 		somatorio2 += peso_cons_esq * peso_doc_dir * peso_cons_esq * peso_doc_dir
+				# 		puts "pesos---"
+				# 		puts multiplicatorio
+				# 		puts somatorio1
+				# 		puts somatorio2
+				# 	end
+				# 	puts "peso total---"
+				# 	puts (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))) * pesos
+				# 	puts "----"
+				# end
 				# indice = @versiculos_array.bsearch{|x| (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))) >= x['peso']}
 				contem = false
 				@versiculos_array.each_with_index{|versiculo, key2|
-					if(versiculo[:peso] <= (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))))
-						@versiculos_array.insert(key2, {versiculo: key, peso: (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))), termos: value['termos']})
+					if(versiculo[:peso] <= (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))) * pesos)
+						@versiculos_array.insert(key2, {versiculo: key, peso: (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))) * pesos, termos: value['termos']})
 						contem = true
 						break
 					end
 				}
 
 				if(!contem)
-					@versiculos_array.push({versiculo: key, peso: (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))), termos: value['termos']})
+					@versiculos_array.push({versiculo: key, peso: (multiplicatorio / ((Math.sqrt(somatorio1)) * (Math.sqrt(somatorio2)))) * pesos, termos: value['termos']})
 				end
 
 				# if indice.blank?
@@ -287,7 +315,7 @@ class Principal
 
 
 
-		# puts @versiculos_array
+		puts @versiculos_array[0...10]
 
 		# @array_versiculos = []
 		# @ranking = []
