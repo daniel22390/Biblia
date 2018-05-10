@@ -69,9 +69,9 @@
                 <div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>
                 <div style="text-align: center;">
                   <% if @ranking[index][:peso] == 1000 -%>
-                    Exato
+                    <p class="contexto">Exato</p>
                   <% else -%>
-                    <%= @ranking[index][:peso] %>
+                    <p class="contexto"><%= @ranking[index][:peso].round(2) %></p>
                   <% end -%>
                 </div>
               </div>
@@ -214,56 +214,62 @@
   function geraMarcacao(){
     $.each($('.resultados .list-group-item'), function(k, v){
       var _versiculo = $(v).attr("idversiculo");
-      var _caracteristicas = [];
-      $.each(versiculos[_versiculo], function(k, termo){
-        var _cor, _aparicoes, _pesquisa, _contexto;
-        if(termo.contexto === "pesoExata"){
-          _cor = "#1a237e";
-          _aparicoes = termo.aparicoes;
-          _pesquisa = termo.pesquisa;
-          _contexto = "Exato";
-        }
-        else if(termo.contexto === "pesoSinonimo"){
-          _cor = "#1b5e20";
-          _aparicoes = termo.aparicoes;
-          _pesquisa = termo.pesquisa;
-          _contexto = "Sinônimo";
-        }
-        else if(termo.contexto === "pesoAntonimo"){
-          _cor = "#e65100";
-          _aparicoes = termo.aparicoes;
-          _pesquisa = termo.pesquisa;
-          _contexto = "Antônimo";
-        }
-        else if(termo.contexto === "pesoFlexao"){
-          _cor = "#3e2723";
-          _aparicoes = termo.aparicoes;
-          _pesquisa = termo.pesquisa;
-          _contexto = "Flexão verbal";
-        }
-        else if(termo.contexto === "pesoRadical"){
-          _cor = "#e91e63";
-          _aparicoes = termo.aparicoes;
-          _pesquisa = termo.pesquisa;
-          _contexto = "Radical";
-        }
-
+      
+      if($(v).find('.contexto').text() === "Exato"){
         var _texto = $(v).find('.texto').html();
-
-        var searchMask = termo.termo;
-        var regEx = new RegExp(searchMask, "ig");
-        var replaceMask = "<span style='text-decoration: underline; color: "+ _cor +"; font-weight: bold;'>" + termo.termo + "</span>";
-
+        var searchMask = $('#nlk-search-str').val();
+        var regEx = new RegExp(searchMask, "i");
+        var replaceMask = "<span style='text-decoration: underline; color: #1a237e; font-weight: bold;'>" + (_texto.match(regEx)[0]) + "</span>";
         _texto = _texto.replace(regEx, replaceMask);
         $(v).find('.texto').html(_texto);
-        // console.log(termo.termo);
-      });
-      // console.log(_caracteristicas);
-      // var _texto_inserir =  $(v).find('.texto').text();
-      // $.each(_caracteristicas, function(k, v){
-      //   var _texto = $(v).find('.texto').html(_texto);
-      //   _texto_inserir = _texto.replace()
-      // });
+      }
+      else{
+        $.each(versiculos[_versiculo], function(k, termo){
+          var _cor, _aparicoes, _pesquisa, _contexto;
+          if(termo.contexto === "pesoExata"){
+            _cor = "#1a237e";
+            _aparicoes = termo.aparicoes;
+            _pesquisa = termo.pesquisa;
+            _contexto = "Exato";
+          }
+          else if(termo.contexto === "pesoSinonimo"){
+            _cor = "#1b5e20";
+            _aparicoes = termo.aparicoes;
+            _pesquisa = termo.pesquisa;
+            _contexto = "Sinônimo";
+          }
+          else if(termo.contexto === "pesoAntonimo"){
+            _cor = "#e65100";
+            _aparicoes = termo.aparicoes;
+            _pesquisa = termo.pesquisa;
+            _contexto = "Antônimo";
+          }
+          else if(termo.contexto === "pesoFlexao"){
+            _cor = "#3e2723";
+            _aparicoes = termo.aparicoes;
+            _pesquisa = termo.pesquisa;
+            _contexto = "Flexão verbal";
+          }
+          else if(termo.contexto === "pesoRadical"){
+            _cor = "#e91e63";
+            _aparicoes = termo.aparicoes;
+            _pesquisa = termo.pesquisa;
+            _contexto = "Radical";
+          }
+
+          var _texto = $(v).find('.texto').html();
+
+          var searchMask = termo.termo;
+          var regEx = new RegExp("(" + searchMask + ")(?!([^<]+)?>)" ,"ig");
+          var replaceMask = '<span data-html="true" style="text-decoration: underline; color: '+ _cor +'; font-weight: bold;" data-toggle="popover" data-trigger="hover" data-placement="top" title="<div '+ "class='text-center'" +'>'+ _contexto +'</div>" data-content="Termo derivado: '+ _pesquisa +'">' + _texto.match(regEx)[0] + '</span>';
+        
+          _texto = _texto.replace(regEx, replaceMask);
+          $(v).find('.texto').html(_texto);
+          // console.log(termo);
+        });
+
+        $('[data-toggle="popover"]').popover();
+      }
     });  
   }
 
