@@ -179,6 +179,7 @@
 
 <script type="text/javascript">
   var tamanho = <%= @ranking.length %>;
+  var ranking = [];
 
   var versiculos = {};
   <% @ranking.each_with_index do |resposta, index| -%>
@@ -186,7 +187,8 @@
     <% resposta[:termos].each do |key, termo| -%>
       _termos[<%= key %>] = {termo: '<%= "#{ termo["termo"]}" %>', aparicoes: <%= "#{termo[:aparicoes]}" %>, aparicoes_termo: <%= "#{termo[:aparicoes_termo]}" %>, contexto: '<%= "#{termo[:contexto]}" %>', pesquisa: '<%= "#{termo[:pesquisa]}" %>'};
     <% end -%>
-    versiculos[<%= "#{ resposta[:versiculo]}" %>] = _termos;
+    versiculos[<%= "#{ resposta[:versiculo]}" %>] = {termos: _termos, peso: <%= "#{ resposta[:peso]}" %>};
+    ranking.push(<%= "#{ resposta[:versiculo]}" %>);
   <% end -%>
   console.log(versiculos);
 
@@ -224,7 +226,7 @@
         $(v).find('.texto').html(_texto);
       }
       else{
-        $.each(versiculos[_versiculo], function(k, termo){
+        $.each(versiculos[_versiculo].termos, function(k, termo){
           var _cor, _aparicoes, _pesquisa, _contexto;
           if(termo.contexto === "pesoExata"){
             _cor = "#1a237e";
@@ -272,6 +274,55 @@
       }
     });  
   }
+
+   $("body").on("click", ".page-link", function(ev){
+    var pagina = parseInt($(this).text());
+    var _versos = [];
+    for(var i = (pagina * 10) -10; i < (pagina * 10);  i++) {
+      _versos.push(ranking[i]);
+    }
+    var _data = _versos;
+    $.ajax({
+      method: "get",
+      url: "/pagina",
+      data: {versiculos: _data},
+      dataType: "json"
+    })
+    .done(function( msg ) {
+     var buttons = "";
+      $.each(msg.data, function(k, v){
+          // buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
+          buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+              '<div class="col-md-10">'+
+                '<div class="col-md-12 text-primary cabecalho">'+
+                    v.livro +' '+ v.capitulo +':'+ v.versiculo +
+                '</div>'+
+              '<div class="col-md-12 texto">'+
+                v.texto +
+              '</div>'+
+              '</div>' +
+              '<div class="col-md-2">'+
+                '<div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>'+
+                '<div style="text-align: center;">';
+            
+            if(versiculos[v.idVersiculo].peso == 1000){
+              buttons += '<p class="contexto">Exato</p>';
+            }
+            else{
+              buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
+            }
+            
+            buttons += '</div></div></button>';
+      });
+      $(".resultados").html(buttons);
+      $(".page-item").removeClass("active");
+      $(".page-link").filter(function() {
+        return $(this).text() == pagina;
+      }).parent().addClass("active");
+
+      geraMarcacao();
+    });
+  });
 
   $.ajax({
     method: "get",
