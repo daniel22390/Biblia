@@ -39,7 +39,6 @@ class Principal
 			if !stopword
 
 				if @sinonimo
-					puts "sinonimos"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes as aparicoes_termo	 FROM termos t1 LEFT JOIN termo_has_sinonimos ON t1.idTermo = termo_has_sinonimos.sinonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_sinonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json				
 					versiculos.each do |versiculo|
 						if(!versiculo["versiculo_id"].nil?)
@@ -87,7 +86,6 @@ class Principal
 				end
 
 				if @antonimo
-					puts "antonimos"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes  as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_antonimos ON t1.idTermo = termo_has_antonimos.antonimo_id LEFT JOIN termos t2 ON t2.idTermo = termo_has_antonimos.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json			
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
@@ -126,7 +124,6 @@ class Principal
 				end
 
 				if @verbo
-					puts "flexoes"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t2.termo as termo_termo, t2.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN termo_has_flexaos tf1 ON t1.idTermo = tf1.termo_id LEFT JOIN termo_has_flexaos tf2 ON tf2.flexao_id = tf1.flexao_id LEFT JOIN termos t2 ON t2.idTermo = tf2.termo_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t2.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
@@ -161,7 +158,6 @@ class Principal
 				end
 
 				if @radical
-					puts "radicais"
 					@radical_gerado = gera_radical(value)
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo as termo_termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN radicals r1 ON r1.idRadical = t1.radical_id LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where r1.radical = '#{@radical_gerado}'").as_json
 					versiculos.each do |versiculo| 
@@ -196,7 +192,6 @@ class Principal
 				end
 
 				if @exata
-					puts "exatos"
 					versiculos = Versiculo_has_termo.find_by_sql("SELECT DISTINCT versiculo_has_termos.*, t1.termo as termo_termo, t1.aparicoes as aparicoes_termo FROM termos t1 LEFT JOIN versiculo_has_termos ON versiculo_has_termos.termo_id = t1.idTermo where t1.termo = '#{value}'").as_json
 					versiculos.each do |versiculo| 
 						if(!versiculo["versiculo_id"].nil?)
@@ -315,7 +310,6 @@ class Principal
 
 
 
-		puts @versiculos_array[0...10]
 
 		# @array_versiculos = []
 		# @ranking = []

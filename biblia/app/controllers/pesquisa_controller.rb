@@ -22,6 +22,6 @@ class PesquisaController < ApplicationController
 	end
 
 	def pesquisa_params
-      params.require(:pesquisa).permit(:buscaEfetuada, :ranking, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao, :versiculo_id, :usuario_id)
+      params.require(:pesquisa).permit(:pesquisado, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao, :usuario_id)
     end
 end

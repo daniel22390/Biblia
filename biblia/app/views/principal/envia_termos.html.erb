@@ -88,6 +88,27 @@
       </nav>
    </div>
 </div>
+
+ <%= form_tag("/salva_pesquisa", method: "post", :class => 'envia_pesquisa') do %>
+  <input type="hidden" name="pesquisa[pesquisado]" value="<%= params[:termos] %>">
+  <input type="hidden" name="pesquisa[usuario_id]" value="<%= @usuario.as_json['id'] %>">
+  <% if(params[:exata]) -%>
+    <input type="hidden" name="pesquisa[pesoExata]" value="<%= @usuario.as_json['pesoExata'] %>">
+  <% end -%>
+  <% if(params[:sinonimo]) -%>
+    <input type="hidden" name="pesquisa[pesoSinonimo]" value="<%= @usuario.as_json['pesoSinonimo'] %>">
+  <% end -%>
+  <% if(params[:antonimo]) -%>
+    <input type="hidden" name="pesquisa[pesoAntonimo]" value="<%= @usuario.as_json['pesoAntonimo'] %>">
+  <% end -%>
+  <% if(params[:radical]) -%>
+    <input type="hidden" name="pesquisa[pesoRadical]" value="<%= @usuario.as_json['pesoRadical'] %>">
+  <% end -%>
+  <% if(params[:verbo]) -%>
+    <input type="hidden" name="pesquisa[pesoFlexao]" value="<%= @usuario.as_json['pesoFlexao'] %>">
+  <% end -%>
+<% end -%>
+
 <div class="modal fade modal_detalhes" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -274,6 +295,20 @@
       }
     });  
   }
+
+  var _data = $('.envia_pesquisa').serialize();
+  var _method =  $('.envia_pesquisa').attr('method');
+  var _action =  $('.envia_pesquisa').attr('action');
+
+  $.ajax({
+    method: _method,
+    url: _action,
+    data: _data,
+    dataType: "json"
+  })
+  .done(function( msg ) {
+    console.log(msg);
+  });
 
   $("body").on("click", ".page-link", function(ev){
     var pagina = parseInt($(this).text());
@@ -474,17 +509,17 @@
     $(".page-link:first").trigger( "click" );
   });
 
-  $.ajax({
-    method: "get",
-    url: "/marcacao",
-    data: "",
-    dataType: "json"
-  })
-  .done(function( msg ) {
-    console.log(msg);
-  })
-  .fail(function(erro){
-    console.log(erro);
-  });
+  // $.ajax({
+  //   method: "get",
+  //   url: "/marcacao",
+  //   data: "",
+  //   dataType: "json"
+  // })
+  // .done(function( msg ) {
+  //   console.log(msg);
+  // })
+  // .fail(function(erro){
+  //   console.log(erro);
+  // });
 
 </script>
