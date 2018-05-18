@@ -56,26 +56,42 @@
       <div class="col-md-12">
          <div class="list-group resultados">
             <% @resultado.each_with_index do |resposta, index| -%>
-            <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" position="<%= index + 1 %>" class="list-group-item list-group-item-action">
-              <div class="col-md-10">
-                <div class="col-md-12 text-primary cabecalho">
-                    <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
+              <button type="button" idVersiculo="<%= resposta["idVersiculo"] %>" position="<%= index + 1 %>" class="list-group-item list-group-item-action">
+                <div class="col-md-9">
+                  <div class="col-md-12 text-primary cabecalho">
+                      <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
+                  </div>
+                  <div class="col-md-12 texto">
+                      <%= resposta["texto"] %>
+                  </div>
                 </div>
-                <div class="col-md-12 texto">
-                    <%= resposta["texto"] %>
+                <div class="col-md-2">
+                  <div>
+                    <div class="text-primary text-center">PONTUAÇÃO</div>
+                    <div>
+                      <% if @ranking[index][:peso] == 1000 -%>
+                        <p class="contexto text-center">Exato</p>
+                      <% else -%>
+                        <p class="contexto text-center"><%= @ranking[index][:peso].round(2) %></p>
+                      <% end -%>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-2">
-                <div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>
-                <div style="text-align: center;">
-                  <% if @ranking[index][:peso] == 1000 -%>
-                    <p class="contexto">Exato</p>
-                  <% else -%>
-                    <p class="contexto"><%= @ranking[index][:peso].round(2) %></p>
-                  <% end -%>
+                <div class="col-md-1">
+                  <div>
+                    <% if(index != 0) -%>
+                      <div class="text-center btn_swap btn_up"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>
+                    <% else -%>
+                      <div class="text-center btn_swap btn_up" style="display: none;"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>
+                    <% end -%>
+                    <% if(index != 9) -%>
+                      <div class="text-center btn_swap btn_down"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+                    <% else -%>
+                      <div class="text-center btn_swap btn_down" style="display: none;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+                    <% end -%>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
             <% end -%>
          </div>
       </div>
@@ -109,94 +125,6 @@
   <% end -%>
 <% end -%>
 
-<div class="modal fade modal_detalhes" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <%= form_tag("/salva_pesquisa", method: "post", :id => 'envia_pesquisa') do %>
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title titulo_detalhes"></h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="versiculo_clicado col-md-12 text-center" style="margin-top: 10px; margin-bottom: 15px;">
-            </div>
-            <div class="col-md-12 busca_efetuada">
-              
-            </div>
-          </div>
-          <div class="row">
-            <div class="exatos_completo col-md-12">
-              <p class="text-center" style="color: blue;">O texto foi encontrado de maneira exata. Devido a isso, sua pontuação aumenta em relação aos demais versículos.</p>
-            </div>
-            
-            <div class="exatos col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">Exatos</div>
-                <div class="panel-body content_exatos"></div>
-                <div class="panel-footer footer_exatos text-center"></div>
-              </div>
-            </div>
-            <div class="sinonimos col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">Sinônimos</div>
-                <div class="panel-body content_sinonimos"></div>
-                <div class="panel-footer footer_sinonimos text-center"></div>
-              </div>
-            </div>
-            <div class="antonimos col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">Antônimos</div>
-                <div class="panel-body content_antonimos"></div>
-                <div class="panel-footer footer_antonimos text-center"></div>
-              </div>
-            </div>
-            <div class="flexoes col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">Flexões</div>
-                <div class="panel-body content_flexoes"></div>
-                <div class="panel-footer footer_flexoes text-center"></div>
-              </div>
-            </div>
-            <div class="radicais col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">Radicais</div>
-                <div class="panel-body content_radicais"></div>
-                <div class="panel-footer footer_radicais text-center"></div>
-              </div>
-            </div>
-            <div class="pontuacao_geral col-md-12">
-              <h3 class="text-center valor_geral" style="color: blue;"></h3>
-            </div>
-          </div>
-          <input type="hidden" id="buscaefetuada_pesquisa" name="pesquisa[buscaEfetuada]" value="">
-          <input type="hidden" id="ranking_pesquisa" name="pesquisa[ranking]" value="">
-          <input type="hidden" name="pesquisa[pesoExata]" value="<%= @usuario.as_json['pesoExata'] %>">
-          <input type="hidden" name="pesquisa[pesoSinonimo]" value="<%= @usuario.as_json['pesoSinonimo'] %>">
-          <input type="hidden" name="pesquisa[pesoAntonimo]" value="<%= @usuario.as_json['pesoAntonimo'] %>">
-          <input type="hidden" name="pesquisa[pesoRadical]" value="<%= @usuario.as_json['pesoRadical'] %>">
-          <input type="hidden" name="pesquisa[pesoFlexao]" value="<%= @usuario.as_json['pesoFlexao'] %>">
-          <input type="hidden" id="versiculo_pesquisa" name="pesquisa[versiculo_id]" value="">
-          <input type="hidden" name="pesquisa[usuario_id]" value="<%= @usuario.as_json['id'] %>">
-
-          <div class="row msg_avaliacao" style="display: none;">
-            <div class="col-md-12">
-              <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <p class="text-center">Que bom que este versículo é relevante para você. Continue a avaliar-nos!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-        </div>
-      <% end -%>
-    </div>
-  </div>
-</div>
-
 
 <script type="text/javascript">
   var tamanho = <%= @ranking.length %>;
@@ -211,9 +139,24 @@
     versiculos[<%= "#{ resposta[:versiculo]}" %>] = {termos: _termos, peso: <%= "#{ resposta[:peso]}" %>};
     ranking.push(<%= "#{ resposta[:versiculo]}" %>);
   <% end -%>
-  console.log(versiculos);
 
   geraMarcacao();
+
+  var _data = $('.envia_pesquisa').serialize();
+  var _method =  $('.envia_pesquisa').attr('method');
+  var _action =  $('.envia_pesquisa').attr('action');
+  var pesquisa_efetuada;
+
+  $.ajax({
+    method: _method,
+    url: _action,
+    data: _data,
+    dataType: "json"
+  })
+  .done(function( msg ) {
+    console.log(msg);
+    pesquisa_efetuada = msg;
+  });
 
   var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
   var limite;
@@ -296,20 +239,6 @@
     });  
   }
 
-  var _data = $('.envia_pesquisa').serialize();
-  var _method =  $('.envia_pesquisa').attr('method');
-  var _action =  $('.envia_pesquisa').attr('action');
-
-  $.ajax({
-    method: _method,
-    url: _action,
-    data: _data,
-    dataType: "json"
-  })
-  .done(function( msg ) {
-    console.log(msg);
-  });
-
   $("body").on("click", ".page-link", function(ev){
     var pagina = parseInt($(this).text());
     var _versos = [];
@@ -326,9 +255,11 @@
     .done(function( msg ) {
      var buttons = "";
       $.each(msg.data, function(k, v){
-          // buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
-          buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
-              '<div class="col-md-10">'+
+          var _btnRanking = "";
+          if(pagina === 1){
+
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+              '<div class="col-md-9">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
                     v.livro +' '+ v.capitulo +':'+ v.versiculo +
                 '</div>'+
@@ -347,7 +278,47 @@
               buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
             }
             
-            buttons += '</div></div></button>';
+            buttons += '</div></div>';
+
+            buttons += '<div class="col-md-1">'+
+              '<div>';
+              if(k !== 0)
+                buttons += '<div class="text-center btn_swap btn_up"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+              else
+                 buttons += '<div class="text-center btn_swap btn_up" style="display: none;"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+              if(k !== 9)
+                buttons += '<div class="text-center btn_swap btn_down"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              else
+                 buttons += '<div class="text-center btn_swap btn_down" style="display: none;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              buttons += '</div>'+
+            '</div>';
+            
+            buttons += '</button>';
+          }
+          else{
+          // buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+                '<div class="col-md-10">'+
+                  '<div class="col-md-12 text-primary cabecalho">'+
+                      v.livro +' '+ v.capitulo +':'+ v.versiculo +
+                  '</div>'+
+                '<div class="col-md-12 texto">'+
+                  v.texto +
+                '</div>'+
+                '</div>' +
+                '<div class="col-md-2">'+
+                  '<div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>'+
+                  '<div style="text-align: center;">';
+              
+              if(versiculos[v.idVersiculo].peso == 1000){
+                buttons += '<p class="contexto">Exato</p>';
+              }
+              else{
+                buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
+              }
+              
+              buttons += '</div></div></button>';
+          }
       });
       $(".resultados").html(buttons);
       $(".page-item").removeClass("active");
@@ -376,8 +347,10 @@
       if(pagina != parseInt($(".page-link").first().text()) - 1){
          var buttons = "";
         $.each(msg.data, function(k, v){
-          buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
-              '<div class="col-md-10">'+
+          if(pagina === 1){
+
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+              '<div class="col-md-9">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
                     v.livro +' '+ v.capitulo +':'+ v.versiculo +
                 '</div>'+
@@ -396,7 +369,48 @@
               buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
             }
             
-            buttons += '</div></div></button>';
+            buttons += '</div></div>';
+
+            buttons += '<div class="col-md-1">'+
+              '<div>';
+              if(k !== 0)
+                buttons += '<div class="text-center btn_swap btn_up"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+              else
+                buttons += '<div class="text-center btn_swap btn_up" style="display: none;"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+             
+              if(k !== 9)
+                buttons += '<div class="text-center btn_swap btn_down"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              else
+                buttons += '<div class="text-center btn_swap btn_down" style="display: none;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              
+              buttons += '</div>'+
+            '</div>';
+            
+            buttons += '</button>';
+          }
+          else{
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+                '<div class="col-md-10">'+
+                  '<div class="col-md-12 text-primary cabecalho">'+
+                      v.livro +' '+ v.capitulo +':'+ v.versiculo +
+                  '</div>'+
+                '<div class="col-md-12 texto">'+
+                  v.texto +
+                '</div>'+
+                '</div>' +
+                '<div class="col-md-2">'+
+                  '<div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>'+
+                  '<div style="text-align: center;">';
+              
+              if(versiculos[v.idVersiculo].peso == 1000){
+                buttons += '<p class="contexto">Exato</p>';
+              }
+              else{
+                buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
+              }
+              
+              buttons += '</div></div></button>';
+          }
         });
         $(".resultados").html(buttons);
         $(".page-item").removeClass("active");
@@ -442,6 +456,49 @@
       if(pagina != (parseInt($(".page-link").last().text()) + 1)){
         var buttons = "";
         $.each(msg.data, function(k, v){
+
+          if(pagina === 1){
+
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+              '<div class="col-md-9">'+
+                '<div class="col-md-12 text-primary cabecalho">'+
+                    v.livro +' '+ v.capitulo +':'+ v.versiculo +
+                '</div>'+
+              '<div class="col-md-12 texto">'+
+                v.texto +
+              '</div>'+
+              '</div>' +
+              '<div class="col-md-2">'+
+                '<div style="text-align: center;" class="text-primary">PONTUAÇÃO</div>'+
+                '<div style="text-align: center;">';
+            
+            if(versiculos[v.idVersiculo].peso == 1000){
+              buttons += '<p class="contexto">Exato</p>';
+            }
+            else{
+              buttons += '<p class="contexto">'+ versiculos[v.idVersiculo].peso.toFixed(2) +'</p>';
+            }
+            
+            buttons += '</div></div>';
+
+           buttons += '<div class="col-md-1">'+
+              '<div>';
+              if(k !== 0)
+                buttons += '<div class="text-center btn_swap btn_up"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+              else
+                 buttons += '<div class="text-center btn_swap btn_up" style="display: none;"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></div>';
+              
+              if(k !== 9)
+                buttons += '<div class="text-center btn_swap btn_down"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              else
+                 buttons += '<div class="text-center btn_swap btn_down" style="display: none;"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>';
+              
+              buttons += '</div>'+
+            '</div>';
+            
+            buttons += '</button>';
+          }
+          else{
            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
               '<div class="col-md-10">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
@@ -463,6 +520,7 @@
             }
             
             buttons += '</div></div></button>';
+          }
         });
         $(".resultados").html(buttons);
         $(".page-item").removeClass("active");
@@ -507,6 +565,36 @@
     paginas += '<li class="page-item"><a class="page-link-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>';
     $(".pagination").html(paginas);
     $(".page-link:first").trigger( "click" );
+  });
+
+  $('body').on('click', '.btn_up', function(ev){
+    if( $(this).parent().parent().parent().attr("position") === "2"){
+      $(this).parent().parent().parent().find('.btn_up').hide();
+      $(this).parent().parent().parent().prev().find('.btn_up').show();
+    }
+    if( $(this).parent().parent().parent().attr("position") === "10"){
+      $(this).parent().parent().parent().find('.btn_down').show();
+      $(this).parent().parent().parent().prev().find('.btn_down').hide();
+    }
+
+    $(this).parent().parent().parent().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) - 1);
+    $(this).parent().parent().parent().prev().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) + 1);
+    $(this).parent().parent().parent().after($(this).parent().parent().parent().prev());
+  });
+
+  $('body').on('click', '.btn_down', function(ev){
+    if( $(this).parent().parent().parent().attr("position") === "9"){
+      $(this).parent().parent().parent().find('.btn_down').hide();
+      $(this).parent().parent().parent().next().find('.btn_down').show();
+    }
+    if( $(this).parent().parent().parent().attr("position") === "1"){
+      $(this).parent().parent().parent().find('.btn_up').show();
+      $(this).parent().parent().parent().next().find('.btn_up').hide();
+    }
+
+    $(this).parent().parent().parent().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) + 1);
+    $(this).parent().parent().parent().next().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) - 1);
+    $(this).parent().parent().parent().before($(this).parent().parent().parent().next());
   });
 
   // $.ajax({

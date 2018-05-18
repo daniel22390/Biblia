@@ -9,9 +9,7 @@ class PesquisaController < ApplicationController
 		@cadastra_pesquisa = Pesquisa.new(pesquisa_params)
 
 		if(@cadastra_pesquisa.valid? && @cadastra_pesquisa.save)
-			retorno[:status] = "Success"
-		  	retorno[:message] = "Pesquisa salva com sucesso!"
-		  	retorno = JSON.generate(retorno)
+		  	retorno = @cadastra_pesquisa.as_json
 			render json: retorno
 		else
 			retorno[:status] = "Error"
