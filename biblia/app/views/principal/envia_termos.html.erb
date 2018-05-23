@@ -125,7 +125,13 @@
   <% end -%>
 <% end -%>
 
-
+<%= form_tag("/altera_ranking", method: "post", :id => 'envia_alteracao') do %>
+  <input type="hidden" name="pesquisa[pos_original]" class="pos_original_alteracao" value="">
+  <input type="hidden" name="pesquisa[pos_atual]" class="pos_atual_alteracao" value="">
+  <input type="hidden" name="pesquisa[peso]" class="peso_alteracao" value="">
+  <input type="hidden" name="pesquisa[pesquisa_id]" class="pesquisa_id_alteracao" value="">
+  <input type="hidden" name="pesquisa[versiculo_id]" class="versiculo_id_alteracao" value="">
+<% end -%>
 <script type="text/javascript">
   var tamanho = <%= @ranking.length %>;
   var ranking = [];
@@ -257,8 +263,8 @@
       $.each(msg.data, function(k, v){
           var _btnRanking = "";
           if(pagina === 1){
-
-            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
+            console.log(k);
+            buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k + 1) + '" class="list-group-item list-group-item-action">'+
               '<div class="col-md-9">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
                     v.livro +' '+ v.capitulo +':'+ v.versiculo +
@@ -568,34 +574,143 @@
   });
 
   $('body').on('click', '.btn_up', function(ev){
-    if( $(this).parent().parent().parent().attr("position") === "2"){
-      $(this).parent().parent().parent().find('.btn_up').hide();
-      $(this).parent().parent().parent().prev().find('.btn_up').show();
-    }
-    if( $(this).parent().parent().parent().attr("position") === "10"){
-      $(this).parent().parent().parent().find('.btn_down').show();
-      $(this).parent().parent().parent().prev().find('.btn_down').hide();
-    }
+    var _pesquisa1 = false;
+    var _pesquisa2 = false;
+    $(this).prop("disabled", true);
 
-    $(this).parent().parent().parent().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) - 1);
-    $(this).parent().parent().parent().prev().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) + 1);
-    $(this).parent().parent().parent().after($(this).parent().parent().parent().prev());
+    swapArrayElements(ranking, parseInt($(this).parent().parent().parent().attr("position")) - 1,  parseInt($(this).parent().parent().parent().prev().attr("position")) - 1);
+    
+
+    var _posOriginal = $(this).parent().parent().parent().attr("position");
+    $('.pos_original_alteracao').val(_posOriginal);
+    var _posAtual = $(this).parent().parent().parent().prev().attr("position");
+    $('.pos_atual_alteracao').val(_posAtual);
+    var _peso =  $(this).parent().parent().parent().find(".contexto").text();
+    $('.peso_alteracao').val(_peso);
+    var _versiculoId =  $(this).parent().parent().parent().attr("idversiculo");
+    $('.versiculo_id_alteracao').val(_versiculoId);
+    var _pesquisaId = pesquisa_efetuada.idPesquisa;
+    $('.pesquisa_id_alteracao').val(_pesquisaId);
+    var _method = $('#envia_alteracao').attr("method");
+    var _action = $('#envia_alteracao').attr("action");
+    var _data = $('#envia_alteracao').serialize();
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+       _pesquisa1 = true;
+
+      if(_pesquisa1 && _pesquisa2){
+        reloadPage();
+      }
+    });
+
+    _posOriginal = $(this).parent().parent().parent().prev().attr("position");
+    $('.pos_original_alteracao').val(_posOriginal);
+    _posAtual = $(this).parent().parent().parent().attr("position");
+    $('.pos_atual_alteracao').val(_posAtual);
+    _peso =  $(this).parent().parent().parent().prev().find(".contexto").text();
+    $('.peso_alteracao').val(_peso);
+    _versiculoId =  $(this).parent().parent().parent().prev().attr("idversiculo");
+    $('.versiculo_id_alteracao').val(_versiculoId);
+    var _pesquisaId = pesquisa_efetuada.idPesquisa;
+    $('.pesquisa_id_alteracao').val(_pesquisaId);
+    var _method = $('#envia_alteracao').attr("method");
+    var _action = $('#envia_alteracao').attr("action");
+    var _data = $('#envia_alteracao').serialize();
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+       _pesquisa2 = true;
+
+      if(_pesquisa1 && _pesquisa2){
+        reloadPage();
+      }
+    });
   });
 
   $('body').on('click', '.btn_down', function(ev){
-    if( $(this).parent().parent().parent().attr("position") === "9"){
-      $(this).parent().parent().parent().find('.btn_down').hide();
-      $(this).parent().parent().parent().next().find('.btn_down').show();
-    }
-    if( $(this).parent().parent().parent().attr("position") === "1"){
-      $(this).parent().parent().parent().find('.btn_up').show();
-      $(this).parent().parent().parent().next().find('.btn_up').hide();
-    }
+    var _pesquisa1 = false;
+    var _pesquisa2 = false;
+    $(this).prop("disabled", true);
 
-    $(this).parent().parent().parent().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) + 1);
-    $(this).parent().parent().parent().next().attr("position",  parseInt($(this).parent().parent().parent().attr('position')) - 1);
-    $(this).parent().parent().parent().before($(this).parent().parent().parent().next());
+    swapArrayElements(ranking, parseInt($(this).parent().parent().parent().attr("position")) - 1,  parseInt($(this).parent().parent().parent().next().attr("position")) - 1);
+    
+    var _posOriginal = $(this).parent().parent().parent().attr("position");
+    $('.pos_original_alteracao').val(_posOriginal);
+    var _posAtual = $(this).parent().parent().parent().next().attr("position");
+    $('.pos_atual_alteracao').val(_posAtual);
+    var _peso =  $(this).parent().parent().parent().find(".contexto").text();
+    $('.peso_alteracao').val(_peso);
+    var _versiculoId =  $(this).parent().parent().parent().attr("idversiculo");
+    $('.versiculo_id_alteracao').val(_versiculoId);
+    var _pesquisaId = pesquisa_efetuada.idPesquisa;
+    $('.pesquisa_id_alteracao').val(_pesquisaId);
+
+    var _method = $('#envia_alteracao').attr("method");
+    var _action = $('#envia_alteracao').attr("action");
+    var _data = $('#envia_alteracao').serialize();
+
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      _pesquisa1 = true;
+
+      if(_pesquisa1 && _pesquisa2){
+        reloadPage();
+      }
+    });
+
+    var _posOriginal = $(this).parent().parent().parent().next().attr("position");
+    $('.pos_original_alteracao').val(_posOriginal);
+    var _posAtual = $(this).parent().parent().parent().attr("position");
+    $('.pos_atual_alteracao').val(_posAtual);
+    var _peso =  $(this).parent().parent().parent().next().find(".contexto").text();
+    $('.peso_alteracao').val(_peso);
+    var _versiculoId =  $(this).parent().parent().parent().next().attr("idversiculo");
+    $('.versiculo_id_alteracao').val(_versiculoId);
+    var _pesquisaId = pesquisa_efetuada.idPesquisa;
+    $('.pesquisa_id_alteracao').val(_pesquisaId);
+
+    var _method = $('#envia_alteracao').attr("method");
+    var _action = $('#envia_alteracao').attr("action");
+    var _data = $('#envia_alteracao').serialize();
+
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      _pesquisa2 = true;
+
+      if(_pesquisa1 && _pesquisa2){
+        reloadPage();
+      }
+    });
   });
+
+  var swapArrayElements = function(arr, indexA, indexB) {
+    var temp = arr[indexA];
+    arr[indexA] = arr[indexB];
+    arr[indexB] = temp;
+  };
+
+  function reloadPage(){
+    $('.page-item.active a').trigger('click');
+  }
 
   // $.ajax({
   //   method: "get",

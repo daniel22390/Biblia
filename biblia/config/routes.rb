@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   post 'salva_pesquisa' => 'pesquisa#cadastra_pesquisa'
   get 'pagina' => 'principal#getPagina'
   get 'marcacao' => 'principal#gera_marcacao'
+  post 'altera_ranking' => 'pesquisa#altera_ranking'
 end
