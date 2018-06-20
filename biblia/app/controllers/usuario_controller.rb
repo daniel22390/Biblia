@@ -48,7 +48,7 @@ class UsuarioController < ApplicationController
 	end
 
 	def usuario_params
-      params.require(:usuario).permit(:nome, :email, :login, :nivel, :password, :password_confirmation, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao)
+      params.require(:usuario).permit(:nome, :email, :login, :nivel, :password, :password_confirmation, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao, :mensagem)
     end
 
 end

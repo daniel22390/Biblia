@@ -84,7 +84,7 @@
 <script type="text/javascript">
    <% if user_signed_in? %>
       var usuario_mensagem = '<%= "#{current_user.mensagem}" %>';
-      if(!usuario_mensagem){
+      if(usuario_mensagem === "S"){
          $("#nome_usuario_msg").text('<%= "Olá #{current_user.nome}" %>')
          $('.modal_mensagem').modal('show');
          var method = $("#envia_mensagem").attr("method");
