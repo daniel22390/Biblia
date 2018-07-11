@@ -48,7 +48,7 @@
 </div>
 
 <div class="modal fade modal_mensagem" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -56,18 +56,31 @@
       </div>
       <div class="modal-body">
          <p class="text-center"><strong>Bem-vindo ao nosso sistema de ranking sobre a bíblia.</strong></p>
-         <p class="text-center"><strong>Antes de comerçarmos, vamos a algumas pequenas instruções:</strong></p>
+         <p class="text-center"><strong>Antes de comerçarmos, veja algumas pequenas instruções:</strong></p>
          <ul>
             <li>
               Você poderá fazer uma busca em vários contextos, marque em quais contextos você quer que sua busca seja inserida (exata, sinônimos, etc.). 
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao1.png", :width => "465px", :height => "106px", :class  => "img-thumbnail") %></div>
             </li>
             <li style="margin-top: 10px;">
-              Ao clicar em um versículo buscado, será mostrado como foi feito o cálculo de ranqueamento do versículo, assim como em quais contextos(busca exata, por sinônimos...) a busca foi ranqueada.
+              Nos resultados da busca, serão exibidos em destaque os termos que estão inseridos nos contextos pretendidos por você.
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao2.png", :width => "607px", :height => "155px", :class  => "img-thumbnail") %></div>
             </li>
             <li style="margin-top: 10px;">
-               A sua avaliação é muito importante para nós. Portanto, sempre que você achar que um versículo seja importante para a sua pesquisa, clique sobre o mesmo e logo após clique em <button type="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button> para que sua avaliação seja salva.</li>
+              A direita dos resultados da busca, serão exibidos os pesos de cada versìculo.
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao3.png", :width => "746px", :height => "54px", :class  => "img-thumbnail") %></div>
+            </li>
+            <li style="margin-top: 10px;">
+              Os dez primeiros resultados poderão ser reordenados pelas setas à direita dos resultados. Portanto, caso os versìculos estejam em uma sequência que não o satisfaça, por favor os reordene. Assim, poderemos usar essa avaliação como um feedback para este trabalho.
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao4.png", :width => "837px", :height => "52px", :class  => "img-thumbnail") %></div>
+            </li>
+            <li style="margin-top: 10px;">
+              Cada contexto possui um peso em relação a busca efetuada. Caso você queira dar mais ou menos importância a um contexto, vá até a área de login localizada na parte superior direita da página, clique em "PESOS DE BUSCA", e insira os valores dos pesos desejados.
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao5.png", :width => "576px", :height => "313px", :class  => "img-thumbnail") %></div>
+            </li>
             <li style="margin-top: 10px;">
                Devido a grande quantidade de documentos analisados, talvez a busca demore um pouco. Basta somente aguardar e o resultado será exibido.
+              <div class="text-center" style="margin-top: 10px; margin-bottom: 25px;"><%= image_tag("instrucao6.png", :width => "563px", :height => "127px", :class  => "img-thumbnail") %></div>          
             </li>
          </ul>
          <p class="text-center"><strong>Boa avaliação!</strong></p>
@@ -82,6 +95,7 @@
 </div><!-- /.modal -->
 
 <script type="text/javascript">
+  //$('.modal_mensagem').modal('show');
    <% if user_signed_in? %>
       var usuario_mensagem = '<%= "#{current_user.mensagem}" %>';
       if(usuario_mensagem === "S"){

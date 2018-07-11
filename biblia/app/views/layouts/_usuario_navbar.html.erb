@@ -8,7 +8,8 @@
       <ul class="dropdown-menu" aria-labelledby="dLabel" style="right: 0; left: auto; padding-left: 8px; padding-right: 8px; min-width: 250px;">
         <label for="nome_usuario" class="label_p">Usuário</label>
         <p id="nome_usuario"><%= current_user.nome %></p>
-        <%= form_tag("/logout", method: "post", :class => 'logout') do %>
+        <a href="!#" data-toggle="modal" data-target=".modal_mensagem">Ajuda</a>
+        <%= form_tag("/logout", method: "post", :class => 'logout', :style => "margin-top: 20px;") do %>
           <button type="button" class="btn btn-primary btn-lg btn-block pesos" data-toggle="modal" data-target=".modal_pesos">Pesos de busca</button>
           <button type="submit" class="btn btn-primary btn-lg btn-block sair">Sair</button>
         <% end %>
