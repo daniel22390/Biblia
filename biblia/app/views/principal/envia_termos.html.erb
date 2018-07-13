@@ -199,6 +199,17 @@
   var _action =  $('.envia_pesquisa').attr('action');
   var pesquisa_efetuada;
 
+  swal({
+  title: 'Aguarde...',
+  text: 'Buscando dados do servidor!',
+  width: "50%",
+  onOpen: () => {
+    swal.showLoading();
+  }
+	}).then((result) => {
+  });
+  $('.btn_swap').attr('disabled', true);
+  
   $.ajax({
     method: _method,
     url: _action,
@@ -206,8 +217,9 @@
     dataType: "json"
   })
   .done(function( msg ) {
-    console.log(msg);
+    swal.close();
     pesquisa_efetuada = msg;
+    $('.btn_swap').attr('disabled', false);
   });
 
   var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
@@ -309,7 +321,6 @@
       $.each(msg.data, function(k, v){
           var _btnRanking = "";
           if(pagina === 1){
-            console.log(k);
             buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k + 1) + '" class="list-group-item list-group-item-action">'+
               '<div class="col-md-9">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
