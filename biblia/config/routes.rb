@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'pagina' => 'principal#getPagina'
   get 'marcacao' => 'principal#gera_marcacao'
   post 'altera_ranking' => 'pesquisa#altera_ranking'
+  post 'salva_avaliacao' => 'pesquisa#envia_avaliacao'
 end

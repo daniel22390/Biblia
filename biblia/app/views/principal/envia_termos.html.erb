@@ -96,6 +96,16 @@
          </div>
       </div>
    </div>
+
+   <div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal_avaliacao">
+        Avaliação
+      </button>
+    </div>
+    <!-- Modal -->
+    
+   </div>
    <div>
       <nav aria-label="Page navigation example" class="text-center">
         <ul class="pagination justify-content-center">
@@ -103,6 +113,180 @@
         </ul>
       </nav>
    </div>
+</div>
+
+<div class="modal fade modal_avaliacao" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <%= form_tag("/salva_avaliacao", method: "post", :class => 'envia_avaliacao') do %>
+        <input type="hidden" class="pesquisado_avaliacao" name="pesquisa[id]">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center">Avaliação</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Responda os questionamentos abaixo, referentes aos 10 resultados iniciais buscados:</p>
+          <div>
+            <label>Algum dos versículos buscados eram esperados por você?</label>
+            <div>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[resultado]" value="sim"> Sim
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[resultado]" value="não"> Não
+              </label>
+            </div>
+          </div>
+          <div style="margin-top: 25px;">
+            <label>Quais?</label>
+            <div class="versiculos_buscados list-group" style="max-height: 20vh; overflow-y: auto;">
+              <% @resultado.each_with_index do |resposta, index| -%>
+                <li class="list-group-item" >
+                  <div class="row">
+                    <div class="col-md-1">
+                       <input type="checkbox" name="pesquisa[resultado_valor][]" value="<%= resposta["idVersiculo"] %>">
+                    </div>
+                    <div class="col-md-11">
+                      <div class="text-primary cabecalho">
+                        <%= "#{resposta["livro"]} #{resposta["capitulo"]}:#{resposta["versiculo"]}" %>
+                      </div>
+                      <div>
+                        <%= resposta["texto"] %>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              <% end -%>
+            </div>
+          </div>
+          <div style="margin-top: 25px;">
+            <label>Você esperava por algum versículo que não tenha aparecido entre os 10 primeiros resultados?</label>
+            <div>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[esperados]" value="sim"> Sim
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[esperados]" value="não"> Não
+              </label>
+            </div>
+          </div>
+          <div style="margin-top: 25px;">
+            <label>Quais?</label>
+            <div class="versiculos_desejados row">
+              <div class="form-group col-md-4 ">
+                <label for="inputlivro">Livro</label>
+                <select class="form-control select_livro" id="inputlivro">
+                  <option id='GÊNESIS'>GÊNESIS</option>
+                  <option id='ÊXODO'>ÊXODO</option>
+                  <option id='LEVÍTICO'>LEVÍTICO</option>
+                  <option id='NÚMEROS'>NÚMEROS</option>
+                  <option id='DEUTERONÔMIO'>DEUTERONÔMIO</option>
+                  <option id='JOSUÉ'>JOSUÉ</option>
+                  <option id='JUÍZES'>JUÍZES</option>
+                  <option id='RUTE'>RUTE</option>
+                  <option id='I SAMUEL'>I SAMUEL</option>
+                  <option id='II SAMUEL'>II SAMUEL</option>
+                  <option id='I REIS'>I REIS</option>
+                  <option id='II REIS'>II REIS</option>
+                  <option id='I CRÔNICAS'>I CRÔNICAS</option>
+                  <option id='II CRÔNICAS'>II CRÔNICAS</option>
+                  <option id='ESDRAS'>ESDRAS</option>
+                  <option id='NEEMIAS'>NEEMIAS</option>
+                  <option id='ESTER'>ESTER</option>
+                  <option id='JÓ'>JÓ</option>
+                  <option id='SALMOS'>SALMOS</option>
+                  <option id='PROVÉRBIOS'>PROVÉRBIOS</option>
+                  <option id='ECLESIASTES'>ECLESIASTES</option>
+                  <option id='CâNTICO DOS CâNTICOS'>CâNTICO DOS CâNTICOS</option>
+                  <option id='ISAÍAS'>ISAÍAS</option>
+                  <option id='JEREMIAS'>JEREMIAS</option>
+                  <option id='LAMENTAÇÕES DE JEREMIAS'>LAMENTAÇÕES DE JEREMIAS</option>
+                  <option id='EZEQUIEL'>EZEQUIEL</option>
+                  <option id='DANIEL'>DANIEL</option>
+                  <option id='OSÉIAS'>OSÉIAS</option>
+                  <option id='JOEL'>JOEL</option>
+                  <option id='AMÓS'>AMÓS</option>
+                  <option id='OBADIAS'>OBADIAS</option>
+                  <option id='JONAS'>JONAS</option>
+                  <option id='MIQUÉIAS'>MIQUÉIAS</option>
+                  <option id='NAUM'>NAUM</option>
+                  <option id='HABACUQUE'>HABACUQUE</option>
+                  <option id='SOFONIAS'>SOFONIAS</option>
+                  <option id='AGEU'>AGEU</option>
+                  <option id='ZACARIAS'>ZACARIAS</option>
+                  <option id='MALAQUIAS'>MALAQUIAS</option>
+                  <option id='MATEUS'>MATEUS</option>
+                  <option id='MARCOS'>MARCOS</option>
+                  <option id='LUCAS'>LUCAS</option>
+                  <option id='JOÃO'>JOÃO</option>
+                  <option id='ATOS'>ATOS</option>
+                  <option id='ROMANOS'>ROMANOS</option>
+                  <option id='I CORINTIOS'>I CORINTIOS</option>
+                  <option id='II CORINTIOS'>II CORINTIOS</option>
+                  <option id='GÁLATAS'>GÁLATAS</option>
+                  <option id='EFÉSIOS'>EFÉSIOS</option>
+                  <option id='FILIPENSES'>FILIPENSES</option>
+                  <option id='COLOSSENSES'>COLOSSENSES</option>
+                  <option id='I TESSALONICENSES'>I TESSALONICENSES</option>
+                  <option id='II TESSALONICENSES'>II TESSALONICENSES</option>
+                  <option id='I TIMóTEO'>I TIMóTEO</option>
+                  <option id='II TIMóTEO'>II TIMóTEO</option>
+                  <option id='TITO'>TITO</option>
+                  <option id='FILEMOM'>FILEMOM</option>
+                  <option id='HEBREUS'>HEBREUS</option>
+                  <option id='TIAGO'>TIAGO</option>
+                  <option id='I PEDRO'>I PEDRO</option>
+                  <option id='II PEDRO'>II PEDRO</option>
+                  <option id='I JOÃO'>I JOÃO</option>
+                  <option id='II JOÃO'>II JOÃO</option>
+                  <option id='III JOÃO'>III JOÃO</option>
+                  <option id='JUDAS'>JUDAS</option>
+                  <option id='APOCALIPSE'>APOCALIPSE</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputcapt">Capítulo</label>
+                <input type="number" class="form-control capitulo_select" id="inputcapt" >
+              </div>
+              <div class="form-group col-md-3 ">
+                <label for="inputvers">Versículo</label>
+                <input type="number" class="form-control versiculo_select" id="inputvers." >
+              </div>
+              <div class="col-md-2 ">
+                <button type="button" class="btn btn-primary add_pretend" style="float: right; margin-top: 20px;">Adicionar</button>
+              </div>
+            </div>
+            <div class="chips">
+            </div>
+          </div>
+          <div style="margin-top: 25px;">
+            <label>Qual seu índice de satisfação com essa busca?</label>
+            <div>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[satisfacao]" id="inlineCheckbox5" value="péssimo"> Péssimo
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[satisfacao]" id="inlineCheckbox7" value="ruim"> Ruim
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[satisfacao]" id="inlineCheckbox8" value="regular"> Regular
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[satisfacao]" id="inlineCheckbox9" value="bom"> Bom
+              </label>
+              <label class="checkbox-inline">
+                <input type="radio" name="pesquisa[satisfacao]" id="inlineCheckbox10" value="excelente"> Excelente
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+      <% end -%>
+    </div>
+  </div>
 </div>
 
  <%= form_tag("/salva_pesquisa", method: "post", :class => 'envia_pesquisa') do %>
@@ -179,6 +363,7 @@
 </div><!-- /.modal -->
 
 <script type="text/javascript">
+  // $('.modal').modal();
   var tamanho = <%= @ranking.length %>;
   var ranking = [];
 
@@ -220,6 +405,7 @@
     swal.close();
     pesquisa_efetuada = msg;
     $('.btn_swap').attr('disabled', false);
+    $('.pesquisado_avaliacao').val(pesquisa_efetuada.idPesquisa);
   });
 
   var paginas = '<li class="page-item"><a class="page-link-previous" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>';
@@ -244,6 +430,7 @@
   function geraMarcacao(){
     $.each($('.resultados .list-group-item'), function(k, v){
       var _versiculo = $(v).attr("idversiculo");
+      
       
       if($(v).find('.contexto').text() === "Exato"){
         var _texto = $(v).find('.texto').html();
@@ -287,17 +474,21 @@
             _contexto = "Radical";
           }
 
-          var _texto = $(v).find('.texto').html();
+          var _texto = $(v).find('.texto').html().toString();
 
           var searchMask = termo.termo;
-          var regEx = new RegExp("(" + searchMask + ")(?!([^<]+)?>)" ,"ig");
-          var replaceMask = '<span data-html="true" style="text-decoration: underline; color: '+ _cor +'; font-weight: bold;" data-toggle="popover" data-trigger="hover" data-placement="top" title="<div '+ "class='text-center'" +'>'+ _contexto +'</div>" data-content="Termo derivado: '+ _pesquisa +'">' + _texto.match(regEx)[0] + '</span>';
+          var regex = new RegExp("(?!<span[^>]*?>)(\\b"+ searchMask +"\\b)(?![^<]*?</span>)" ,"ig");
+          //var regEx = new RegExp(`(\\W|\^|\\s)${searchMask}(\\W|\$|\\s)`, "ig");
+          //problema aqui... no regex
+          // console.log(termo.termo);
+          // console.log(_texto);
+          var replaceMask = '<span data-html="true" style="text-decoration: underline; color: '+ _cor +'; font-weight: bold;" data-toggle="popover" data-trigger="hover" data-placement="top" title="'+ _contexto +'" data-content="Termo derivado: '+ _pesquisa +'">' +  _texto.match(regex)[0] + '</span>';
         
-          _texto = _texto.replace(regEx, replaceMask);
+          _texto = _texto.replace(regex, replaceMask);
           $(v).find('.texto').html(_texto);
           // console.log(termo);
         });
-
+        console.log('fim versiculo');
         $('[data-toggle="popover"]').popover();
       }
     });  
@@ -321,6 +512,7 @@
       $.each(msg.data, function(k, v){
           var _btnRanking = "";
           if(pagina === 1){
+            
             buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k + 1) + '" class="list-group-item list-group-item-action">'+
               '<div class="col-md-9">'+
                 '<div class="col-md-12 text-primary cabecalho">'+
@@ -359,6 +551,7 @@
             buttons += '</button>';
           }
           else{
+            // console.log(v.texto);
           // buttons += '<button type="button" idVersiculo="'+ v.idVersiculo +'" position="'+ ((pagina * 10) -10 + k - 1) +'" class="list-group-item list-group-item-action"><div class="col-md-12 text-primary cabecalho">'+ v.livro +' '+ v.capitulo +':'+ v.versiculo +'</div><div class="col-md-12 texto">'+ v.texto +'</div></button>';
             buttons += '<button type="button" idVersiculo="' + v.idVersiculo +'" position="' + ((pagina * 10) -10 + k - 1) + '" class="list-group-item list-group-item-action">'+
                 '<div class="col-md-10">'+
@@ -391,6 +584,14 @@
 
       geraMarcacao();
     });
+  });
+
+  $("body").on("click", ".add_pretend", function(ev){
+    var _input_livro = '<input type="hidden" name=pesquisa[pretendidos][][livro] value="'+ $('.select_livro').val() +'">';
+    var _input_capitulo = '<input type="hidden" name=pesquisa[pretendidos][][capitulo] value="'+ $('.capitulo_select').val() +'">';
+    var _input_versiculo = '<input type="hidden" name=pesquisa[pretendidos][][versiculo] value="'+ $('.versiculo_select').val() +'">';
+    var _texto = $('.select_livro').val() + " " + $('.capitulo_select').val() + ":" + $('.versiculo_select').val();
+    $('.chips').append('<div class="chip">'+ _input_livro + _input_capitulo + _input_versiculo + _texto +'</div>');
   });
 
   $("body").on("click", ".page-link-previous", function(ev){
@@ -499,6 +700,23 @@
         $(".pagination").html(paginas);
         $(".page-link:last").trigger( "click" );
       }
+    });
+  });
+
+  $('body').on('submit', '.envia_avaliacao', function(ev){
+    ev.preventDefault();
+    var _data = $(this).serialize();
+    var _method =  $(this).attr('method');
+    var _action =  $(this).attr('action');
+    // console.log($(this).serializeArray());
+    $.ajax({
+      method: _method,
+      url: _action,
+      data: _data,
+      dataType: "json"
+    })
+    .done(function( msg ) {
+      console.log(msg);
     });
   });
 

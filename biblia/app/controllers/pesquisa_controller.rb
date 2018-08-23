@@ -38,8 +38,35 @@ class PesquisaController < ApplicationController
 		end
 	end
 
+	def envia_avaliacao
+		retorno = Hash.new
+		retorno[:status] = ""
+		retorno[:message] = ""
+		retorno[:data] = ""
+
+		puts params
+
+		render json: retorno
+
+		# @avaliacao = Pesquisa.update(current_user.id, :mensagem => 'N')
+
+		# if(@altera_ranking.valid? && @altera_ranking.save)
+		#   	retorno = @altera_ranking.as_json
+		# 	render json: retorno
+		# else
+		# 	retorno[:status] = "Error"
+		#   	retorno[:message] = @altera_ranking.errors.first[1]
+		#   	retorno = JSON.generate(retorno)
+		# 	render json: retorno
+		# end
+	end
+
 	def pesquisa_params
       params.require(:pesquisa).permit(:pesquisado, :pesoExata, :pesoSinonimo, :pesoAntonimo, :pesoRadical, :pesoFlexao, :usuario_id)
+	end
+
+	def pesquisa_altera
+	params.require(:pesquisa).permit(:id, :resultado, :resultado_valor, :esperados, :pretendidos, :satisfacao)
 	end
 	
 	def altera_params
